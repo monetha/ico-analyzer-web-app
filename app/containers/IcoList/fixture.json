@@ -1,0 +1,4466 @@
+[
+  {
+    "metadata": {
+      "version": 75,
+      "ico_name": "Konklab",
+      "decimals": 13,
+      "token_contract_address": "185dc578739d0bf687c34787f6c420f0c52e8d0100b2ae5b037f7a16e18beee1",
+      "crowdsale_address": "0ef082a8411e0ed309e643409ea67c260be9da507f85258146c357858f1e9fb1",
+      "owner_address": "c319e2921eb51739b1d1229bf4b83314a08d9dfba49358c8d051eb5f5b18b786",
+      "funds_address": "526162c5fcc1e14d4fd982eca7fda9e5db342180cff9a34ea386979633c15177",
+      "token_issuer_address": "1681a5cef94bae580dbca16a66be641ab0be481643fe8702f1de5ef17fd41236",
+      "passportAddress": "1681a5cef94bae580dbca16a66be641ab0be481643fe8702f1de5ef17fd41236",
+      "eth_nominated": true,
+      "token_tx_input_adjustment": true,
+      "owner_is_ico_wallet": true,
+      "confidence": 0.5
+    },
+    "ico_info": {
+      "cfr_currency": "PHP",
+      "cfr": 264295234.3,
+      "ico_start_date": "2018/05/15",
+      "ico_end_date": "2018/09/08",
+      "ico_price_cur": "PHP",
+      "ico_price": 8.424889
+    },
+    "ico_infoico_price_adjusted": 13.738356342,
+    "calculated_data": {
+      "tokens_issued": 29452510.0,
+      "efr_token": 80682914.11223,
+      "eth_rate_start": 2006746.6,
+      "eth_rate_end": 44951898.0,
+      "efr_token_adjusted": 12412523.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.444427427,
+        "funds_raised_adjusted_diff": 1.755174804,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.5,
+      "ico_eth_total": 17289.8,
+      "efr_ico_tx": 12495752.272096,
+      "efr_owner_tx_currency": "USD",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": 0.415815766,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 31.349418863,
+        "distribution_start_from_ico_start": 64.815507192,
+        "distribution_end_from_ico_end": 49.357662656,
+        "distribution_halflife": "4/28/2018",
+        "funds_balance_eth": 15320.70042637
+      }
+    },
+    "change_log": {
+      "metadata.version": 7,
+      "metadata.ico_address": "12ae2b5c59bd42f2b8b4b1973c2e631611f7c717ffbdf6cc6e78476bc1bc6bcd",
+      "ico_info.ico_start_date": "3/27/2018",
+      "ico_info.ico_end_date": "3/21/2018",
+      "ico_info.ico_price": 0.671403,
+      "ico_info.ico_price_adjusted": 0.92474
+    }
+  },
+  {
+    "metadata": {
+      "version": 52,
+      "ico_name": "Stim",
+      "decimals": 17,
+      "token_contract_address": "4d799f7b502470181b401d8ccad66d7025639c38bd04c2ecde8c9358943d08e1",
+      "crowdsale_address": "4431ef083253e2509e5d6eacc5a96db581aa06489cd4f572a3b35dbbba30dd32",
+      "owner_address": "70bdfaf46e0e7fbc2a7a2f293e0bf52027ec6a67b01eed3ea5ec2510b72f2f1c",
+      "funds_address": "272a955763875fdd13f594f755a7f29d86edf1a76065737dc8efffa3108ad6dd",
+      "token_issuer_address": "cfec66381d78bb256112bc0e5e9ffca5a01c4f0393afdb2017ed5d9839fb46e3",
+      "passportAddress": "cfec66381d78bb256112bc0e5e9ffca5a01c4f0393afdb2017ed5d9839fb46e3",
+      "eth_nominated": false,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": false,
+      "confidence": 0.1
+    },
+    "ico_info": {
+      "cfr_currency": "CNY",
+      "cfr": 769175789.6,
+      "ico_start_date": "2018/05/08",
+      "ico_end_date": "2017/11/07",
+      "ico_price_cur": "THB",
+      "ico_price": 5.087855
+    },
+    "ico_infoico_price_adjusted": 57.778335316,
+    "calculated_data": {
+      "tokens_issued": 87190778.0,
+      "efr_token": 30329829.542903,
+      "eth_rate_start": 55581139.0,
+      "eth_rate_end": 40615499.0,
+      "efr_token_adjusted": 74660742.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.228056136,
+        "funds_raised_adjusted_diff": 2.729268125,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": 111984.968671677,
+      "ico_eth_out": 0.4,
+      "ico_eth_total": 61286.0,
+      "efr_ico_tx": 60299765.085601,
+      "efr_owner_tx_currency": "PKR",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": 0.776998958,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 47.299256437,
+        "distribution_start_from_ico_start": 88.518998413,
+        "distribution_end_from_ico_end": 33.919267832,
+        "distribution_halflife": "8/28/2018",
+        "funds_balance_eth": 98052.42382652
+      }
+    },
+    "change_log": {
+      "metadata.version": 10,
+      "metadata.ico_address": "f1a07f1c50069dc73a22d5a341508733c7a30941ad5b2d2faeb7f808874e5db1",
+      "ico_info.ico_start_date": "5/20/2018",
+      "ico_info.ico_end_date": "1/30/2018",
+      "ico_info.ico_price": 0.300718,
+      "ico_info.ico_price_adjusted": 0.46284
+    }
+  },
+  {
+    "metadata": {
+      "version": 12,
+      "ico_name": "Y-Solowarm",
+      "decimals": 12,
+      "token_contract_address": "aa6f7dc3b11ab7df44453c40f02b34dc586acaf7077b40b79d5be020dbc000ee",
+      "crowdsale_address": "8ccbf00f0186acc88c7feb6f4732a1a869ba03f91211e2abef84c9e88b7e33f6",
+      "owner_address": "64c333e4d1cd1713e72c76e6c85719856e0741f123004111195c7fe4872f8fca",
+      "funds_address": "013f8b069f4113698cff6c054b1386553a0b4228aa65aaaaedda61c54e56a003",
+      "token_issuer_address": "b467cbfb986b41c696c2fb23ef9488bbd7bc6a40ea7277d127b6f857d8b33620",
+      "passportAddress": "b467cbfb986b41c696c2fb23ef9488bbd7bc6a40ea7277d127b6f857d8b33620",
+      "eth_nominated": false,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": false,
+      "confidence": 0.9
+    },
+    "ico_info": {
+      "cfr_currency": "ZAR",
+      "cfr": 772417733.5,
+      "ico_start_date": "2018/06/29",
+      "ico_end_date": "2018/10/23",
+      "ico_price_cur": "EUR",
+      "ico_price": 6.794625
+    },
+    "ico_infoico_price_adjusted": 35.382223256,
+    "calculated_data": {
+      "tokens_issued": 32876755.0,
+      "efr_token": 82811324.774793,
+      "eth_rate_start": 45122134.0,
+      "eth_rate_end": 31539295.0,
+      "efr_token_adjusted": 37265788.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.62432243,
+        "funds_raised_adjusted_diff": 2.158756846,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.5,
+      "ico_eth_total": 55634.9,
+      "efr_ico_tx": 78177639.701025,
+      "efr_owner_tx_currency": "IDR",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": 0.101263932,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 66.395103219,
+        "distribution_start_from_ico_start": 97.856854332,
+        "distribution_end_from_ico_end": 42.140156975,
+        "distribution_halflife": "8/10/2018",
+        "funds_balance_eth": 49604.933422518
+      }
+    },
+    "change_log": {
+      "metadata.version": 10,
+      "metadata.ico_address": "4c5eefccdf49aa4931dfc2eddf055ef01de8b20e1a3c9e079fc8c7c519691f86",
+      "ico_info.ico_start_date": "3/27/2018",
+      "ico_info.ico_end_date": "7/2/2018",
+      "ico_info.ico_price": 0.296571,
+      "ico_info.ico_price_adjusted": 0.46152
+    }
+  },
+  {
+    "metadata": {
+      "version": 71,
+      "ico_name": "Tresom",
+      "decimals": 17,
+      "token_contract_address": "8ec9946fde5603757d7ca131215a71b42d93358768bed989e3d99cfa0a8c8310",
+      "crowdsale_address": "0b88789d7446dbf6256911cb090c67e02f590ef52d56328707e8e17749460fd4",
+      "owner_address": "31ce95d8a4707ae8ce8cdd3933922381030324fb4f1145389c8d43758b7b333b",
+      "funds_address": "a488d840df6ca97431b2022226e3ce95c9ad5c76ebefd8192b440345461a2998",
+      "token_issuer_address": "09856d5136deee60b5c593b7a4d92a3c2361770d5fe5cd9050bf8e01ed2023ff",
+      "passportAddress": "09856d5136deee60b5c593b7a4d92a3c2361770d5fe5cd9050bf8e01ed2023ff",
+      "eth_nominated": false,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": true,
+      "confidence": 0.7
+    },
+    "ico_info": {
+      "cfr_currency": "CNY",
+      "cfr": 696000975.8,
+      "ico_start_date": "2018/05/07",
+      "ico_end_date": "2018/10/19",
+      "ico_price_cur": "SEK",
+      "ico_price": 6.656638
+    },
+    "ico_infoico_price_adjusted": 34.194990572,
+    "calculated_data": {
+      "tokens_issued": 29633695.0,
+      "efr_token": 84704344.427979,
+      "eth_rate_start": 12400918.0,
+      "eth_rate_end": 74378033.0,
+      "efr_token_adjusted": 80402626.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.75484724,
+        "funds_raised_adjusted_diff": 4.516623271,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": 2256716.208140398,
+      "ico_eth_out": 0.2,
+      "ico_eth_total": 56929.2,
+      "efr_ico_tx": 22430292.386158,
+      "efr_owner_tx_currency": "HNL",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": 0.73381274,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 43.130321965,
+        "distribution_start_from_ico_start": -2.191737337,
+        "distribution_end_from_ico_end": 24.604089104,
+        "distribution_halflife": "7/12/2018",
+        "funds_balance_eth": 14281.744281383
+      }
+    },
+    "change_log": {
+      "metadata.version": 1,
+      "metadata.ico_address": "c8c5cdee49a3ed4d649c358800c432142efc32c9fb584002c050ef178e274c07",
+      "ico_info.ico_start_date": "5/19/2018",
+      "ico_info.ico_end_date": "4/20/2018",
+      "ico_info.ico_price": 0.589234,
+      "ico_info.ico_price_adjusted": 0.49956
+    }
+  },
+  {
+    "metadata": {
+      "version": 60,
+      "ico_name": "Span",
+      "decimals": 12,
+      "token_contract_address": "2d06e0f950d5c94f78418ca84d84db04ecc643d2df19665443a8fb0a2f35afec",
+      "crowdsale_address": "e210f01afe34ab4aeba61ca66aa544e4da0fb2e3956493b536929acc9395fa46",
+      "owner_address": "a7b201fc552f2cb4e454fb660716ecd6015e89fcb448f42a737161edd8750261",
+      "funds_address": "d637e467f2aa41d5c67d68a4dabbf85923c87bbfe8b5d8b4db176fca03a4fb3d",
+      "token_issuer_address": "732f4e91e86442d77250ade5db6ae90264d6b5032d8ff144cbf4b2666cecf7de",
+      "passportAddress": "732f4e91e86442d77250ade5db6ae90264d6b5032d8ff144cbf4b2666cecf7de",
+      "eth_nominated": true,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": false,
+      "confidence": 0.0
+    },
+    "ico_info": {
+      "cfr_currency": "CNY",
+      "cfr": 314388022.1,
+      "ico_start_date": "2018/06/22",
+      "ico_end_date": "2018/01/02",
+      "ico_price_cur": "CNY",
+      "ico_price": 5.373629
+    },
+    "ico_infoico_price_adjusted": 69.718220165,
+    "calculated_data": {
+      "tokens_issued": 4823610.0,
+      "efr_token": 86967981.082086,
+      "eth_rate_start": 56652260.0,
+      "eth_rate_end": 70033270.0,
+      "efr_token_adjusted": 95022809.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.832477909,
+        "funds_raised_adjusted_diff": 2.724388458,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": 4051958.715369502,
+      "ico_eth_out": 0.4,
+      "ico_eth_total": 20714.0,
+      "efr_ico_tx": 44982831.762769,
+      "efr_owner_tx_currency": "PLN",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": -0.391281926,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 36.417699701,
+        "distribution_start_from_ico_start": 49.597308419,
+        "distribution_end_from_ico_end": 64.434195686,
+        "distribution_halflife": "6/29/2018",
+        "funds_balance_eth": 97325.204619761
+      }
+    },
+    "change_log": {
+      "metadata.version": 4,
+      "metadata.ico_address": "a4e19b894fe155f9924995ad963e9532f4edae82b410d8db9f79644f19469790",
+      "ico_info.ico_start_date": "12/6/2017",
+      "ico_info.ico_end_date": "7/18/2018",
+      "ico_info.ico_price": 0.118503,
+      "ico_info.ico_price_adjusted": 0.02924
+    }
+  },
+  {
+    "metadata": {
+      "version": 61,
+      "ico_name": "Hatity",
+      "decimals": 13,
+      "token_contract_address": "b37d0a10ab557d14cd59ff382ef923449b2c48d96498f5f975a70a46daefab31",
+      "crowdsale_address": "61fb93cb1286e01c1885abc43298f0bc019435931b2c134b403f32943811a69c",
+      "owner_address": "a3ea2d15e508e09fcded4de07f685ca3a16628d27648368218f57b99bee5a97e",
+      "funds_address": "b046239efd58f06e8348da1d45e21815ec200713505633a7614e6d1ca6b03f87",
+      "token_issuer_address": "6fb1052010ceb38520eb80c4728fdbc17146deda69853c2162554e795861a548",
+      "passportAddress": "6fb1052010ceb38520eb80c4728fdbc17146deda69853c2162554e795861a548",
+      "eth_nominated": true,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": false,
+      "confidence": 0.7
+    },
+    "ico_info": {
+      "cfr_currency": "AFN",
+      "cfr": 714385766.6,
+      "ico_start_date": "2018/09/30",
+      "ico_end_date": "2018/09/02",
+      "ico_price_cur": "EUR",
+      "ico_price": 8.626792
+    },
+    "ico_infoico_price_adjusted": 48.379936889,
+    "calculated_data": {
+      "tokens_issued": 25750561.0,
+      "efr_token": 66156429.8888,
+      "eth_rate_start": 92133133.0,
+      "eth_rate_end": 73614575.0,
+      "efr_token_adjusted": 83372320.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.56536832,
+        "funds_raised_adjusted_diff": 1.180202954,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.2,
+      "ico_eth_total": 96053.5,
+      "efr_ico_tx": 77318802.857476,
+      "efr_owner_tx_currency": "VND",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": 0.226242165,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 75.79235565,
+        "distribution_start_from_ico_start": 22.195627839,
+        "distribution_end_from_ico_end": 90.045728404,
+        "distribution_halflife": "4/6/2018",
+        "funds_balance_eth": 30064.738018059
+      }
+    },
+    "change_log": {
+      "metadata.version": 3,
+      "metadata.ico_address": "00e33b5356f90e49bb3ede834caaf9e38e6257c05ac8c60951f0712b940c6d13",
+      "ico_info.ico_start_date": "6/5/2018",
+      "ico_info.ico_end_date": "6/24/2018",
+      "ico_info.ico_price": 0.704387,
+      "ico_info.ico_price_adjusted": 0.98449
+    }
+  },
+  {
+    "metadata": {
+      "version": 54,
+      "ico_name": "Opela",
+      "decimals": 17,
+      "token_contract_address": "c8b1a25f49a10471c65661b89e76c2ab3b12a3cccbf92f514fe46d05f1c0bfd3",
+      "crowdsale_address": "d16c9a58378ce0166c7956a5dcea6ba240c2902ad6b5d706123470a4f4fcaa65",
+      "owner_address": "afa2a1eb3984ea4446987f0d85b2e1bba90a3df17790c2f3ec31f55820b5d9c8",
+      "funds_address": "d327048b182b796bc1ea39ca31fe0c6818464e6ce91f512fea12e9d83cfd8505",
+      "token_issuer_address": "c9e667c09bc168f89e3b7f8ec2c5eea2aac2b06e93def001eb06969bf6d4a20a",
+      "passportAddress": "c9e667c09bc168f89e3b7f8ec2c5eea2aac2b06e93def001eb06969bf6d4a20a",
+      "eth_nominated": false,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": false,
+      "confidence": 0.2
+    },
+    "ico_info": {
+      "cfr_currency": "CNY",
+      "cfr": 235508057.1,
+      "ico_start_date": "2018/08/30",
+      "ico_end_date": "2018/01/10",
+      "ico_price_cur": "JPY",
+      "ico_price": 5.465028
+    },
+    "ico_infoico_price_adjusted": 10.913254014,
+    "calculated_data": {
+      "tokens_issued": 30386678.0,
+      "efr_token": 31691313.836846,
+      "eth_rate_start": 74815126.0,
+      "eth_rate_end": 46091573.0,
+      "efr_token_adjusted": 30657999.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.907296502,
+        "funds_raised_adjusted_diff": 2.289653176,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.6,
+      "ico_eth_total": 25613.3,
+      "efr_ico_tx": 81215767.789199,
+      "efr_owner_tx_currency": "RUB",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": -0.255816319,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 30.104968922,
+        "distribution_start_from_ico_start": 4.605153238,
+        "distribution_end_from_ico_end": 98.843021993,
+        "distribution_halflife": "11/3/2017",
+        "funds_balance_eth": 56685.198123483
+      }
+    },
+    "change_log": {
+      "metadata.version": 10,
+      "metadata.ico_address": "8036c5e5af94f2c1f1f7099759cbacd95cd395d2b5d94b9e38b6b1d60aa9e464",
+      "ico_info.ico_start_date": "12/24/2017",
+      "ico_info.ico_end_date": "7/2/2018",
+      "ico_info.ico_price": 0.493291,
+      "ico_info.ico_price_adjusted": 0.62818
+    }
+  },
+  {
+    "metadata": {
+      "version": 78,
+      "ico_name": "Bitchip",
+      "decimals": 13,
+      "token_contract_address": "546016ffe9c082d24a8569caacef586cfcb9a42336627077fed3f70f7002d20b",
+      "crowdsale_address": "d6f9af44434d54bd1058d33902cd6df2a7e6e650bf31a08519f1034f32b20e12",
+      "owner_address": "95fc4a4960495ab665147511df71781a7e4ea0a7090650066df98dfb7bed321e",
+      "funds_address": "d1061289b93077f6cfd17da9c84b627e01b94d2e7f9a9ff352695a086f5e22a9",
+      "token_issuer_address": "e15f6f28691cc68437cfd5dbe4b29ee5f8af3bffd494de74bae3117abc00701a",
+      "passportAddress": "e15f6f28691cc68437cfd5dbe4b29ee5f8af3bffd494de74bae3117abc00701a",
+      "eth_nominated": true,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": true,
+      "confidence": 0.3
+    },
+    "ico_info": {
+      "cfr_currency": "PEN",
+      "cfr": 793215097.6,
+      "ico_start_date": "2018/01/03",
+      "ico_end_date": "2018/01/29",
+      "ico_price_cur": "BWP",
+      "ico_price": 5.728586
+    },
+    "ico_infoico_price_adjusted": 82.768453905,
+    "calculated_data": {
+      "tokens_issued": 98780595.0,
+      "efr_token": 61663241.346612,
+      "eth_rate_start": 58965905.0,
+      "eth_rate_end": 29321333.0,
+      "efr_token_adjusted": 19606722.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.825031542,
+        "funds_raised_adjusted_diff": 2.774213155,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.2,
+      "ico_eth_total": 46094.5,
+      "efr_ico_tx": 51745401.02033,
+      "efr_owner_tx_currency": "ARS",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": -0.268587343,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 29.531897616,
+        "distribution_start_from_ico_start": 38.482677864,
+        "distribution_end_from_ico_end": 20.455000311,
+        "distribution_halflife": "7/18/2018",
+        "funds_balance_eth": 92733.649541734
+      }
+    },
+    "change_log": {
+      "metadata.version": 8,
+      "metadata.ico_address": "04907df71b5fc842dd1f59664c04adb91a9d0bf19c22b9a830131b8d221566c8",
+      "ico_info.ico_start_date": "4/25/2018",
+      "ico_info.ico_end_date": "8/9/2018",
+      "ico_info.ico_price": 0.39764,
+      "ico_info.ico_price_adjusted": 0.17289
+    }
+  },
+  {
+    "metadata": {
+      "version": 74,
+      "ico_name": "Konklab",
+      "decimals": 10,
+      "token_contract_address": "1a4a8243e22d8ad02554d8d55718e40ebbaf7a862178c7a3e4c1cdf4c2cc2794",
+      "crowdsale_address": "4c64d29ac8675279f8192981a1c06ed0f0957b6d73db89c5632883d58fa00d02",
+      "owner_address": "4c136373a1060a120da729514a47ab60209818fd1bf6176ab0dcbf413b453578",
+      "funds_address": "4a326a55fd950f21f43fd6d737914854f3d01aba711442eb658095bdddcb362d",
+      "token_issuer_address": "bc325b2b022f13058e24afe7883b668ace16a022b423ae5c0cf31ea2bfb818e8",
+      "passportAddress": "bc325b2b022f13058e24afe7883b668ace16a022b423ae5c0cf31ea2bfb818e8",
+      "eth_nominated": false,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": true,
+      "confidence": 0.8
+    },
+    "ico_info": {
+      "cfr_currency": "PKR",
+      "cfr": 572481744.0,
+      "ico_start_date": "2018/01/26",
+      "ico_end_date": "2018/10/23",
+      "ico_price_cur": "RUB",
+      "ico_price": 6.757181
+    },
+    "ico_infoico_price_adjusted": 73.101315693,
+    "calculated_data": {
+      "tokens_issued": 85473289.0,
+      "efr_token": 16243275.697963,
+      "eth_rate_start": 66261771.0,
+      "eth_rate_end": 17993078.0,
+      "efr_token_adjusted": 94756513.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.930400903,
+        "funds_raised_adjusted_diff": 4.598034261,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.8,
+      "ico_eth_total": 26490.1,
+      "efr_ico_tx": 23930405.66795,
+      "efr_owner_tx_currency": "EUR",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": 0.822195593,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 25.505804457,
+        "distribution_start_from_ico_start": 17.335115739,
+        "distribution_end_from_ico_end": 29.205879718,
+        "distribution_halflife": "8/8/2018",
+        "funds_balance_eth": 75154.54705911
+      }
+    },
+    "change_log": {
+      "metadata.version": 5,
+      "metadata.ico_address": "c93209ab2a8ead14806e763a0c8c2c9cc5898d3809e1d935171adc74b47ddb69",
+      "ico_info.ico_start_date": "10/22/2018",
+      "ico_info.ico_end_date": "4/1/2018",
+      "ico_info.ico_price": 0.727376,
+      "ico_info.ico_price_adjusted": 0.01166
+    }
+  },
+  {
+    "metadata": {
+      "version": 24,
+      "ico_name": "Mat Lam Tam",
+      "decimals": 18,
+      "token_contract_address": "d15a6c2036f54002d537a81d03305147fea55ebc9fea38445b03629df67a85ba",
+      "crowdsale_address": "a2c14486278e2c7c84cb860631a79a5182610314831819037a4b911c40a6b21c",
+      "owner_address": "1123b8c7a08e35fa900aacfb8a224a7af80b26ddaee822498c90ed1c37178de4",
+      "funds_address": "8cb822f8a9311c22f323e9750d495adf37772b7db6becf2ffe4dd537bc904ed0",
+      "token_issuer_address": "c6d11ea3ecf6824872e7bed1c5be836eff56ac4cfcc1e0f5c09b7036c7012293",
+      "passportAddress": "c6d11ea3ecf6824872e7bed1c5be836eff56ac4cfcc1e0f5c09b7036c7012293",
+      "eth_nominated": false,
+      "token_tx_input_adjustment": true,
+      "owner_is_ico_wallet": false,
+      "confidence": 0.7
+    },
+    "ico_info": {
+      "cfr_currency": "NGN",
+      "cfr": 671618740.6,
+      "ico_start_date": "2017/12/27",
+      "ico_end_date": "2018/08/11",
+      "ico_price_cur": "EUR",
+      "ico_price": 7.283037
+    },
+    "ico_infoico_price_adjusted": 99.532989545,
+    "calculated_data": {
+      "tokens_issued": 71589206.0,
+      "efr_token": 2536978.021546,
+      "eth_rate_start": 65722926.0,
+      "eth_rate_end": 48354149.0,
+      "efr_token_adjusted": 29134409.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.202123476,
+        "funds_raised_adjusted_diff": 2.429628429,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.1,
+      "ico_eth_total": 27315.0,
+      "efr_ico_tx": 88805372.149495,
+      "efr_owner_tx_currency": "CNY",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": -0.31247427,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 66.999366933,
+        "distribution_start_from_ico_start": 69.168254224,
+        "distribution_end_from_ico_end": 46.383909104,
+        "distribution_halflife": "12/5/2017",
+        "funds_balance_eth": 50066.301027348
+      }
+    },
+    "change_log": {
+      "metadata.version": 4,
+      "metadata.ico_address": "b185bd9c90d531abbdb563670a78b1b3a45f4f9417574746b7989ba8dee9ef6f",
+      "ico_info.ico_start_date": "9/30/2018",
+      "ico_info.ico_end_date": "5/1/2018",
+      "ico_info.ico_price": 0.40569,
+      "ico_info.ico_price_adjusted": 0.12516
+    }
+  },
+  {
+    "metadata": {
+      "version": 31,
+      "ico_name": "Sonair",
+      "decimals": 17,
+      "token_contract_address": "7b29fc4ed1415f9b7a1bf84ad0bbaeb349ed1f302b13da1f340e57fc9230d754",
+      "crowdsale_address": "a7e0af65d18c0ec495b40de8d042d83baf3f8d5f39f06e449379695f640b1f1b",
+      "owner_address": "59452e42bc7fd28ab664255e5f0e9ed961537fc2946bfd49d4a602b4a85e54ef",
+      "funds_address": "647c416dba33a7a4e6aa6615ed03880417a18869995d667fb74075c7323795d0",
+      "token_issuer_address": "d2c7b137e0b0b7f1f9afa06df68d5f26f63ff19d196527e74e36f2295d206838",
+      "passportAddress": "d2c7b137e0b0b7f1f9afa06df68d5f26f63ff19d196527e74e36f2295d206838",
+      "eth_nominated": false,
+      "token_tx_input_adjustment": true,
+      "owner_is_ico_wallet": true,
+      "confidence": 0.8
+    },
+    "ico_info": {
+      "cfr_currency": "GHS",
+      "cfr": 703739121.0,
+      "ico_start_date": "2018/03/21",
+      "ico_end_date": "2018/07/15",
+      "ico_price_cur": "CNY",
+      "ico_price": 9.341705
+    },
+    "ico_infoico_price_adjusted": 98.217468618,
+    "calculated_data": {
+      "tokens_issued": 62496857.0,
+      "efr_token": 13904109.929379,
+      "eth_rate_start": 98419553.0,
+      "eth_rate_end": 35378956.0,
+      "efr_token_adjusted": 64562505.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.178663234,
+        "funds_raised_adjusted_diff": 2.328887395,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.5,
+      "ico_eth_total": 88658.6,
+      "efr_ico_tx": 31009030.104769,
+      "efr_owner_tx_currency": "PHP",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": 0.735415474,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 19.651595625,
+        "distribution_start_from_ico_start": 87.334954972,
+        "distribution_end_from_ico_end": 62.973192477,
+        "distribution_halflife": "11/30/2017",
+        "funds_balance_eth": 65620.10484812
+      }
+    },
+    "change_log": {
+      "metadata.version": 3,
+      "metadata.ico_address": "b31c8e07d6546f64e8d670a90ba7a70e456a3f5f7b9222ba17585190b3a61121",
+      "ico_info.ico_start_date": "5/17/2018",
+      "ico_info.ico_end_date": "9/30/2018",
+      "ico_info.ico_price": 0.469357,
+      "ico_info.ico_price_adjusted": 0.64837
+    }
+  },
+  {
+    "metadata": {
+      "version": 3,
+      "ico_name": "Overhold",
+      "decimals": 14,
+      "token_contract_address": "b7e5c47e8cfa5dcc7e3444e220ef0b07e7ecd63cf3e5e425ad80d94c0a41ddfd",
+      "crowdsale_address": "f2202e57677f723cedb8e0c54688f217914feea0be9cbb515790b29a94662a4b",
+      "owner_address": "b6c526d94d4497249fa82e71d94f2c9ccbaa773dfc129db0a60dd57f5f84adaa",
+      "funds_address": "97b09d20e3ab475ffd6dd00ff216b05561a3d2e9891297f5054812a9cf5fe139",
+      "token_issuer_address": "3b52dc5b4e805f6a03e6a696c69b44101d1a45017e6428a0c51fbaca24426174",
+      "passportAddress": "3b52dc5b4e805f6a03e6a696c69b44101d1a45017e6428a0c51fbaca24426174",
+      "eth_nominated": false,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": true,
+      "confidence": 0.9
+    },
+    "ico_info": {
+      "cfr_currency": "IDR",
+      "cfr": 688891267.3,
+      "ico_start_date": "2018/03/27",
+      "ico_end_date": "2018/01/03",
+      "ico_price_cur": "CNY",
+      "ico_price": 9.382283
+    },
+    "ico_infoico_price_adjusted": 35.947048865,
+    "calculated_data": {
+      "tokens_issued": 69046960.0,
+      "efr_token": 86065438.963734,
+      "eth_rate_start": 12623570.0,
+      "eth_rate_end": 32821942.0,
+      "efr_token_adjusted": 54213077.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.058887607,
+        "funds_raised_adjusted_diff": 4.097608962,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.3,
+      "ico_eth_total": 11069.4,
+      "efr_ico_tx": 7587822.259065,
+      "efr_owner_tx_currency": "IDR",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": -0.590002129,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 27.92475825,
+        "distribution_start_from_ico_start": 21.434118846,
+        "distribution_end_from_ico_end": 73.883166263,
+        "distribution_halflife": "8/6/2018",
+        "funds_balance_eth": 52230.665247596
+      }
+    },
+    "change_log": {
+      "metadata.version": 7,
+      "metadata.ico_address": "d9b9aa10ef80f8e8a0b5001b2204a2aca160ba2a5576896a913ed5575b13a6bc",
+      "ico_info.ico_start_date": "10/14/2018",
+      "ico_info.ico_end_date": "6/12/2018",
+      "ico_info.ico_price": 0.520077,
+      "ico_info.ico_price_adjusted": 0.04897
+    }
+  },
+  {
+    "metadata": {
+      "version": 12,
+      "ico_name": "Namfix",
+      "decimals": 13,
+      "token_contract_address": "3f0970f297ad163f9da117f790b3db2edca4511b83f9770aac0c03b8aae48725",
+      "crowdsale_address": "ab22177c2379bc28351ef40b1ed9a4470767284d5ad2b8a221b6c10de5dec340",
+      "owner_address": "13e4fa4df3cc7b7c8cd3f6086fb6380d7a2ee8cfeb29e80ed50762ade29bb8db",
+      "funds_address": "804e8efe017bb302a45be04eee1df91cb1cbdc6801c099117ccfad7e4fa71479",
+      "token_issuer_address": "2345349af4911c6ab87b7d00675413af693278623344bf253a8ba450dd317772",
+      "passportAddress": "2345349af4911c6ab87b7d00675413af693278623344bf253a8ba450dd317772",
+      "eth_nominated": false,
+      "token_tx_input_adjustment": true,
+      "owner_is_ico_wallet": false,
+      "confidence": 0.1
+    },
+    "ico_info": {
+      "cfr_currency": "CNY",
+      "cfr": 948284076.5,
+      "ico_start_date": "2017/11/13",
+      "ico_end_date": "2018/03/19",
+      "ico_price_cur": "EUR",
+      "ico_price": 6.06315
+    },
+    "ico_infoico_price_adjusted": 58.461898525,
+    "calculated_data": {
+      "tokens_issued": 63453726.0,
+      "efr_token": 10105692.105884,
+      "eth_rate_start": 15916751.0,
+      "eth_rate_end": 21021429.0,
+      "efr_token_adjusted": 82528750.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.144376841,
+        "funds_raised_adjusted_diff": 3.509271332,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.4,
+      "ico_eth_total": 19892.5,
+      "efr_ico_tx": 88620388.577789,
+      "efr_owner_tx_currency": "USD",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": -0.361382847,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 70.432301504,
+        "distribution_start_from_ico_start": 56.250117251,
+        "distribution_end_from_ico_end": 46.448076563,
+        "distribution_halflife": "4/18/2018",
+        "funds_balance_eth": 70390.527476045
+      }
+    },
+    "change_log": {
+      "metadata.version": 9,
+      "metadata.ico_address": "a563ed67ea0c09917ecb3a6b596363479b94f053e36170eb9fdf66948ce32b52",
+      "ico_info.ico_start_date": "3/31/2018",
+      "ico_info.ico_end_date": "2/11/2018",
+      "ico_info.ico_price": 0.665779,
+      "ico_info.ico_price_adjusted": 0.00412
+    }
+  },
+  {
+    "metadata": {
+      "version": 19,
+      "ico_name": "Vagram",
+      "decimals": 13,
+      "token_contract_address": "2de5e3d479e60ccc8e82319dbb5279e0102c961b613d032007a1a00436c38b3c",
+      "crowdsale_address": "e2366ed9fed52dd191d9b159cd894eec776b5fcafce8b7b29e4a97e500d6775c",
+      "owner_address": "91badcd741a887251b63ab4cbcd8dd00d7e82403d7916fc5b11b645bc4eab559",
+      "funds_address": "42dbce1c0dcee9eb36eafc697299f2fe0e7acab37039cf995abaeede7c3bb1e2",
+      "token_issuer_address": "86ddb80cdabbdf8de6fdf4bac0d567b89c1700f22040eae7d4d5acea7b312509",
+      "passportAddress": "86ddb80cdabbdf8de6fdf4bac0d567b89c1700f22040eae7d4d5acea7b312509",
+      "eth_nominated": true,
+      "token_tx_input_adjustment": true,
+      "owner_is_ico_wallet": true,
+      "confidence": 0.4
+    },
+    "ico_info": {
+      "cfr_currency": "USD",
+      "cfr": 373351989.1,
+      "ico_start_date": "2018/06/19",
+      "ico_end_date": "2018/03/04",
+      "ico_price_cur": "PHP",
+      "ico_price": 8.663782
+    },
+    "ico_infoico_price_adjusted": 76.095174427,
+    "calculated_data": {
+      "tokens_issued": 12556978.0,
+      "efr_token": 64687537.391971,
+      "eth_rate_start": 56638275.0,
+      "eth_rate_end": 92685574.0,
+      "efr_token_adjusted": 14786315.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.752244533,
+        "funds_raised_adjusted_diff": 1.364901051,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.9,
+      "ico_eth_total": 36973.8,
+      "efr_ico_tx": 82862560.251268,
+      "efr_owner_tx_currency": "NGN",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": -0.509509159,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 64.232802492,
+        "distribution_start_from_ico_start": 25.634927232,
+        "distribution_end_from_ico_end": 18.358250661,
+        "distribution_halflife": "6/16/2018",
+        "funds_balance_eth": 71077.892675752
+      }
+    },
+    "change_log": {
+      "metadata.version": 8,
+      "metadata.ico_address": "57e5d3c8b16b0ba4522760d93991c6ec73dbf15edec063229fe8917f10d81a16",
+      "ico_info.ico_start_date": "10/9/2018",
+      "ico_info.ico_end_date": "8/21/2018",
+      "ico_info.ico_price": 0.317183,
+      "ico_info.ico_price_adjusted": 0.62883
+    }
+  },
+  {
+    "metadata": {
+      "version": 62,
+      "ico_name": "Lotstring",
+      "decimals": 17,
+      "token_contract_address": "df980247bbf1ff763d416ced5c1c45a9198cb7ea16ae539418f16a25ee836eb3",
+      "crowdsale_address": "4382d76f165de13d9de2f59a026207d09255c19e511f1fc88893a62d253faed6",
+      "owner_address": "38b3383fe1333f0df38b6a9d68f9f8515b2da93d4cb1cfa601bf616e1d11aec8",
+      "funds_address": "da1cfccf7895de1f63a0bb4d8a5c68c45200ca7f43c3b83f66b67b48763697b6",
+      "token_issuer_address": "1ffe67dc8f2901fe166597c06711653dcfa062bfde043608ee9cab49d8f329aa",
+      "passportAddress": "1ffe67dc8f2901fe166597c06711653dcfa062bfde043608ee9cab49d8f329aa",
+      "eth_nominated": true,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": false,
+      "confidence": 0.4
+    },
+    "ico_info": {
+      "cfr_currency": "AMD",
+      "cfr": 880815694.9,
+      "ico_start_date": "2017/12/06",
+      "ico_end_date": "2018/02/26",
+      "ico_price_cur": "UAH",
+      "ico_price": 6.023279
+    },
+    "ico_infoico_price_adjusted": 46.274505828,
+    "calculated_data": {
+      "tokens_issued": 10847459.0,
+      "efr_token": 23450812.789223,
+      "eth_rate_start": 68981330.0,
+      "eth_rate_end": 58917370.0,
+      "efr_token_adjusted": 61380004.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.762723154,
+        "funds_raised_adjusted_diff": 4.480278783,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.6,
+      "ico_eth_total": 96032.8,
+      "efr_ico_tx": 90963000.659802,
+      "efr_owner_tx_currency": "CNY",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": 0.227405059,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 15.037928176,
+        "distribution_start_from_ico_start": 30.474023946,
+        "distribution_end_from_ico_end": 75.086736459,
+        "distribution_halflife": "2/14/2018",
+        "funds_balance_eth": 87250.231780133
+      }
+    },
+    "change_log": {
+      "metadata.version": 2,
+      "metadata.ico_address": "8c713c6119acd85e66fd7ea36d9589ac3859ec475803a9a1bec063637977a068",
+      "ico_info.ico_start_date": "1/10/2018",
+      "ico_info.ico_end_date": "3/19/2018",
+      "ico_info.ico_price": 0.680344,
+      "ico_info.ico_price_adjusted": 0.89603
+    }
+  },
+  {
+    "metadata": {
+      "version": 76,
+      "ico_name": "Sub-Ex",
+      "decimals": 15,
+      "token_contract_address": "829ada67f3eb70ebf411d884a6cb711c6c48df1b3d16e0fbd64c20e35d1d770e",
+      "crowdsale_address": "ce1cb9f7046b316ae8a78d9dcd8de1ebe1345ddbdc1efb6f26619ce025763612",
+      "owner_address": "f8af440612662768394baaae24f18f916a400e5e584f3150bd5235886768f389",
+      "funds_address": "60f008095486bfd04405ff955dfdceb6894f340fd5f8092f0e1eb42050d6eeb4",
+      "token_issuer_address": "3a897afeb985cdaa1924a8b72b68d1cd32d52f929fa17f744ad853016a786fa5",
+      "passportAddress": "3a897afeb985cdaa1924a8b72b68d1cd32d52f929fa17f744ad853016a786fa5",
+      "eth_nominated": false,
+      "token_tx_input_adjustment": true,
+      "owner_is_ico_wallet": false,
+      "confidence": 0.7
+    },
+    "ico_info": {
+      "cfr_currency": "CZK",
+      "cfr": 334246728.5,
+      "ico_start_date": "2017/12/04",
+      "ico_end_date": "2018/05/17",
+      "ico_price_cur": "EUR",
+      "ico_price": 9.556724
+    },
+    "ico_infoico_price_adjusted": 45.916916384,
+    "calculated_data": {
+      "tokens_issued": 50439443.0,
+      "efr_token": 42947099.300365,
+      "eth_rate_start": 9093802.0,
+      "eth_rate_end": 41782218.0,
+      "efr_token_adjusted": 28691124.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.784624621,
+        "funds_raised_adjusted_diff": 4.796468835,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.3,
+      "ico_eth_total": 62667.7,
+      "efr_ico_tx": 67536986.514326,
+      "efr_owner_tx_currency": "XCD",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": -0.840589793,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 69.203813223,
+        "distribution_start_from_ico_start": 99.79694923,
+        "distribution_end_from_ico_end": 29.275472604,
+        "distribution_halflife": "10/20/2018",
+        "funds_balance_eth": 96287.974186211
+      }
+    },
+    "change_log": {
+      "metadata.version": 9,
+      "metadata.ico_address": "13311f5a45bf5feeffb1a6ab5e4acb954682212414ee2ece1ca7292d8c2ad2d6",
+      "ico_info.ico_start_date": "1/30/2018",
+      "ico_info.ico_end_date": "10/10/2018",
+      "ico_info.ico_price": 0.481308,
+      "ico_info.ico_price_adjusted": 0.34541
+    }
+  },
+  {
+    "metadata": {
+      "version": 98,
+      "ico_name": "Konklab",
+      "decimals": 10,
+      "token_contract_address": "2e6fdca78f0e3ba02067d789c71db09bd8fc7f72719394ede9fd07c2b6620e38",
+      "crowdsale_address": "5169b26103a54307db06776bb707d0795426e2c84863660307beafa8dd48816f",
+      "owner_address": "7605be25f86ee43ec5d9cde4fa735eac589bb1b61bb1af67f1f6b73079c57bbc",
+      "funds_address": "0dea05cae22319a8dd951cbf3620d66db2c538a8cd393739005428df0c578d87",
+      "token_issuer_address": "346765a61290362d822c6b3704a5a0f6d0390bea1ebd23512dbf35a98483c344",
+      "passportAddress": "346765a61290362d822c6b3704a5a0f6d0390bea1ebd23512dbf35a98483c344",
+      "eth_nominated": true,
+      "token_tx_input_adjustment": true,
+      "owner_is_ico_wallet": false,
+      "confidence": 0.5
+    },
+    "ico_info": {
+      "cfr_currency": "CNY",
+      "cfr": 219779582.0,
+      "ico_start_date": "2018/10/20",
+      "ico_end_date": "2018/02/18",
+      "ico_price_cur": "PLN",
+      "ico_price": 7.814972
+    },
+    "ico_infoico_price_adjusted": 42.772911885,
+    "calculated_data": {
+      "tokens_issued": 27074413.0,
+      "efr_token": 42897797.91787,
+      "eth_rate_start": 61370544.0,
+      "eth_rate_end": 10322093.0,
+      "efr_token_adjusted": 21954629.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.16571763,
+        "funds_raised_adjusted_diff": 4.814689007,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.7,
+      "ico_eth_total": 81345.8,
+      "efr_ico_tx": 96014581.939818,
+      "efr_owner_tx_currency": "CNY",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": -0.772579924,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 69.048453504,
+        "distribution_start_from_ico_start": 79.961662355,
+        "distribution_end_from_ico_end": 53.584111244,
+        "distribution_halflife": "1/1/2018",
+        "funds_balance_eth": 63677.798369543
+      }
+    },
+    "change_log": {
+      "metadata.version": 3,
+      "metadata.ico_address": "3bacd5823686cfb8e1474e83bfc062ac6a764429cc2afe0ee6ecf5ebce2608b8",
+      "ico_info.ico_start_date": "7/28/2018",
+      "ico_info.ico_end_date": "8/14/2018",
+      "ico_info.ico_price": 0.602196,
+      "ico_info.ico_price_adjusted": 0.33463
+    }
+  },
+  {
+    "metadata": {
+      "version": 6,
+      "ico_name": "Tresom",
+      "decimals": 15,
+      "token_contract_address": "a0195fd252798357e42a77528e865fbbb02af76e0c57eb1571a0f9972bc09e4a",
+      "crowdsale_address": "1c992b32ff34e6188fa3dde7024d79886266399cbb71732b971e13804bca3af5",
+      "owner_address": "f1d4cf7e68c41341eb9a704b6cdd9cca6cc9230fd9bc7b8f54349c970a2fb3b4",
+      "funds_address": "251a6080571e638cb85af4e961d9089b8c749e4bdd889791fed7854905189ab6",
+      "token_issuer_address": "f56b7efbfe4fd1946be0ca8b837191d8aac11c3f5fda0681bef1dd61b11f5b39",
+      "passportAddress": "f56b7efbfe4fd1946be0ca8b837191d8aac11c3f5fda0681bef1dd61b11f5b39",
+      "eth_nominated": false,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": true,
+      "confidence": 0.5
+    },
+    "ico_info": {
+      "cfr_currency": "PHP",
+      "cfr": 68191621.0,
+      "ico_start_date": "2017/11/11",
+      "ico_end_date": "2018/03/28",
+      "ico_price_cur": "CNY",
+      "ico_price": 7.726748
+    },
+    "ico_infoico_price_adjusted": 11.952844806,
+    "calculated_data": {
+      "tokens_issued": 75191331.0,
+      "efr_token": 63203499.73219,
+      "eth_rate_start": 32284221.0,
+      "eth_rate_end": 26469150.0,
+      "efr_token_adjusted": 46594548.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.992088261,
+        "funds_raised_adjusted_diff": 3.486548815,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.6,
+      "ico_eth_total": 96951.9,
+      "efr_ico_tx": 35128533.002764,
+      "efr_owner_tx_currency": "IDR",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": -0.81733846,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 56.867819934,
+        "distribution_start_from_ico_start": 77.364236551,
+        "distribution_end_from_ico_end": 24.12772546,
+        "distribution_halflife": "7/17/2018",
+        "funds_balance_eth": 18001.371768029
+      }
+    },
+    "change_log": {
+      "metadata.version": 4,
+      "metadata.ico_address": "d67431d5496ca35c786f0759cc3c18f70e9facda3c23c6d51e02f6c4caece891",
+      "ico_info.ico_start_date": "10/29/2018",
+      "ico_info.ico_end_date": "5/4/2018",
+      "ico_info.ico_price": 0.901863,
+      "ico_info.ico_price_adjusted": 0.53952
+    }
+  },
+  {
+    "metadata": {
+      "version": 59,
+      "ico_name": "Konklux",
+      "decimals": 15,
+      "token_contract_address": "40c7eee0e695c060d4d1c638d37a341603133d0c79b8646c173d9c617a3ded0e",
+      "crowdsale_address": "5960692e2f17647a623fea365dd988e9469d491c6ae01126992b37f2cb25fd42",
+      "owner_address": "7506cbd8d4a31e7b75960ebe3a31b3ef1d0a57af258b8e4cf3abbbbd561404ae",
+      "funds_address": "28b9b478c7f337c4ffb3784f328eb11509a6b978f2d2baa4c933af90164ec058",
+      "token_issuer_address": "68f1009c84585caf03eb1099b20ac2d59f203ac3887c80e9d18b7d1c8f1eaf83",
+      "passportAddress": "68f1009c84585caf03eb1099b20ac2d59f203ac3887c80e9d18b7d1c8f1eaf83",
+      "eth_nominated": true,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": false,
+      "confidence": 0.3
+    },
+    "ico_info": {
+      "cfr_currency": "IDR",
+      "cfr": 336193163.2,
+      "ico_start_date": "2018/08/13",
+      "ico_end_date": "2018/07/02",
+      "ico_price_cur": "VND",
+      "ico_price": 7.236238
+    },
+    "ico_infoico_price_adjusted": 82.87706663,
+    "calculated_data": {
+      "tokens_issued": 26156198.0,
+      "efr_token": 33242303.212391,
+      "eth_rate_start": 79528760.0,
+      "eth_rate_end": 54402831.0,
+      "efr_token_adjusted": 30379929.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.300348257,
+        "funds_raised_adjusted_diff": 3.139941531,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.0,
+      "ico_eth_total": 35870.5,
+      "efr_ico_tx": 50163163.871021,
+      "efr_owner_tx_currency": "ZAR",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": -0.180217285,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 33.246361004,
+        "distribution_start_from_ico_start": 73.871938255,
+        "distribution_end_from_ico_end": 41.265540217,
+        "distribution_halflife": "5/18/2018",
+        "funds_balance_eth": 50032.357952298
+      }
+    },
+    "change_log": {
+      "metadata.version": 5,
+      "metadata.ico_address": "159a4f0eca972671f37e3b18379b72af136e73c9a9f755111ff379a6ba21819e",
+      "ico_info.ico_start_date": "7/3/2018",
+      "ico_info.ico_end_date": "12/23/2017",
+      "ico_info.ico_price": 0.456445,
+      "ico_info.ico_price_adjusted": 0.15845
+    }
+  },
+  {
+    "metadata": {
+      "version": 78,
+      "ico_name": "Flexidy",
+      "decimals": 11,
+      "token_contract_address": "ea48fff0ee47db135dbcb57773b5c3b07cd18428220cdba43ee8a0f91b880425",
+      "crowdsale_address": "0000557c4b46299744d9545b7062ae875a93eb951d0ce5cefa0ff49cf43c0fbc",
+      "owner_address": "1665ef13697611d2e878aa1087e27dc55185137f04acbb1ccd094b827938fe7e",
+      "funds_address": "909056c0f10af268d7f7b7482f54e08268ca0c3fbdeb6fcb75fc6fa9c2a4cf57",
+      "token_issuer_address": "ccc6b1631bb7ca25ddc62ed7e9c7543a4da7cdaaf198bccc0ffd82ee9b78e713",
+      "passportAddress": "ccc6b1631bb7ca25ddc62ed7e9c7543a4da7cdaaf198bccc0ffd82ee9b78e713",
+      "eth_nominated": false,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": false,
+      "confidence": 0.8
+    },
+    "ico_info": {
+      "cfr_currency": "CZK",
+      "cfr": 558487309.2,
+      "ico_start_date": "2018/10/13",
+      "ico_end_date": "2018/05/24",
+      "ico_price_cur": "BRL",
+      "ico_price": 8.465184
+    },
+    "ico_infoico_price_adjusted": 84.611378651,
+    "calculated_data": {
+      "tokens_issued": 93054901.0,
+      "efr_token": 93896473.576857,
+      "eth_rate_start": 64179317.0,
+      "eth_rate_end": 52649548.0,
+      "efr_token_adjusted": 80590788.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.399357981,
+        "funds_raised_adjusted_diff": 1.847548739,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.1,
+      "ico_eth_total": 14870.3,
+      "efr_ico_tx": 90445649.866597,
+      "efr_owner_tx_currency": "BRL",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": -0.802221682,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 16.595709168,
+        "distribution_start_from_ico_start": 33.416435442,
+        "distribution_end_from_ico_end": 13.914909623,
+        "distribution_halflife": "2/6/2018",
+        "funds_balance_eth": 78351.698524233
+      }
+    },
+    "change_log": {
+      "metadata.version": 0,
+      "metadata.ico_address": "3350dd0f14487f12968d89eedcf1b1df0c6be0a59f25e9267566602e57f439b8",
+      "ico_info.ico_start_date": "10/25/2018",
+      "ico_info.ico_end_date": "12/1/2017",
+      "ico_info.ico_price": 0.83425,
+      "ico_info.ico_price_adjusted": 0.71236
+    }
+  },
+  {
+    "metadata": {
+      "version": 97,
+      "ico_name": "Keylex",
+      "decimals": 13,
+      "token_contract_address": "02f99dc9db781285a850842f9df99fc7f211f26da745637cb00b65f8ed9341e8",
+      "crowdsale_address": "69772cfa435845c94aac33f57daedbb3ad002d034fe768ee91e7d4e48b06330a",
+      "owner_address": "4d45161adaf93075aa4fef7f962937bfc64f72554b5216eb9a6bccb95dd80687",
+      "funds_address": "7b240cac150a43b0dc774e5f0f7c0593d9a7e068a79ea1ee6ed730d324fc42ec",
+      "token_issuer_address": "041eacd37b59f7295df6b812f58a8d047dc8ed12c5269ee27d21b5c71a1f77c3",
+      "passportAddress": "041eacd37b59f7295df6b812f58a8d047dc8ed12c5269ee27d21b5c71a1f77c3",
+      "eth_nominated": false,
+      "token_tx_input_adjustment": true,
+      "owner_is_ico_wallet": false,
+      "confidence": 0.5
+    },
+    "ico_info": {
+      "cfr_currency": "ARS",
+      "cfr": 718806819.8,
+      "ico_start_date": "2018/04/08",
+      "ico_end_date": "2018/03/26",
+      "ico_price_cur": "VEF",
+      "ico_price": 8.015552
+    },
+    "ico_infoico_price_adjusted": 95.749230867,
+    "calculated_data": {
+      "tokens_issued": 76257403.0,
+      "efr_token": 33627961.101043,
+      "eth_rate_start": 80643100.0,
+      "eth_rate_end": 87209970.0,
+      "efr_token_adjusted": 8371642.6,
+      "token_check_result": {
+        "funds_raised_diff": 0.961510934,
+        "funds_raised_adjusted_diff": 1.267706946,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.3,
+      "ico_eth_total": 41383.5,
+      "efr_ico_tx": 27823979.665001,
+      "efr_owner_tx_currency": "ARS",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": -0.380133469,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 28.962115428,
+        "distribution_start_from_ico_start": 73.518843618,
+        "distribution_end_from_ico_end": 80.193382787,
+        "distribution_halflife": "1/22/2018",
+        "funds_balance_eth": 30397.304874353
+      }
+    },
+    "change_log": {
+      "metadata.version": 8,
+      "metadata.ico_address": "8d08b5ee8a5b0c6e94e3d2a21959f9404114f3d0f3d80d3ac0c2a28ae0821baa",
+      "ico_info.ico_start_date": "5/5/2018",
+      "ico_info.ico_end_date": "5/25/2018",
+      "ico_info.ico_price": 0.939845,
+      "ico_info.ico_price_adjusted": 0.84951
+    }
+  },
+  {
+    "metadata": {
+      "version": 2,
+      "ico_name": "Solarbreeze",
+      "decimals": 15,
+      "token_contract_address": "c2c4f72cc5a176e4ecda70f58bfe60598e83b4da45c38fca4295585b8f5aa0b1",
+      "crowdsale_address": "12dd9dade59b79e4d7fc887033ee35f14fdf1a417e3446bb4c550d66a0ec9fa0",
+      "owner_address": "38aa8856154f3ce4737f4c6aa9ef00f843e4cf0f48b4d045c604ce9d255f2c8f",
+      "funds_address": "c81b63e52e09c7f515f95c1290d27551c27b250d3a7098b48fea93f76f861cce",
+      "token_issuer_address": "39d12b9e567a062eab7755264e9d4e70d7908e4b5d57f612d5379f7c95a47a7e",
+      "passportAddress": "39d12b9e567a062eab7755264e9d4e70d7908e4b5d57f612d5379f7c95a47a7e",
+      "eth_nominated": false,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": true,
+      "confidence": 0.3
+    },
+    "ico_info": {
+      "cfr_currency": "PLN",
+      "cfr": 543352480.5,
+      "ico_start_date": "2018/04/29",
+      "ico_end_date": "2018/06/05",
+      "ico_price_cur": "KRW",
+      "ico_price": 6.465483
+    },
+    "ico_infoico_price_adjusted": 80.992316668,
+    "calculated_data": {
+      "tokens_issued": 63416713.0,
+      "efr_token": 56399454.864244,
+      "eth_rate_start": 16677489.0,
+      "eth_rate_end": 38742398.0,
+      "efr_token_adjusted": 61517159.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.731249276,
+        "funds_raised_adjusted_diff": 4.603653888,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.5,
+      "ico_eth_total": 23132.1,
+      "efr_ico_tx": 18977650.129086,
+      "efr_owner_tx_currency": "CNY",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": 0.067263228,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 60.243241027,
+        "distribution_start_from_ico_start": 35.410093776,
+        "distribution_end_from_ico_end": 80.016876134,
+        "distribution_halflife": "3/7/2018",
+        "funds_balance_eth": 40556.611152077
+      }
+    },
+    "change_log": {
+      "metadata.version": 1,
+      "metadata.ico_address": "6485f92374da105ac70849db7f6d5948a727bc49580c574ff6bb0afbbfdf86c5",
+      "ico_info.ico_start_date": "7/17/2018",
+      "ico_info.ico_end_date": "6/17/2018",
+      "ico_info.ico_price": 0.530551,
+      "ico_info.ico_price_adjusted": 0.85875
+    }
+  },
+  {
+    "metadata": {
+      "version": 89,
+      "ico_name": "Kanlam",
+      "decimals": 10,
+      "token_contract_address": "6720528a2756e45f86e764aeac3934c3a43dd570e2c7a0f56ecdd8375a2a3a18",
+      "crowdsale_address": "e8509ded8adff3298b78a514729c5735eb4a9b844df0879dd9482ab72df8a3a2",
+      "owner_address": "76610364bbe73a1f469a917754adf021c23a967a99ba03e11b828a49a4cb41aa",
+      "funds_address": "b9248a96979c000aa8c58fa0268b464e8d0b83dc7bab8807214a029b1ddfee5c",
+      "token_issuer_address": "01a999f0ebb5a3d83ccad2cdd1a61a5a8ba33459132803fdc83757d906902456",
+      "passportAddress": "01a999f0ebb5a3d83ccad2cdd1a61a5a8ba33459132803fdc83757d906902456",
+      "eth_nominated": true,
+      "token_tx_input_adjustment": true,
+      "owner_is_ico_wallet": true,
+      "confidence": 0.6
+    },
+    "ico_info": {
+      "cfr_currency": "DJF",
+      "cfr": 557911716.1,
+      "ico_start_date": "2018/08/08",
+      "ico_end_date": "2017/11/17",
+      "ico_price_cur": "MUR",
+      "ico_price": 9.842972
+    },
+    "ico_infoico_price_adjusted": 32.062463856,
+    "calculated_data": {
+      "tokens_issued": 29025968.0,
+      "efr_token": 39834927.069896,
+      "eth_rate_start": 46863108.0,
+      "eth_rate_end": 67624500.0,
+      "efr_token_adjusted": 37982555.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.952136872,
+        "funds_raised_adjusted_diff": 1.62972044,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.1,
+      "ico_eth_total": 73136.8,
+      "efr_ico_tx": 33040784.845566,
+      "efr_owner_tx_currency": "CNY",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": -0.875611577,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 76.232413727,
+        "distribution_start_from_ico_start": 31.074211491,
+        "distribution_end_from_ico_end": 76.331905966,
+        "distribution_halflife": "12/22/2017",
+        "funds_balance_eth": 4981.982951804
+      }
+    },
+    "change_log": {
+      "metadata.version": 5,
+      "metadata.ico_address": "e81f4e0b3864b78dba94a00d63b596b556e080eae815fdc7763d8fe3c27d597f",
+      "ico_info.ico_start_date": "4/18/2018",
+      "ico_info.ico_end_date": "5/3/2018",
+      "ico_info.ico_price": 0.01822,
+      "ico_info.ico_price_adjusted": 0.54089
+    }
+  },
+  {
+    "metadata": {
+      "version": 99,
+      "ico_name": "Flowdesk",
+      "decimals": 14,
+      "token_contract_address": "be976abeeff36daff2e9fcb89dff3fe604bda81415e86127c726885ea838183d",
+      "crowdsale_address": "c9a720629496aa06840e4718817c176de857c7bdfd31fa44d0922a0aca238020",
+      "owner_address": "de123dfe49c70c60a9eb6de49a5a8b80eda44b2ff65ecbab589dca1a0c5e61f2",
+      "funds_address": "a490720b57717e4f1fe42703ddc3af2c58ee8025f5566e33bfa65d5e141488c7",
+      "token_issuer_address": "4d1dc784e91a3acda1c967e71378a2d999bcfd6c3b0a955853baf7cdee1eb8e9",
+      "passportAddress": "4d1dc784e91a3acda1c967e71378a2d999bcfd6c3b0a955853baf7cdee1eb8e9",
+      "eth_nominated": false,
+      "token_tx_input_adjustment": true,
+      "owner_is_ico_wallet": true,
+      "confidence": 0.5
+    },
+    "ico_info": {
+      "cfr_currency": "CNY",
+      "cfr": 986429896.4,
+      "ico_start_date": "2018/02/28",
+      "ico_end_date": "2018/04/11",
+      "ico_price_cur": "XOF",
+      "ico_price": 6.849234
+    },
+    "ico_infoico_price_adjusted": 89.493840512,
+    "calculated_data": {
+      "tokens_issued": 38641939.0,
+      "efr_token": 25005218.451198,
+      "eth_rate_start": 84521068.0,
+      "eth_rate_end": 20469917.0,
+      "efr_token_adjusted": 26628156.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.615504104,
+        "funds_raised_adjusted_diff": 1.558425424,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.0,
+      "ico_eth_total": 56371.0,
+      "efr_ico_tx": 78388029.206326,
+      "efr_owner_tx_currency": "ARS",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": -0.068625049,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 56.495793242,
+        "distribution_start_from_ico_start": 39.819488989,
+        "distribution_end_from_ico_end": 92.582913376,
+        "distribution_halflife": "10/15/2018",
+        "funds_balance_eth": 35134.01380539
+      }
+    },
+    "change_log": {
+      "metadata.version": 10,
+      "metadata.ico_address": "d97e09a303d601a6d37d72557e1df5e7d970e3d275c62de5657d0a9303a6767b",
+      "ico_info.ico_start_date": "4/22/2018",
+      "ico_info.ico_end_date": "9/14/2018",
+      "ico_info.ico_price": 0.815257,
+      "ico_info.ico_price_adjusted": 0.06652
+    }
+  },
+  {
+    "metadata": {
+      "version": 6,
+      "ico_name": "Matsoft",
+      "decimals": 17,
+      "token_contract_address": "fc3727068dbb52ed7da81f7e984d9face2b284c27a99953564e53f1a32b74283",
+      "crowdsale_address": "3d8a79419774c8029d3e055380ec19ad97b5aaae76005d8e17021db31d99f0fd",
+      "owner_address": "a6195c44866fea38b708a46a5f2b1f12a3c2362e946fb619ba92ee557491c637",
+      "funds_address": "24639d8329dc18e4cbcb78668e82f5e5506571a68f1db481977de77190eb9aa0",
+      "token_issuer_address": "a426e2cb107fee0d2c6a72b129eae68e9e1a3cc79c5909aa28b324868542f027",
+      "passportAddress": "a426e2cb107fee0d2c6a72b129eae68e9e1a3cc79c5909aa28b324868542f027",
+      "eth_nominated": true,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": false,
+      "confidence": 0.8
+    },
+    "ico_info": {
+      "cfr_currency": "CNY",
+      "cfr": 810220882.1,
+      "ico_start_date": "2018/03/09",
+      "ico_end_date": "2018/01/22",
+      "ico_price_cur": "CNY",
+      "ico_price": 5.376977
+    },
+    "ico_infoico_price_adjusted": 12.183381548,
+    "calculated_data": {
+      "tokens_issued": 67892430.0,
+      "efr_token": 66901013.744068,
+      "eth_rate_start": 99830634.0,
+      "eth_rate_end": 49893478.0,
+      "efr_token_adjusted": 42712268.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.802165122,
+        "funds_raised_adjusted_diff": 4.239724112,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 1.0,
+      "ico_eth_total": 42570.7,
+      "efr_ico_tx": 18595433.032232,
+      "efr_owner_tx_currency": "LKR",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": 0.982440011,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 72.346475107,
+        "distribution_start_from_ico_start": 40.211640265,
+        "distribution_end_from_ico_end": 42.120966784,
+        "distribution_halflife": "10/30/2018",
+        "funds_balance_eth": 58866.814543826
+      }
+    },
+    "change_log": {
+      "metadata.version": 5,
+      "metadata.ico_address": "c3d3625abc831b9211ad2def6e8b5dc2faeecffe4f5fe24facffb6aac1ed7900",
+      "ico_info.ico_start_date": "1/12/2018",
+      "ico_info.ico_end_date": "11/9/2017",
+      "ico_info.ico_price": 0.152894,
+      "ico_info.ico_price_adjusted": 0.60158
+    }
+  },
+  {
+    "metadata": {
+      "version": 8,
+      "ico_name": "Voltsillam",
+      "decimals": 15,
+      "token_contract_address": "24dfe33e68611cefff35aa53ac47163a2462662ca9ef09cffd72f2c377d08c79",
+      "crowdsale_address": "8a0dcdb8cd484b5b8ae75fa42d06cc6a61405fa71b07b20739c7b819ac1089cb",
+      "owner_address": "e811da245a63b03d0aefe86970edc1b0a903d6065376deb39154f5f80c984a42",
+      "funds_address": "dc1a56f8fe25f82318cb51b65c7ea99317a4fd12afd040879d1d6ebf4f28f639",
+      "token_issuer_address": "6726aaa39f957deb25cbe60a475b60b522b50ab7ec4736942184244619024f8a",
+      "passportAddress": "6726aaa39f957deb25cbe60a475b60b522b50ab7ec4736942184244619024f8a",
+      "eth_nominated": true,
+      "token_tx_input_adjustment": true,
+      "owner_is_ico_wallet": false,
+      "confidence": 0.6
+    },
+    "ico_info": {
+      "cfr_currency": "BRL",
+      "cfr": 888105708.6,
+      "ico_start_date": "2018/04/19",
+      "ico_end_date": "2018/05/10",
+      "ico_price_cur": "KPW",
+      "ico_price": 5.784531
+    },
+    "ico_infoico_price_adjusted": 82.966607161,
+    "calculated_data": {
+      "tokens_issued": 57701907.0,
+      "efr_token": 17773035.272718,
+      "eth_rate_start": 51079219.0,
+      "eth_rate_end": 50250433.0,
+      "efr_token_adjusted": 57016662.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.447718657,
+        "funds_raised_adjusted_diff": 4.847982617,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 1.0,
+      "ico_eth_total": 38365.0,
+      "efr_ico_tx": 63490440.805023,
+      "efr_owner_tx_currency": "CNY",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": -0.833481108,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 37.141471913,
+        "distribution_start_from_ico_start": 32.680233617,
+        "distribution_end_from_ico_end": 83.582497275,
+        "distribution_halflife": "10/22/2018",
+        "funds_balance_eth": 10253.368219487
+      }
+    },
+    "change_log": {
+      "metadata.version": 6,
+      "metadata.ico_address": "a13d78148cc7c8744de8a9597cab998a9cfd9697eb45bac6f7a1c8c1d4e8c3d8",
+      "ico_info.ico_start_date": "5/14/2018",
+      "ico_info.ico_end_date": "11/6/2017",
+      "ico_info.ico_price": 0.776406,
+      "ico_info.ico_price_adjusted": 0.2015
+    }
+  },
+  {
+    "metadata": {
+      "version": 67,
+      "ico_name": "Sonsing",
+      "decimals": 17,
+      "token_contract_address": "e061d045621ee601dffbcf3cc3d35882a28f8727eef87486ea197e7274037543",
+      "crowdsale_address": "a56fb5744b699c912a70f7e6b7b560c1eef4bf54bab12562b3c77cce0dd6915d",
+      "owner_address": "f66f8bb434f82824a6dc67d2e3122f0ab8ebc37da70701cd5cef78f2f3479cfe",
+      "funds_address": "bee3cabf6bc2591fc52a84ad5756fe6e321259606f79006ce0b2a9e44ff084bc",
+      "token_issuer_address": "22f7a5073dfe1d13f81c4b7a38c03adc69f814717f3d72db13431ef7a6845b69",
+      "passportAddress": "22f7a5073dfe1d13f81c4b7a38c03adc69f814717f3d72db13431ef7a6845b69",
+      "eth_nominated": true,
+      "token_tx_input_adjustment": true,
+      "owner_is_ico_wallet": true,
+      "confidence": 0.5
+    },
+    "ico_info": {
+      "cfr_currency": "TND",
+      "cfr": 320303708.5,
+      "ico_start_date": "2018/07/02",
+      "ico_end_date": "2018/05/10",
+      "ico_price_cur": "CNY",
+      "ico_price": 6.97704
+    },
+    "ico_infoico_price_adjusted": 35.434764512,
+    "calculated_data": {
+      "tokens_issued": 17517460.0,
+      "efr_token": 81581144.867378,
+      "eth_rate_start": 44148501.0,
+      "eth_rate_end": 65482479.0,
+      "efr_token_adjusted": 93603643.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.710511282,
+        "funds_raised_adjusted_diff": 1.477539729,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.6,
+      "ico_eth_total": 67550.7,
+      "efr_ico_tx": 51315214.418065,
+      "efr_owner_tx_currency": "PHP",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": -0.034845139,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 44.351057449,
+        "distribution_start_from_ico_start": 86.086364885,
+        "distribution_end_from_ico_end": 39.062263761,
+        "distribution_halflife": "10/19/2018",
+        "funds_balance_eth": 60749.626159896
+      }
+    },
+    "change_log": {
+      "metadata.version": 5,
+      "metadata.ico_address": "5f4a7814681a05912c3c9d0f3d8d9b4a0221eeaa12efb81ce4671a3b3c5a5a3f",
+      "ico_info.ico_start_date": "5/4/2018",
+      "ico_info.ico_end_date": "5/3/2018",
+      "ico_info.ico_price": 0.987399,
+      "ico_info.ico_price_adjusted": 0.96408
+    }
+  },
+  {
+    "metadata": {
+      "version": 13,
+      "ico_name": "Bitchip",
+      "decimals": 12,
+      "token_contract_address": "7f6c08f1c9a69e4c563d4764223e2e58f00eac2c8e7a268ab6e24c789dcb7f2f",
+      "crowdsale_address": "b01f678852a1d85ff4ebc95ba661ec16f8b335777560b0eb87c339e234e4819a",
+      "owner_address": "26e9e187f33a13ce06c0d0b5e1fcc28085a7878c522fa35617982797d703d439",
+      "funds_address": "e2ead7ee16961c8459cf14387fe6a8bf01e62e7c23016e86e15cf547ce5087ef",
+      "token_issuer_address": "8608caa1044ebbeef8c6e098ab35f5983fbf660d3c8c088cc05f5f8c9bb80506",
+      "passportAddress": "8608caa1044ebbeef8c6e098ab35f5983fbf660d3c8c088cc05f5f8c9bb80506",
+      "eth_nominated": false,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": true,
+      "confidence": 0.9
+    },
+    "ico_info": {
+      "cfr_currency": "USD",
+      "cfr": 892409223.0,
+      "ico_start_date": "2018/04/25",
+      "ico_end_date": "2018/02/01",
+      "ico_price_cur": "AUD",
+      "ico_price": 5.930724
+    },
+    "ico_infoico_price_adjusted": 70.479178983,
+    "calculated_data": {
+      "tokens_issued": 57341763.0,
+      "efr_token": 70623700.624957,
+      "eth_rate_start": 61245343.0,
+      "eth_rate_end": 47265069.0,
+      "efr_token_adjusted": 25563317.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.608106981,
+        "funds_raised_adjusted_diff": 1.981997889,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.7,
+      "ico_eth_total": 93224.6,
+      "efr_ico_tx": 91277899.490981,
+      "efr_owner_tx_currency": "CNY",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": -0.90180172,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 22.749122882,
+        "distribution_start_from_ico_start": 41.281996914,
+        "distribution_end_from_ico_end": 47.703860192,
+        "distribution_halflife": "7/8/2018",
+        "funds_balance_eth": 59244.007969998
+      }
+    },
+    "change_log": {
+      "metadata.version": 9,
+      "metadata.ico_address": "870c88500347091a3c60b4d99aade11f297e9bd9501dfceef7b68dd43583e9b2",
+      "ico_info.ico_start_date": "8/13/2018",
+      "ico_info.ico_end_date": "6/30/2018",
+      "ico_info.ico_price": 0.667219,
+      "ico_info.ico_price_adjusted": 0.85983
+    }
+  },
+  {
+    "metadata": {
+      "version": 26,
+      "ico_name": "Job",
+      "decimals": 10,
+      "token_contract_address": "84faf8bc28b174bc7d116491fdff471b645835b45a72b8bd23cbd77b32ea1ef6",
+      "crowdsale_address": "e5ad7d49fe72c6a6200ed89e7a3c1e4b6c40794922f327f77001539d4b88d073",
+      "owner_address": "394520e6bb8f92ceaf3a934fe10e85add77e9bb54856788f1c2587ae4045c0f2",
+      "funds_address": "9e566911925b3110d198567387749ceb714be7b6e9d3b64beeb27728f4ccb88e",
+      "token_issuer_address": "b08b4e6eaebdd3932d9168e770b4b1b00de571f5ab827b44fb70af16fb645fd2",
+      "passportAddress": "b08b4e6eaebdd3932d9168e770b4b1b00de571f5ab827b44fb70af16fb645fd2",
+      "eth_nominated": true,
+      "token_tx_input_adjustment": true,
+      "owner_is_ico_wallet": false,
+      "confidence": 0.8
+    },
+    "ico_info": {
+      "cfr_currency": "PHP",
+      "cfr": 163999165.8,
+      "ico_start_date": "2018/02/26",
+      "ico_end_date": "2018/06/17",
+      "ico_price_cur": "IDR",
+      "ico_price": 9.080282
+    },
+    "ico_infoico_price_adjusted": 14.631193367,
+    "calculated_data": {
+      "tokens_issued": 18847278.0,
+      "efr_token": 17540000.143226,
+      "eth_rate_start": 31828335.0,
+      "eth_rate_end": 72436698.0,
+      "efr_token_adjusted": 15596189.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.676594376,
+        "funds_raised_adjusted_diff": 2.27796338,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.8,
+      "ico_eth_total": 41565.9,
+      "efr_ico_tx": 71102549.677516,
+      "efr_owner_tx_currency": "SEK",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": -0.752446329,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 76.246996687,
+        "distribution_start_from_ico_start": 43.011735407,
+        "distribution_end_from_ico_end": 27.895827049,
+        "distribution_halflife": "7/5/2018",
+        "funds_balance_eth": 68136.497611805
+      }
+    },
+    "change_log": {
+      "metadata.version": 3,
+      "metadata.ico_address": "8324f319b8ce2cc82711c906b2422fe1b2c43a6c6433f15c89f3716eadb7f952",
+      "ico_info.ico_start_date": "12/10/2017",
+      "ico_info.ico_end_date": "10/9/2018",
+      "ico_info.ico_price": 0.79508,
+      "ico_info.ico_price_adjusted": 0.54089
+    }
+  },
+  {
+    "metadata": {
+      "version": 74,
+      "ico_name": "Overhold",
+      "decimals": 16,
+      "token_contract_address": "f413803a11f76f76299e96fcf5d8a96655ba82dd64ebb52c65a34876e2b90fe4",
+      "crowdsale_address": "25085724e5d5e7f5308945601c1897b3ea1a81f5462856edaa9b9e47f619f980",
+      "owner_address": "2cc7b4b1f74ab4a8660c7336e6023e61f67a4f495d646d0256cb45cdbf88d7bf",
+      "funds_address": "79b69298dccb65e9c861fdf517da45969d2f003301608f00ea5d679f4160c00c",
+      "token_issuer_address": "acfc73f2807e62a6c10bba02dd81a01aaa3441b0e1e5d1c4cbbcd893c86830c2",
+      "passportAddress": "acfc73f2807e62a6c10bba02dd81a01aaa3441b0e1e5d1c4cbbcd893c86830c2",
+      "eth_nominated": true,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": false,
+      "confidence": 0.7
+    },
+    "ico_info": {
+      "cfr_currency": "PHP",
+      "cfr": 523524107.8,
+      "ico_start_date": "2017/11/12",
+      "ico_end_date": "2018/10/17",
+      "ico_price_cur": "XAF",
+      "ico_price": 9.42599
+    },
+    "ico_infoico_price_adjusted": 34.383193853,
+    "calculated_data": {
+      "tokens_issued": 67718859.0,
+      "efr_token": 46683118.148641,
+      "eth_rate_start": 8112500.4,
+      "eth_rate_end": 77295557.0,
+      "efr_token_adjusted": 62645883.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.536544959,
+        "funds_raised_adjusted_diff": 1.733772053,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.6,
+      "ico_eth_total": 62214.3,
+      "efr_ico_tx": 74930521.408812,
+      "efr_owner_tx_currency": "UAH",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": -0.430318625,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 44.389949664,
+        "distribution_start_from_ico_start": 50.351449602,
+        "distribution_end_from_ico_end": 10.14035809,
+        "distribution_halflife": "3/10/2018",
+        "funds_balance_eth": 27219.237935545
+      }
+    },
+    "change_log": {
+      "metadata.version": 6,
+      "metadata.ico_address": "42f403fc529db0804c84f6f0675488856730b32112d2e5b827705b6267f81f4c",
+      "ico_info.ico_start_date": "11/25/2017",
+      "ico_info.ico_end_date": "1/13/2018",
+      "ico_info.ico_price": 0.384075,
+      "ico_info.ico_price_adjusted": 0.78425
+    }
+  },
+  {
+    "metadata": {
+      "version": 63,
+      "ico_name": "Zamit",
+      "decimals": 17,
+      "token_contract_address": "b12fc95d903fd0492ba29252247d61a12555212bbbb9fe66c8cc3950d1fece29",
+      "crowdsale_address": "f29535aeb030e21fa79fcfb7835d3354d80764bae13a1bfb460124ac74c9e928",
+      "owner_address": "2aa3268c790e2c99fafd790d3a26238748b36c931a0489909d33e63e6a668e2f",
+      "funds_address": "a59b06bbf3604adf80307ab3a6dfb66c962939038b0b2a0e6697f60958a9624e",
+      "token_issuer_address": "d7f2172252d2dc0d04352a07e1a3fddc28fffccf5a9cefdb29df4b3bc662f1f1",
+      "passportAddress": "d7f2172252d2dc0d04352a07e1a3fddc28fffccf5a9cefdb29df4b3bc662f1f1",
+      "eth_nominated": false,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": true,
+      "confidence": 0.6
+    },
+    "ico_info": {
+      "cfr_currency": "PHP",
+      "cfr": 73629093.0,
+      "ico_start_date": "2018/08/04",
+      "ico_end_date": "2018/10/22",
+      "ico_price_cur": "ZAR",
+      "ico_price": 7.553934
+    },
+    "ico_infoico_price_adjusted": 55.075512624,
+    "calculated_data": {
+      "tokens_issued": 63674928.0,
+      "efr_token": 32076457.383267,
+      "eth_rate_start": 5818222.0,
+      "eth_rate_end": 20234389.0,
+      "efr_token_adjusted": 57608531.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.847579197,
+        "funds_raised_adjusted_diff": 3.346841295,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.9,
+      "ico_eth_total": 54626.3,
+      "efr_ico_tx": 60799024.185036,
+      "efr_owner_tx_currency": "EUR",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": -0.289999459,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 13.665978209,
+        "distribution_start_from_ico_start": 72.938125727,
+        "distribution_end_from_ico_end": 50.64263469,
+        "distribution_halflife": "5/26/2018",
+        "funds_balance_eth": 85013.498502496
+      }
+    },
+    "change_log": {
+      "metadata.version": 2,
+      "metadata.ico_address": "303632bd8204f316e012dd22b49b069108985f4d1576e3afbdc0cea73cf54e5e",
+      "ico_info.ico_start_date": "8/21/2018",
+      "ico_info.ico_end_date": "9/22/2018",
+      "ico_info.ico_price": 0.87166,
+      "ico_info.ico_price_adjusted": 0.03123
+    }
+  },
+  {
+    "metadata": {
+      "version": 13,
+      "ico_name": "Wrapsafe",
+      "decimals": 18,
+      "token_contract_address": "6d4d45dc5852cd0af951e3e6bd51a6f63f8dde1e94dcb11fb7fdee81f66c36aa",
+      "crowdsale_address": "d177703306bdf758bf19cd2f8079b9480d944fc66c43b3e2d1ef4f0f0449afe9",
+      "owner_address": "f314fbae729ef2b31eebedab47f365e84bde29d3d88639134fcbfecd916b2212",
+      "funds_address": "6cbf6f9105139d9d6ebf7049038849e291c9fcd8d5f97c31bba8b19248add768",
+      "token_issuer_address": "799f77707da720054e9d6d1736f07f66d4e485d76f71506e55f1428568b32520",
+      "passportAddress": "799f77707da720054e9d6d1736f07f66d4e485d76f71506e55f1428568b32520",
+      "eth_nominated": true,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": false,
+      "confidence": 0.3
+    },
+    "ico_info": {
+      "cfr_currency": "UAH",
+      "cfr": 703028393.0,
+      "ico_start_date": "2018/09/19",
+      "ico_end_date": "2018/02/19",
+      "ico_price_cur": "CNY",
+      "ico_price": 9.235165
+    },
+    "ico_infoico_price_adjusted": 53.823128796,
+    "calculated_data": {
+      "tokens_issued": 95067730.0,
+      "efr_token": 11904940.954447,
+      "eth_rate_start": 55938522.0,
+      "eth_rate_end": 16711598.0,
+      "efr_token_adjusted": 60973432.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.278171267,
+        "funds_raised_adjusted_diff": 4.374727192,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.3,
+      "ico_eth_total": 51327.9,
+      "efr_ico_tx": 14585085.474685,
+      "efr_owner_tx_currency": "EGP",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": 0.183608248,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 66.274645709,
+        "distribution_start_from_ico_start": 81.731806385,
+        "distribution_end_from_ico_end": 42.544689985,
+        "distribution_halflife": "10/27/2018",
+        "funds_balance_eth": 79920.608444287
+      }
+    },
+    "change_log": {
+      "metadata.version": 5,
+      "metadata.ico_address": "dd81a83bda66a4df4bd8a562473eef9504818168616e99b4630a7ad68abeb52f",
+      "ico_info.ico_start_date": "6/25/2018",
+      "ico_info.ico_end_date": "5/9/2018",
+      "ico_info.ico_price": 0.632283,
+      "ico_info.ico_price_adjusted": 0.11113
+    }
+  },
+  {
+    "metadata": {
+      "version": 95,
+      "ico_name": "Zontrax",
+      "decimals": 15,
+      "token_contract_address": "3b6a3ab9df4bacedb169148302ae341afd2a8a2613d31e5e51ca76f427e28124",
+      "crowdsale_address": "1e86571d1f071387a3e72757a2cf99aa29bb1c7bd20ebe5f9d47c1034b9e5f93",
+      "owner_address": "2737cb6101aed77c1d50c88d07d237f03fc9e351bd2258fe713ab33561cf0c28",
+      "funds_address": "9d60d44927185af8cf5384a436eac260fe164fe7b6e42291978a4ca73d788474",
+      "token_issuer_address": "880f3d639a16d1de2ff53494a492afb9c0bfb1e6706ed73e181555ac5d244c4d",
+      "passportAddress": "880f3d639a16d1de2ff53494a492afb9c0bfb1e6706ed73e181555ac5d244c4d",
+      "eth_nominated": false,
+      "token_tx_input_adjustment": true,
+      "owner_is_ico_wallet": true,
+      "confidence": 0.6
+    },
+    "ico_info": {
+      "cfr_currency": "IDR",
+      "cfr": 732619306.0,
+      "ico_start_date": "2018/07/24",
+      "ico_end_date": "2018/10/24",
+      "ico_price_cur": "VEF",
+      "ico_price": 7.446573
+    },
+    "ico_infoico_price_adjusted": 75.80330418,
+    "calculated_data": {
+      "tokens_issued": 6151047.0,
+      "efr_token": 52555417.5769,
+      "eth_rate_start": 31559380.0,
+      "eth_rate_end": 49584817.0,
+      "efr_token_adjusted": 79847538.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.587104635,
+        "funds_raised_adjusted_diff": 2.7777402,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.0,
+      "ico_eth_total": 23078.5,
+      "efr_ico_tx": 49313790.952713,
+      "efr_owner_tx_currency": "CNY",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": 0.168279892,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 34.787572739,
+        "distribution_start_from_ico_start": -9.292448652,
+        "distribution_end_from_ico_end": 28.139535682,
+        "distribution_halflife": "9/29/2018",
+        "funds_balance_eth": 49801.807739106
+      }
+    },
+    "change_log": {
+      "metadata.version": 9,
+      "metadata.ico_address": "5030956f58500842c20d3ac46a0605d926a20ac17ae899bb15b16498d67baad6",
+      "ico_info.ico_start_date": "11/28/2017",
+      "ico_info.ico_end_date": "4/10/2018",
+      "ico_info.ico_price": 0.529274,
+      "ico_info.ico_price_adjusted": 0.47543
+    }
+  },
+  {
+    "metadata": {
+      "version": 67,
+      "ico_name": "Aerified",
+      "decimals": 15,
+      "token_contract_address": "a16b20c2010dfdd18b24de253b50f3b40bab6373286d457fbc5029bbf776c0d0",
+      "crowdsale_address": "1e0bb6b90f29201976b2e02c3460f3d78f6acde6620b2eab3a1d4ae8f10dee76",
+      "owner_address": "7ccc084dcbe0eb9b7f5212ebcd0afbf90dac9dbcf6a11a951fe15beeb27b83ea",
+      "funds_address": "78743a15c48b8b72d7c0f5af7f95d1f9be938a94c19e9c7edb459376118cafb9",
+      "token_issuer_address": "9590c91f9d36f279b0d10b917527e0503d756d35c1b65a58fc4f31a93d3231e2",
+      "passportAddress": "9590c91f9d36f279b0d10b917527e0503d756d35c1b65a58fc4f31a93d3231e2",
+      "eth_nominated": false,
+      "token_tx_input_adjustment": true,
+      "owner_is_ico_wallet": true,
+      "confidence": 0.9
+    },
+    "ico_info": {
+      "cfr_currency": "ZAR",
+      "cfr": 711080299.5,
+      "ico_start_date": "2018/07/16",
+      "ico_end_date": "2018/09/09",
+      "ico_price_cur": "IRR",
+      "ico_price": 5.837032
+    },
+    "ico_infoico_price_adjusted": 82.429421828,
+    "calculated_data": {
+      "tokens_issued": 21118351.0,
+      "efr_token": 4637259.627218,
+      "eth_rate_start": 70940675.0,
+      "eth_rate_end": 49658767.0,
+      "efr_token_adjusted": 85908172.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.358731648,
+        "funds_raised_adjusted_diff": 1.957398189,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.7,
+      "ico_eth_total": 59062.3,
+      "efr_ico_tx": 81607841.35967,
+      "efr_owner_tx_currency": "BRL",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": -0.734811294,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 59.957738411,
+        "distribution_start_from_ico_start": 60.221588959,
+        "distribution_end_from_ico_end": 45.978898984,
+        "distribution_halflife": "5/17/2018",
+        "funds_balance_eth": 27509.47069832
+      }
+    },
+    "change_log": {
+      "metadata.version": 2,
+      "metadata.ico_address": "baacd0df82207605422a3c5126f58d161a5f35a061f310d693e922a35f989961",
+      "ico_info.ico_start_date": "2/14/2018",
+      "ico_info.ico_end_date": "5/22/2018",
+      "ico_info.ico_price": 0.269791,
+      "ico_info.ico_price_adjusted": 0.63939
+    }
+  },
+  {
+    "metadata": {
+      "version": 52,
+      "ico_name": "Bamity",
+      "decimals": 15,
+      "token_contract_address": "cc636bba9af679c9a5916a963bbee2a5ec125198c0044f0ee9e69983b0056e2e",
+      "crowdsale_address": "f9e58be003b9a293fd4932cbc7fd8ddc79d173feb8b2cc0ae0aac5e3b4d98d8b",
+      "owner_address": "de46c35adbf5be76b8ae85bbbdd576da1b51214f7d9b76e3ba387df34f6a9915",
+      "funds_address": "92d9c542638dfc3a2be282df94f508b1dcaa8311cdd9a33823dfbb858d434180",
+      "token_issuer_address": "e7f9b9f07943c4a5e28927f0a920ea0188ff284eb9f6c0d1817dadce2b74b58f",
+      "passportAddress": "e7f9b9f07943c4a5e28927f0a920ea0188ff284eb9f6c0d1817dadce2b74b58f",
+      "eth_nominated": true,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": false,
+      "confidence": 0.8
+    },
+    "ico_info": {
+      "cfr_currency": "PLN",
+      "cfr": 433648497.8,
+      "ico_start_date": "2018/04/28",
+      "ico_end_date": "2018/04/07",
+      "ico_price_cur": "RUB",
+      "ico_price": 6.69482
+    },
+    "ico_infoico_price_adjusted": 10.794097138,
+    "calculated_data": {
+      "tokens_issued": 27790087.0,
+      "efr_token": 82480531.067085,
+      "eth_rate_start": 32125763.0,
+      "eth_rate_end": 11172324.0,
+      "efr_token_adjusted": 57323779.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.838604036,
+        "funds_raised_adjusted_diff": 2.452952187,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.9,
+      "ico_eth_total": 13203.0,
+      "efr_ico_tx": 67841206.185281,
+      "efr_owner_tx_currency": "AMD",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": -0.54516193,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 72.40249807,
+        "distribution_start_from_ico_start": 67.167849396,
+        "distribution_end_from_ico_end": 24.897910237,
+        "distribution_halflife": "8/14/2018",
+        "funds_balance_eth": 44406.914083098
+      }
+    },
+    "change_log": {
+      "metadata.version": 3,
+      "metadata.ico_address": "00183b305a2c751f5e28fbf7aa8fcb9225b80cd97f3ad753368ddc3740649c20",
+      "ico_info.ico_start_date": "6/18/2018",
+      "ico_info.ico_end_date": "3/23/2018",
+      "ico_info.ico_price": 0.291674,
+      "ico_info.ico_price_adjusted": 0.93971
+    }
+  },
+  {
+    "metadata": {
+      "version": 51,
+      "ico_name": "Tin",
+      "decimals": 11,
+      "token_contract_address": "7d45e9b085519c54cbb067a64a0e11b1a84d86111230b3cfadb54d8ffef5f24c",
+      "crowdsale_address": "55a48b4e40981ce17f93235a70b38a142b95759a3e1fe1196b41be56a3198b31",
+      "owner_address": "a610080ca706bda71022cd06e0bc3b0f668f11a99d71803c5e0ecf077a4fc070",
+      "funds_address": "ce14542899746c8620f8ced12b99e76325dab66f5fe9faa415c694ca99d59b74",
+      "token_issuer_address": "0c5257b97f158e845b6cb6afcdfdbc6ce4c3f0b6191996049c04ab46167160b0",
+      "passportAddress": "0c5257b97f158e845b6cb6afcdfdbc6ce4c3f0b6191996049c04ab46167160b0",
+      "eth_nominated": false,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": true,
+      "confidence": 0.6
+    },
+    "ico_info": {
+      "cfr_currency": "THB",
+      "cfr": 871069803.8,
+      "ico_start_date": "2018/06/13",
+      "ico_end_date": "2018/02/13",
+      "ico_price_cur": "CNY",
+      "ico_price": 6.993732
+    },
+    "ico_infoico_price_adjusted": 30.563504984,
+    "calculated_data": {
+      "tokens_issued": 59192730.0,
+      "efr_token": 24858487.664481,
+      "eth_rate_start": 17888703.0,
+      "eth_rate_end": 79001698.0,
+      "efr_token_adjusted": 93006343.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.691430761,
+        "funds_raised_adjusted_diff": 3.757010853,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.3,
+      "ico_eth_total": 72085.7,
+      "efr_ico_tx": 17047110.794357,
+      "efr_owner_tx_currency": "MZN",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": -0.966940725,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 49.789682376,
+        "distribution_start_from_ico_start": 93.670805241,
+        "distribution_end_from_ico_end": 80.871905529,
+        "distribution_halflife": "9/2/2018",
+        "funds_balance_eth": 47452.202022812
+      }
+    },
+    "change_log": {
+      "metadata.version": 7,
+      "metadata.ico_address": "821f58186373662d9e7305c6c1deceeabc64689a4e75a80302a3cb5c04a50c47",
+      "ico_info.ico_start_date": "12/5/2017",
+      "ico_info.ico_end_date": "3/27/2018",
+      "ico_info.ico_price": 0.622782,
+      "ico_info.ico_price_adjusted": 0.92839
+    }
+  },
+  {
+    "metadata": {
+      "version": 46,
+      "ico_name": "Kanlam",
+      "decimals": 14,
+      "token_contract_address": "fedc5df945652422ce867137746604af179cb9ee43b64fd4c2a7408530da7ea6",
+      "crowdsale_address": "fdf3fd5115333748944e04a5ace052ff1634178b020e279579a814baab85889f",
+      "owner_address": "a2656c70f6225a0a1b062e0916ebbfb0b26d37be6c8a24edf01bd0e602fa6240",
+      "funds_address": "4121fd3d53ee51238400538f53593d3e8b8f297cb93ba3a40e0543a91d0848e5",
+      "token_issuer_address": "540706688adb6717fcab933dea49544eebe0ac74f24cc1736ba4b2f82eb42ebe",
+      "passportAddress": "540706688adb6717fcab933dea49544eebe0ac74f24cc1736ba4b2f82eb42ebe",
+      "eth_nominated": true,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": false,
+      "confidence": 1.0
+    },
+    "ico_info": {
+      "cfr_currency": "IDR",
+      "cfr": 759409491.8,
+      "ico_start_date": "2018/05/18",
+      "ico_end_date": "2017/11/28",
+      "ico_price_cur": "CNY",
+      "ico_price": 5.570935
+    },
+    "ico_infoico_price_adjusted": 44.2152215,
+    "calculated_data": {
+      "tokens_issued": 88460995.0,
+      "efr_token": 97143113.309806,
+      "eth_rate_start": 43156035.0,
+      "eth_rate_end": 64780086.0,
+      "efr_token_adjusted": 5249459.7,
+      "token_check_result": {
+        "funds_raised_diff": 0.307991811,
+        "funds_raised_adjusted_diff": 1.706079483,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.5,
+      "ico_eth_total": 96884.9,
+      "efr_ico_tx": 15909265.731767,
+      "efr_owner_tx_currency": "PHP",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": 0.287223456,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 17.869737097,
+        "distribution_start_from_ico_start": 12.984386974,
+        "distribution_end_from_ico_end": 71.00597532,
+        "distribution_halflife": "8/21/2018",
+        "funds_balance_eth": 51921.358355071
+      }
+    },
+    "change_log": {
+      "metadata.version": 10,
+      "metadata.ico_address": "fbe887676efd4a2c2f7235bee2562481c4ccb40de740854f1a6d7c37b2cdc0d1",
+      "ico_info.ico_start_date": "6/12/2018",
+      "ico_info.ico_end_date": "6/27/2018",
+      "ico_info.ico_price": 0.21293,
+      "ico_info.ico_price_adjusted": 0.02468
+    }
+  },
+  {
+    "metadata": {
+      "version": 40,
+      "ico_name": "Lotstring",
+      "decimals": 17,
+      "token_contract_address": "58578435785da6cd99e57cedc04484880a13b88432eb9cf5df7da4c63545982b",
+      "crowdsale_address": "2ef6ce890a194aa012f2da2cdf314d0fee4cdc89064193f2fad53e6da2af43a8",
+      "owner_address": "77b90320bafc75b330493b82cceb4e20e629a57a70aea1b0a5a33083f93fc46b",
+      "funds_address": "f86e5a36ae57a42a3f1f81534ab49c7aadc8226406512b5c0a6f1fb10550cf0b",
+      "token_issuer_address": "588ec68a64ad4d789a2ca9c41a02d65925b47398e883883aad319e455165bba3",
+      "passportAddress": "588ec68a64ad4d789a2ca9c41a02d65925b47398e883883aad319e455165bba3",
+      "eth_nominated": true,
+      "token_tx_input_adjustment": true,
+      "owner_is_ico_wallet": false,
+      "confidence": 0.4
+    },
+    "ico_info": {
+      "cfr_currency": "PHP",
+      "cfr": 573725032.4,
+      "ico_start_date": "2017/11/30",
+      "ico_end_date": "2018/01/01",
+      "ico_price_cur": "USD",
+      "ico_price": 5.833483
+    },
+    "ico_infoico_price_adjusted": 81.994464497,
+    "calculated_data": {
+      "tokens_issued": 94601987.0,
+      "efr_token": 65761030.860211,
+      "eth_rate_start": 23503207.0,
+      "eth_rate_end": 88945353.0,
+      "efr_token_adjusted": 9447484.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.766896785,
+        "funds_raised_adjusted_diff": 2.610605657,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.0,
+      "ico_eth_total": 76065.9,
+      "efr_ico_tx": 94101838.159204,
+      "efr_owner_tx_currency": "RUB",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": 0.482998294,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 75.255489201,
+        "distribution_start_from_ico_start": 45.160386658,
+        "distribution_end_from_ico_end": 30.905958199,
+        "distribution_halflife": "5/12/2018",
+        "funds_balance_eth": 32148.415743399
+      }
+    },
+    "change_log": {
+      "metadata.version": 7,
+      "metadata.ico_address": "6f0339f7c822fbbb07f302df936b24d61dd095dfd9daf9d7510fb6f82b12b0a6",
+      "ico_info.ico_start_date": "1/18/2018",
+      "ico_info.ico_end_date": "8/29/2018",
+      "ico_info.ico_price": 0.787358,
+      "ico_info.ico_price_adjusted": 0.50221
+    }
+  },
+  {
+    "metadata": {
+      "version": 44,
+      "ico_name": "Tempsoft",
+      "decimals": 14,
+      "token_contract_address": "f648bdd15981e0ce2155cef4918bbeda224eb46cc7e4dabe80e3dc56dc8a5713",
+      "crowdsale_address": "0f5730e74728f48962e85f650260eb961722b75ffbdcbfffed49a12ba4bec3c0",
+      "owner_address": "7ddce22085c9c3c983e65a9fd8e300a5cdc69dbee466666c5cfe3d54440e113e",
+      "funds_address": "43efd694c397091647b3b45489114b80148fd7c84990f37036e7828b033d1cab",
+      "token_issuer_address": "6e9bba38b1e7432a30d026a4e7aa4e2db8a683aa6efd79e809f71cd73449ea23",
+      "passportAddress": "6e9bba38b1e7432a30d026a4e7aa4e2db8a683aa6efd79e809f71cd73449ea23",
+      "eth_nominated": true,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": true,
+      "confidence": 0.8
+    },
+    "ico_info": {
+      "cfr_currency": "ZAR",
+      "cfr": 311499407.1,
+      "ico_start_date": "2018/03/01",
+      "ico_end_date": "2018/09/02",
+      "ico_price_cur": "UAH",
+      "ico_price": 8.445653
+    },
+    "ico_infoico_price_adjusted": 14.833988389,
+    "calculated_data": {
+      "tokens_issued": 52022662.0,
+      "efr_token": 38789103.490503,
+      "eth_rate_start": 29660929.0,
+      "eth_rate_end": 49548739.0,
+      "efr_token_adjusted": 20460393.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.990398081,
+        "funds_raised_adjusted_diff": 1.10787942,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.0,
+      "ico_eth_total": 76754.8,
+      "efr_ico_tx": 88185843.949409,
+      "efr_owner_tx_currency": "UAH",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": 0.162429948,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 13.473173632,
+        "distribution_start_from_ico_start": 23.450957813,
+        "distribution_end_from_ico_end": 90.681069763,
+        "distribution_halflife": "1/29/2018",
+        "funds_balance_eth": 52048.870558818
+      }
+    },
+    "change_log": {
+      "metadata.version": 8,
+      "metadata.ico_address": "46477a1503cdc4e64d85949a059b6f848a0f29a5f7f1c7451ca81a9a100ca01a",
+      "ico_info.ico_start_date": "3/19/2018",
+      "ico_info.ico_end_date": "2/14/2018",
+      "ico_info.ico_price": 0.893858,
+      "ico_info.ico_price_adjusted": 0.45933
+    }
+  },
+  {
+    "metadata": {
+      "version": 90,
+      "ico_name": "Job",
+      "decimals": 18,
+      "token_contract_address": "16e67d7453d5e7f6d99fd671c36ffc56b1ff993c77efb902cac75ea6cb6538f3",
+      "crowdsale_address": "73e079e41791c11b8fb0e244cc2a0f80d5d4bb4f4dbe05ad28ae48c68852f9bb",
+      "owner_address": "b7a8851fddc2aeb6c77f4e8d8647c7e676def831448ba0afe1c9ead8dc1cd699",
+      "funds_address": "92b44ec5e4f385595ae44d8def1a8fcfe4351c47521dd24ac3f1e6e733a8ac11",
+      "token_issuer_address": "34771261d65a53a718b7a85626a0311bc4ef57d654e9baf1382cf48de2a3bd65",
+      "passportAddress": "34771261d65a53a718b7a85626a0311bc4ef57d654e9baf1382cf48de2a3bd65",
+      "eth_nominated": false,
+      "token_tx_input_adjustment": true,
+      "owner_is_ico_wallet": false,
+      "confidence": 0.7
+    },
+    "ico_info": {
+      "cfr_currency": "IDR",
+      "cfr": 868564082.5,
+      "ico_start_date": "2018/06/07",
+      "ico_end_date": "2018/10/31",
+      "ico_price_cur": "CNY",
+      "ico_price": 8.868342
+    },
+    "ico_infoico_price_adjusted": 66.692356199,
+    "calculated_data": {
+      "tokens_issued": 61159856.0,
+      "efr_token": 8137622.340617,
+      "eth_rate_start": 30376895.0,
+      "eth_rate_end": 15553973.0,
+      "efr_token_adjusted": 81050301.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.595251613,
+        "funds_raised_adjusted_diff": 4.303879594,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": 8325269.81891426,
+      "ico_eth_out": 0.9,
+      "ico_eth_total": 59493.1,
+      "efr_ico_tx": 18721998.539513,
+      "efr_owner_tx_currency": "NGN",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": 0.759118763,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 27.717620838,
+        "distribution_start_from_ico_start": 79.889766248,
+        "distribution_end_from_ico_end": 16.824553796,
+        "distribution_halflife": "4/1/2018",
+        "funds_balance_eth": 74086.316676674
+      }
+    },
+    "change_log": {
+      "metadata.version": 0,
+      "metadata.ico_address": "5ada6624084def949e8ded9d6810131f96bbe39e8eb754a306518436dc1b1ed2",
+      "ico_info.ico_start_date": "12/4/2017",
+      "ico_info.ico_end_date": "1/9/2018",
+      "ico_info.ico_price": 0.935959,
+      "ico_info.ico_price_adjusted": 0.1637
+    }
+  },
+  {
+    "metadata": {
+      "version": 61,
+      "ico_name": "Y-Solowarm",
+      "decimals": 14,
+      "token_contract_address": "8ae67708805a12fe3f6df8ba899434818265165ae48f8e5689a479c20abc3f1a",
+      "crowdsale_address": "5e04ec7ea1fa6a70da9477e599ec235ff72a9c572bb427a5bc60a08ae77c446e",
+      "owner_address": "21fa3a97b97d83249e69bc9a3bd9f5f9b91e430f192cecc0dc326c93ad79f5c8",
+      "funds_address": "9a4e4f1a32e58e004683d011b14d7cf9fa21005a6fd8f813fe233e6a0871c68a",
+      "token_issuer_address": "e9f72bc3992bef9f8503ab5628ff2a46bddee711a3eabc4a7867fdb2d850a415",
+      "passportAddress": "e9f72bc3992bef9f8503ab5628ff2a46bddee711a3eabc4a7867fdb2d850a415",
+      "eth_nominated": true,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": true,
+      "confidence": 0.6
+    },
+    "ico_info": {
+      "cfr_currency": "UAH",
+      "cfr": 647825459.4,
+      "ico_start_date": "2018/03/05",
+      "ico_end_date": "2018/10/25",
+      "ico_price_cur": "HRK",
+      "ico_price": 6.107338
+    },
+    "ico_infoico_price_adjusted": 38.928160604,
+    "calculated_data": {
+      "tokens_issued": 26394533.0,
+      "efr_token": 22559143.300349,
+      "eth_rate_start": 96945283.0,
+      "eth_rate_end": 92130255.0,
+      "efr_token_adjusted": 29389976.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.522781758,
+        "funds_raised_adjusted_diff": 3.988776613,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.0,
+      "ico_eth_total": 14540.5,
+      "efr_ico_tx": 36842098.618755,
+      "efr_owner_tx_currency": "IRR",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": -0.815107506,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 42.555450981,
+        "distribution_start_from_ico_start": 30.108881425,
+        "distribution_end_from_ico_end": 46.233621673,
+        "distribution_halflife": "3/30/2018",
+        "funds_balance_eth": 98631.307433038
+      }
+    },
+    "change_log": {
+      "metadata.version": 7,
+      "metadata.ico_address": "e5666568b1c2c87715abff6591816f260b110e9e0cf9391e426f1db39e823368",
+      "ico_info.ico_start_date": "9/29/2018",
+      "ico_info.ico_end_date": "1/25/2018",
+      "ico_info.ico_price": 0.722501,
+      "ico_info.ico_price_adjusted": 0.92344
+    }
+  },
+  {
+    "metadata": {
+      "version": 47,
+      "ico_name": "Treeflex",
+      "decimals": 12,
+      "token_contract_address": "1166d4b60c963d5a20ef5dace3fcfdc07c007fde590b7120462041efe0e2d6e9",
+      "crowdsale_address": "49116e6c0126bf67bb2e12253af42d5f57d960829cc1ecb249d289c49a2b7979",
+      "owner_address": "b0675e76674606ab2df6351994d6b44bd2276ac6c16f35e8ecae628af83ff1cf",
+      "funds_address": "4cdaf3b84cbcef006e0def15be820d020b928c9e50b134eb33b705474a290d8f",
+      "token_issuer_address": "2383b733ccb7bb2de2e73ed1e9cef16c93059bc57eb450c9b860f83a92711b33",
+      "passportAddress": "2383b733ccb7bb2de2e73ed1e9cef16c93059bc57eb450c9b860f83a92711b33",
+      "eth_nominated": false,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": false,
+      "confidence": 0.4
+    },
+    "ico_info": {
+      "cfr_currency": "USD",
+      "cfr": 984165474.7,
+      "ico_start_date": "2018/03/11",
+      "ico_end_date": "2018/03/26",
+      "ico_price_cur": "PHP",
+      "ico_price": 5.847024
+    },
+    "ico_infoico_price_adjusted": 34.815134691,
+    "calculated_data": {
+      "tokens_issued": 32479897.0,
+      "efr_token": 50862678.139261,
+      "eth_rate_start": 40437655.0,
+      "eth_rate_end": 58095396.0,
+      "efr_token_adjusted": 52558387.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.244216651,
+        "funds_raised_adjusted_diff": 4.068865504,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.2,
+      "ico_eth_total": 17635.5,
+      "efr_ico_tx": 99018656.902718,
+      "efr_owner_tx_currency": "BRL",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": -0.934726789,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 68.987124232,
+        "distribution_start_from_ico_start": 95.95367004,
+        "distribution_end_from_ico_end": 82.870427824,
+        "distribution_halflife": "12/26/2017",
+        "funds_balance_eth": 5228.626850347
+      }
+    },
+    "change_log": {
+      "metadata.version": 2,
+      "metadata.ico_address": "0c4553f06dfa69d12ed9abf10dfc779c32318e7d693db565eb5a5776c03b6e37",
+      "ico_info.ico_start_date": "3/24/2018",
+      "ico_info.ico_end_date": "11/3/2017",
+      "ico_info.ico_price": 0.451239,
+      "ico_info.ico_price_adjusted": 0.49819
+    }
+  },
+  {
+    "metadata": {
+      "version": 35,
+      "ico_name": "Domainer",
+      "decimals": 11,
+      "token_contract_address": "0a1ed4f31dd76acf5ca515e5b0abee0cedd388a59104db6b2b25f1c03739cb66",
+      "crowdsale_address": "38487be6f0f2c82acbca40743cee4d19e6b74aa69c79f9865d11ea7e7980ed03",
+      "owner_address": "bcb20a16ad4c001f07bff185912b020a1a9f1df61fad1761a2e274c140d25cdb",
+      "funds_address": "14767e42cb6235570624b2e1fb62f70030b3256ec5f9dec3f5dfd49d61d507b5",
+      "token_issuer_address": "40abaec2c7687995658c7f7ee291d144e171879924f84adc34004c86cada72fe",
+      "passportAddress": "40abaec2c7687995658c7f7ee291d144e171879924f84adc34004c86cada72fe",
+      "eth_nominated": false,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": false,
+      "confidence": 0.7
+    },
+    "ico_info": {
+      "cfr_currency": "CNY",
+      "cfr": 234805133.2,
+      "ico_start_date": "2018/05/26",
+      "ico_end_date": "2017/11/16",
+      "ico_price_cur": "PAB",
+      "ico_price": 6.248014
+    },
+    "ico_infoico_price_adjusted": 11.251913583,
+    "calculated_data": {
+      "tokens_issued": 88668515.0,
+      "efr_token": 96143793.57542,
+      "eth_rate_start": 67699764.0,
+      "eth_rate_end": 13794952.0,
+      "efr_token_adjusted": 3627701.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.158632579,
+        "funds_raised_adjusted_diff": 3.701362168,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.6,
+      "ico_eth_total": 68074.4,
+      "efr_ico_tx": 49254743.52321,
+      "efr_owner_tx_currency": "ARS",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": 0.788566224,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 24.564851377,
+        "distribution_start_from_ico_start": 73.377339882,
+        "distribution_end_from_ico_end": 40.691339588,
+        "distribution_halflife": "4/11/2018",
+        "funds_balance_eth": 7342.496815856
+      }
+    },
+    "change_log": {
+      "metadata.version": 2,
+      "metadata.ico_address": "a2c82b4439d5e8d02896304722eb17ef6d8a1aad87579a3a1424f1c48e77d917",
+      "ico_info.ico_start_date": "7/18/2018",
+      "ico_info.ico_end_date": "9/29/2018",
+      "ico_info.ico_price": 0.707822,
+      "ico_info.ico_price_adjusted": 0.55838
+    }
+  },
+  {
+    "metadata": {
+      "version": 31,
+      "ico_name": "Bitchip",
+      "decimals": 11,
+      "token_contract_address": "41b07c664fdee6129e560031d3a17ef15fdb4955ad354bc1a545633dc03e4a22",
+      "crowdsale_address": "2348e34f2e7005e50754fcaa7be72eab8d2c664fcc9de76c0025e00d8163fb9f",
+      "owner_address": "4af2750bcdab494c8b503a71ab55f5e1515d259d3c1ea1fdbbf025149849abc5",
+      "funds_address": "3e5b3456838cc7ba10e514c22a7af7c50ebfcb61812abceec5dbc77ee3a7611a",
+      "token_issuer_address": "7e6d63366d4a7a1bad4533328223e586c4eaa95230ee9a740bb63bfd0a5f4138",
+      "passportAddress": "7e6d63366d4a7a1bad4533328223e586c4eaa95230ee9a740bb63bfd0a5f4138",
+      "eth_nominated": true,
+      "token_tx_input_adjustment": true,
+      "owner_is_ico_wallet": true,
+      "confidence": 0.2
+    },
+    "ico_info": {
+      "cfr_currency": "EUR",
+      "cfr": 38414754.0,
+      "ico_start_date": "2018/03/29",
+      "ico_end_date": "2018/07/10",
+      "ico_price_cur": "CNY",
+      "ico_price": 8.448162
+    },
+    "ico_infoico_price_adjusted": 41.535800978,
+    "calculated_data": {
+      "tokens_issued": 57083056.0,
+      "efr_token": 27309642.258869,
+      "eth_rate_start": 25950346.0,
+      "eth_rate_end": 78908288.0,
+      "efr_token_adjusted": 98502000.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.89072211,
+        "funds_raised_adjusted_diff": 1.279441459,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.8,
+      "ico_eth_total": 82694.9,
+      "efr_ico_tx": 24078982.24178,
+      "efr_owner_tx_currency": "CNY",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": -0.698151157,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 32.467646682,
+        "distribution_start_from_ico_start": -8.05662451,
+        "distribution_end_from_ico_end": 63.88882062,
+        "distribution_halflife": "2/27/2018",
+        "funds_balance_eth": 22413.345297594
+      }
+    },
+    "change_log": {
+      "metadata.version": 1,
+      "metadata.ico_address": "e7b808180f3f789de5259e7ca543749a22907a9c2a5c543562b9970af45dacb7",
+      "ico_info.ico_start_date": "11/17/2017",
+      "ico_info.ico_end_date": "3/30/2018",
+      "ico_info.ico_price": 0.509869,
+      "ico_info.ico_price_adjusted": 0.27598
+    }
+  },
+  {
+    "metadata": {
+      "version": 21,
+      "ico_name": "Trippledex",
+      "decimals": 18,
+      "token_contract_address": "270cff37418d13cb86e895f42af56338483b99bc5b3511fb9fbfdd61395a90e0",
+      "crowdsale_address": "f081f170bb73c8b471ce014f14750ed27a95ef3d61fd2572f150fc1b24786007",
+      "owner_address": "8350cd5b59fce58123c86270900f199d591d4af05548978f2e0d58bc9d069be8",
+      "funds_address": "ce292d349c6d2f8507e2c41f478de2bbe44641732eb653e26d3511beb4b4bb9f",
+      "token_issuer_address": "9d832e6dad5866ab6609ba993a229c179b3390c48fdb0a9d33f85b13eaf1669c",
+      "passportAddress": "9d832e6dad5866ab6609ba993a229c179b3390c48fdb0a9d33f85b13eaf1669c",
+      "eth_nominated": false,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": true,
+      "confidence": 0.5
+    },
+    "ico_info": {
+      "cfr_currency": "EUR",
+      "cfr": 311557167.2,
+      "ico_start_date": "2017/12/30",
+      "ico_end_date": "2018/09/25",
+      "ico_price_cur": "RUB",
+      "ico_price": 9.711243
+    },
+    "ico_infoico_price_adjusted": 78.105824417,
+    "calculated_data": {
+      "tokens_issued": 6655139.4,
+      "efr_token": 80898208.437643,
+      "eth_rate_start": 70445721.0,
+      "eth_rate_end": 3495444.9,
+      "efr_token_adjusted": 86058047.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.233974262,
+        "funds_raised_adjusted_diff": 3.402702624,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.6,
+      "ico_eth_total": 22370.8,
+      "efr_ico_tx": 37636003.700582,
+      "efr_owner_tx_currency": "IDR",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": 0.572015795,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 61.698168795,
+        "distribution_start_from_ico_start": 56.668994522,
+        "distribution_end_from_ico_end": 88.380378107,
+        "distribution_halflife": "10/6/2018",
+        "funds_balance_eth": 17453.372686512
+      }
+    },
+    "change_log": {
+      "metadata.version": 0,
+      "metadata.ico_address": "a8e7b81e2c16fb13140100a88f83a10a315f5bc42de1e8c7df6c55834e7f02cd",
+      "ico_info.ico_start_date": "4/25/2018",
+      "ico_info.ico_end_date": "4/11/2018",
+      "ico_info.ico_price": 0.151922,
+      "ico_info.ico_price_adjusted": 0.27184
+    }
+  },
+  {
+    "metadata": {
+      "version": 98,
+      "ico_name": "Y-Solowarm",
+      "decimals": 16,
+      "token_contract_address": "63d3fbd610c021e3431e9fba75b84802984d4e46c17ba0cac60500afe76ba137",
+      "crowdsale_address": "08e487d71e13e6984d028a372554a95f3aa7de368492cce129c38f2f3c2ccec9",
+      "owner_address": "ed08fb6f5958a8d623e5ac5f372bc2429999f5a255ba65808016c547628836f7",
+      "funds_address": "7292ca4764fd7564a01ed92c27b13c9f3ba6abf8327e43b8626913fd6e003f96",
+      "token_issuer_address": "60a7a3b2a32b00544567ee2aa86c95b70b4c0204de7ed1ed537e89dc4ad9e775",
+      "passportAddress": "60a7a3b2a32b00544567ee2aa86c95b70b4c0204de7ed1ed537e89dc4ad9e775",
+      "eth_nominated": false,
+      "token_tx_input_adjustment": true,
+      "owner_is_ico_wallet": true,
+      "confidence": 0.8
+    },
+    "ico_info": {
+      "cfr_currency": "EUR",
+      "cfr": 551176458.0,
+      "ico_start_date": "2017/11/06",
+      "ico_end_date": "2018/01/29",
+      "ico_price_cur": "RUB",
+      "ico_price": 5.254005
+    },
+    "ico_infoico_price_adjusted": 57.072518814,
+    "calculated_data": {
+      "tokens_issued": 1383805.0,
+      "efr_token": 10321605.430281,
+      "eth_rate_start": 65860921.0,
+      "eth_rate_end": 87552709.0,
+      "efr_token_adjusted": 61283741.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.959899891,
+        "funds_raised_adjusted_diff": 2.158604073,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.5,
+      "ico_eth_total": 82819.3,
+      "efr_ico_tx": 56346021.946816,
+      "efr_owner_tx_currency": "LYD",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": -0.071711713,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 14.18204818,
+        "distribution_start_from_ico_start": 20.231297539,
+        "distribution_end_from_ico_end": 86.790018329,
+        "distribution_halflife": "11/10/2017",
+        "funds_balance_eth": 62365.166890898
+      }
+    },
+    "change_log": {
+      "metadata.version": 6,
+      "metadata.ico_address": "93e7a7eed484a70956726e0d64685a72459e88367e54497b917b2f9ae9351413",
+      "ico_info.ico_start_date": "8/16/2018",
+      "ico_info.ico_end_date": "3/29/2018",
+      "ico_info.ico_price": 0.552803,
+      "ico_info.ico_price_adjusted": 0.10634
+    }
+  },
+  {
+    "metadata": {
+      "version": 79,
+      "ico_name": "Bytecard",
+      "decimals": 18,
+      "token_contract_address": "02fc272a05c41f911f4acb4dcb137aebff4b78d465078f40ecfb1afb1fd38286",
+      "crowdsale_address": "ed9ed81676118ecef8e06796325c642cb59b10a8662b8cbb6edf2ba0c7765280",
+      "owner_address": "b4e07187cb324dd4b6414a6f20c01079a54c393f57d1638da75f3d923cbc4395",
+      "funds_address": "778688c58f5ddbd53ba5074c6bba55e3f2992822e1a563daaa7470fc4aa722a6",
+      "token_issuer_address": "b1d81ce287ef3d7bd748241518015a88da4945794309a13c24ede88dacdb4c02",
+      "passportAddress": "b1d81ce287ef3d7bd748241518015a88da4945794309a13c24ede88dacdb4c02",
+      "eth_nominated": false,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": true,
+      "confidence": 0.6
+    },
+    "ico_info": {
+      "cfr_currency": "THB",
+      "cfr": 907274380.3,
+      "ico_start_date": "2018/06/07",
+      "ico_end_date": "2017/12/25",
+      "ico_price_cur": "PLN",
+      "ico_price": 8.485732
+    },
+    "ico_infoico_price_adjusted": 95.594046171,
+    "calculated_data": {
+      "tokens_issued": 43420329.0,
+      "efr_token": 38375941.945557,
+      "eth_rate_start": 82597921.0,
+      "eth_rate_end": 70373829.0,
+      "efr_token_adjusted": 24550763.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.482899369,
+        "funds_raised_adjusted_diff": 2.0345305,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 1.0,
+      "ico_eth_total": 15083.7,
+      "efr_ico_tx": 38739387.687364,
+      "efr_owner_tx_currency": "RUB",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": 0.329866072,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 18.223978854,
+        "distribution_start_from_ico_start": 38.411363901,
+        "distribution_end_from_ico_end": 30.873946161,
+        "distribution_halflife": "12/28/2017",
+        "funds_balance_eth": 77104.700184283
+      }
+    },
+    "change_log": {
+      "metadata.version": 1,
+      "metadata.ico_address": "00d2fdd637e8c3ae32637431d1d58021c2470af8df9808377faf8a2b025117cc",
+      "ico_info.ico_start_date": "7/9/2018",
+      "ico_info.ico_end_date": "3/4/2018",
+      "ico_info.ico_price": 0.841354,
+      "ico_info.ico_price_adjusted": 0.27056
+    }
+  },
+  {
+    "metadata": {
+      "version": 49,
+      "ico_name": "Gembucket",
+      "decimals": 13,
+      "token_contract_address": "b04319beb69d371f86a1a0697cde8d638fc85e39c7907bd9b1736ab05ef2ffd4",
+      "crowdsale_address": "b59855bb2613a58f807d66e7b080c61fea5a7b59d041bb95ecf8e213251dd74e",
+      "owner_address": "bbdf907b0c98438bccf6b653b125b2add8ed5f015af2542252ceff37f0cf6741",
+      "funds_address": "f1deb50094f229fa66a20864c32622f46a2d9f731429ca1d7ffd44c11b430c16",
+      "token_issuer_address": "6da5dbb32fb2d9afce5b6fe5d16801ab05ffe0015cd0c0482a89e2911ad29fcc",
+      "passportAddress": "6da5dbb32fb2d9afce5b6fe5d16801ab05ffe0015cd0c0482a89e2911ad29fcc",
+      "eth_nominated": false,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": true,
+      "confidence": 0.5
+    },
+    "ico_info": {
+      "cfr_currency": "RUB",
+      "cfr": 594317409.3,
+      "ico_start_date": "2018/02/09",
+      "ico_end_date": "2018/03/03",
+      "ico_price_cur": "PLN",
+      "ico_price": 7.307645
+    },
+    "ico_infoico_price_adjusted": 21.845357554,
+    "calculated_data": {
+      "tokens_issued": 33051765.0,
+      "efr_token": 41205511.651846,
+      "eth_rate_start": 34103508.0,
+      "eth_rate_end": 96512218.0,
+      "efr_token_adjusted": 2197034.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.195486012,
+        "funds_raised_adjusted_diff": 4.267657872,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.7,
+      "ico_eth_total": 97521.6,
+      "efr_ico_tx": 21640754.136526,
+      "efr_owner_tx_currency": "USD",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": -0.640369584,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 52.051193738,
+        "distribution_start_from_ico_start": 64.710767176,
+        "distribution_end_from_ico_end": 93.104496721,
+        "distribution_halflife": "1/19/2018",
+        "funds_balance_eth": 39089.716334417
+      }
+    },
+    "change_log": {
+      "metadata.version": 5,
+      "metadata.ico_address": "1bb957312243a0f6ead80af72ce16104a12ea0b34b7ad0a96f8850c4f03400de",
+      "ico_info.ico_start_date": "12/18/2017",
+      "ico_info.ico_end_date": "4/16/2018",
+      "ico_info.ico_price": 0.44506,
+      "ico_info.ico_price_adjusted": 0.57435
+    }
+  },
+  {
+    "metadata": {
+      "version": 67,
+      "ico_name": "Flexidy",
+      "decimals": 14,
+      "token_contract_address": "2fa6c752a1c196974abcb468f51a6b72646be2fbf6730f5ba01acb7a5e7a6dca",
+      "crowdsale_address": "603537fece7ae93c0b4486be99a03801a12237ea01980e034ef9a9e19d1bb49c",
+      "owner_address": "aa5fea633dfe04c36d7b383a072ded928b6d8b9b1d4681da500518f32d211377",
+      "funds_address": "1a84b9ff8f0c8f4dc6ba0b20b20188d4b64854ec156dee962b19406c6a87ad00",
+      "token_issuer_address": "405c2a7eb2f62c5b7a1a3cf20531a41ebeaeb2769325008a3d593eb37db54f38",
+      "passportAddress": "405c2a7eb2f62c5b7a1a3cf20531a41ebeaeb2769325008a3d593eb37db54f38",
+      "eth_nominated": false,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": true,
+      "confidence": 0.6
+    },
+    "ico_info": {
+      "cfr_currency": "IDR",
+      "cfr": 241445229.0,
+      "ico_start_date": "2018/01/28",
+      "ico_end_date": "2018/07/22",
+      "ico_price_cur": "PHP",
+      "ico_price": 8.023366
+    },
+    "ico_infoico_price_adjusted": 41.319585953,
+    "calculated_data": {
+      "tokens_issued": 50330528.0,
+      "efr_token": 4999927.8237,
+      "eth_rate_start": 55250298.0,
+      "eth_rate_end": 67178884.0,
+      "efr_token_adjusted": 44097629.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.46625449,
+        "funds_raised_adjusted_diff": 2.012336677,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.5,
+      "ico_eth_total": 75759.2,
+      "efr_ico_tx": 10666488.301671,
+      "efr_owner_tx_currency": "AZN",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": -0.80336027,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 41.519647049,
+        "distribution_start_from_ico_start": 53.097907815,
+        "distribution_end_from_ico_end": 72.269445717,
+        "distribution_halflife": "10/3/2018",
+        "funds_balance_eth": 9969.684502169
+      }
+    },
+    "change_log": {
+      "metadata.version": 5,
+      "metadata.ico_address": "3d02d2c10259e7c40baf8c6485e1b8947188ec2aa340cd2ef0027411524b726f",
+      "ico_info.ico_start_date": "9/5/2018",
+      "ico_info.ico_end_date": "12/26/2017",
+      "ico_info.ico_price": 0.741956,
+      "ico_info.ico_price_adjusted": 0.44408
+    }
+  },
+  {
+    "metadata": {
+      "version": 2,
+      "ico_name": "Matsoft",
+      "decimals": 14,
+      "token_contract_address": "a527b957041d90f1889a03aed11b989d942210dafec5e270442621d4561efc34",
+      "crowdsale_address": "fb3e429cd18f315559b06f18f2f4f20abe42e2dd03a112fdc3843fe8f8dfa56a",
+      "owner_address": "e2d91c793d052b408e9464bec7977103df35a424477234f5aa708c7f5f8e3328",
+      "funds_address": "e87165295b11dffd431a7569b619d3eeef1f0296ef0fbac6d1228e6645f42b4b",
+      "token_issuer_address": "4ade7b2b051ee341dfb16c2a1e3d2e4b2fdef3d5a1eb6ac1f16ddcc091ecc4b9",
+      "passportAddress": "4ade7b2b051ee341dfb16c2a1e3d2e4b2fdef3d5a1eb6ac1f16ddcc091ecc4b9",
+      "eth_nominated": false,
+      "token_tx_input_adjustment": true,
+      "owner_is_ico_wallet": true,
+      "confidence": 0.5
+    },
+    "ico_info": {
+      "cfr_currency": "IDR",
+      "cfr": 402003745.7,
+      "ico_start_date": "2018/01/22",
+      "ico_end_date": "2018/05/28",
+      "ico_price_cur": "EUR",
+      "ico_price": 7.317892
+    },
+    "ico_infoico_price_adjusted": 60.572800237,
+    "calculated_data": {
+      "tokens_issued": 47993213.0,
+      "efr_token": 94846948.660944,
+      "eth_rate_start": 41698858.0,
+      "eth_rate_end": 29434979.0,
+      "efr_token_adjusted": 10641014.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.697093594,
+        "funds_raised_adjusted_diff": 4.581187795,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.4,
+      "ico_eth_total": 10693.5,
+      "efr_ico_tx": 65477502.491604,
+      "efr_owner_tx_currency": "EUR",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": 0.241769705,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 74.907342288,
+        "distribution_start_from_ico_start": 63.853441043,
+        "distribution_end_from_ico_end": 19.586699246,
+        "distribution_halflife": "8/10/2018",
+        "funds_balance_eth": 64297.118753124
+      }
+    },
+    "change_log": {
+      "metadata.version": 10,
+      "metadata.ico_address": "89c545566ef1d609402e385d150f9c0f052ed8b838f1bb36702ed3114e6e9fb1",
+      "ico_info.ico_start_date": "10/9/2018",
+      "ico_info.ico_end_date": "7/9/2018",
+      "ico_info.ico_price": 0.581121,
+      "ico_info.ico_price_adjusted": 0.74628
+    }
+  },
+  {
+    "metadata": {
+      "version": 18,
+      "ico_name": "Aerified",
+      "decimals": 18,
+      "token_contract_address": "67e7d8983024210a74e054f1e5f3093d00055fc8ffc9a090418b3660b56aab47",
+      "crowdsale_address": "932b2f91c6c12a55775aa6b42da0974579ec02f840695a0ad0f09257063c4088",
+      "owner_address": "1861bcda5845af4c1743e16cccfe52885452df0f8e2c65afbc67b339b3e910e6",
+      "funds_address": "b8b77059abfad49d0a914ca46dba5ef5d8830dcebca8e6d0709f5b44eaf9dd42",
+      "token_issuer_address": "e74e7a1741630833d9a08263642ef5615cf751c032413aaf1c2e10dcfc4ad39d",
+      "passportAddress": "e74e7a1741630833d9a08263642ef5615cf751c032413aaf1c2e10dcfc4ad39d",
+      "eth_nominated": true,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": false,
+      "confidence": 0.9
+    },
+    "ico_info": {
+      "cfr_currency": "CNY",
+      "cfr": 99843966.0,
+      "ico_start_date": "2017/12/14",
+      "ico_end_date": "2018/06/30",
+      "ico_price_cur": "CNY",
+      "ico_price": 8.098819
+    },
+    "ico_infoico_price_adjusted": 57.403740614,
+    "calculated_data": {
+      "tokens_issued": 98083246.0,
+      "efr_token": 84224705.234029,
+      "eth_rate_start": 13943002.0,
+      "eth_rate_end": 43920769.0,
+      "efr_token_adjusted": 89405687.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.674628175,
+        "funds_raised_adjusted_diff": 4.750406192,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.0,
+      "ico_eth_total": 15972.6,
+      "efr_ico_tx": 84266254.473561,
+      "efr_owner_tx_currency": "IDR",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": 0.55699828,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 40.948868527,
+        "distribution_start_from_ico_start": -8.39774735,
+        "distribution_end_from_ico_end": 45.673002008,
+        "distribution_halflife": "11/21/2017",
+        "funds_balance_eth": 44849.001549694
+      }
+    },
+    "change_log": {
+      "metadata.version": 6,
+      "metadata.ico_address": "e17667db1c3bcfabbb5347f5bf6ef02a1dbfe187a47fd067d0c6f14c16138668",
+      "ico_info.ico_start_date": "2/8/2018",
+      "ico_info.ico_end_date": "5/2/2018",
+      "ico_info.ico_price": 0.058073,
+      "ico_info.ico_price_adjusted": 0.67048
+    }
+  },
+  {
+    "metadata": {
+      "version": 26,
+      "ico_name": "Lotstring",
+      "decimals": 18,
+      "token_contract_address": "010bcaf94d2f0f0198fb29ed0b4848a35a6c842abcc6834e5ca8e69b1df2735f",
+      "crowdsale_address": "6ed9265be5180aeb42fa5584d4a8dadcd0ebbd12d5739fd31ed8129cb29c65d4",
+      "owner_address": "a1cb456544ecfca69dba07398b146920925748d66cfc9ac3c10a40a33ba0a08a",
+      "funds_address": "5b0429c764a3c7d081abe1bd6c9242ef04a110c78d760f15d6c4896a2e398b83",
+      "token_issuer_address": "43936a2562691ca3cb0bf1b3d4dd1d173aac514a9988454f376427d3e0ef5d20",
+      "passportAddress": "43936a2562691ca3cb0bf1b3d4dd1d173aac514a9988454f376427d3e0ef5d20",
+      "eth_nominated": false,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": true,
+      "confidence": 0.6
+    },
+    "ico_info": {
+      "cfr_currency": "CNY",
+      "cfr": 910194906.1,
+      "ico_start_date": "2018/10/29",
+      "ico_end_date": "2018/10/08",
+      "ico_price_cur": "USD",
+      "ico_price": 6.94716
+    },
+    "ico_infoico_price_adjusted": 30.733654998,
+    "calculated_data": {
+      "tokens_issued": 35031186.0,
+      "efr_token": 69426870.940071,
+      "eth_rate_start": 73452341.0,
+      "eth_rate_end": 58662875.0,
+      "efr_token_adjusted": 65594107.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.199259588,
+        "funds_raised_adjusted_diff": 4.08879972,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.1,
+      "ico_eth_total": 45377.7,
+      "efr_ico_tx": 59153840.389932,
+      "efr_owner_tx_currency": "EUR",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": 0.745129386,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 46.420589907,
+        "distribution_start_from_ico_start": 75.626151693,
+        "distribution_end_from_ico_end": 34.01365116,
+        "distribution_halflife": "10/20/2018",
+        "funds_balance_eth": 36519.332060388
+      }
+    },
+    "change_log": {
+      "metadata.version": 6,
+      "metadata.ico_address": "a55b345a23b26e9bd4cc1b0a29a919b7f0f287cac3409e8e1c7dfa8cd1d5e5f8",
+      "ico_info.ico_start_date": "9/29/2018",
+      "ico_info.ico_end_date": "2/3/2018",
+      "ico_info.ico_price": 0.876177,
+      "ico_info.ico_price_adjusted": 0.94353
+    }
+  },
+  {
+    "metadata": {
+      "version": 49,
+      "ico_name": "Domainer",
+      "decimals": 16,
+      "token_contract_address": "92d78fdaa3e25abaf9e906895605a93727a891ec46b1e425738f83bc7da2cebd",
+      "crowdsale_address": "a4bb907db86256bd835204c6b382b30e8064e7ed6691c2473584bb99c5ca8662",
+      "owner_address": "4095479defceab4193ae49f4ce182ac06f22640824c50cb39c85022f775c91e1",
+      "funds_address": "b00e04e7f43a335f038470e0ab26f2a4948b2cd26cc3d9e5503219a48ecf481d",
+      "token_issuer_address": "e3983b9abb205d394afef4d1f2b7db5f496f8ded4d7e4c53eb25ba4ab76e88bf",
+      "passportAddress": "e3983b9abb205d394afef4d1f2b7db5f496f8ded4d7e4c53eb25ba4ab76e88bf",
+      "eth_nominated": true,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": false,
+      "confidence": 0.8
+    },
+    "ico_info": {
+      "cfr_currency": "KPW",
+      "cfr": 247440000.6,
+      "ico_start_date": "2017/12/06",
+      "ico_end_date": "2018/05/25",
+      "ico_price_cur": "BGN",
+      "ico_price": 8.161616
+    },
+    "ico_infoico_price_adjusted": 14.620047495,
+    "calculated_data": {
+      "tokens_issued": 44758141.0,
+      "efr_token": 35680542.230891,
+      "eth_rate_start": 19575865.0,
+      "eth_rate_end": 89416949.0,
+      "efr_token_adjusted": 43379390.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.478157752,
+        "funds_raised_adjusted_diff": 2.83197285,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.4,
+      "ico_eth_total": 29287.0,
+      "efr_ico_tx": 16446193.079364,
+      "efr_owner_tx_currency": "RSD",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": -0.111782786,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 27.164388684,
+        "distribution_start_from_ico_start": 90.613792878,
+        "distribution_end_from_ico_end": 50.736831142,
+        "distribution_halflife": "12/14/2017",
+        "funds_balance_eth": 42220.030671907
+      }
+    },
+    "change_log": {
+      "metadata.version": 0,
+      "metadata.ico_address": "b0ca266ed8ecd0a445cb07284cf8cfa9e44bf8dae0f5afc716d2fb9869229269",
+      "ico_info.ico_start_date": "6/15/2018",
+      "ico_info.ico_end_date": "2/6/2018",
+      "ico_info.ico_price": 0.278948,
+      "ico_info.ico_price_adjusted": 0.688
+    }
+  },
+  {
+    "metadata": {
+      "version": 50,
+      "ico_name": "Stim",
+      "decimals": 10,
+      "token_contract_address": "4298afd1e57ffcfdecba9e7599e939a7c9a744a56ea8cc153c8002107e0ad03d",
+      "crowdsale_address": "75d185876b48b8493dac2f0e36d04e5036230910f49fe4da778ae8b66e2f2204",
+      "owner_address": "9640f56768890d592c734dfba053b6ea054fe0a2b954050e11f5171974f59452",
+      "funds_address": "6bf6426e228b94f443fb4806f9937d05dd8a8b9340e8eca0612de74eb8af4150",
+      "token_issuer_address": "cae02f0bfafad7429f154e0730ea9da3869a80a6d08a3765ed306b22343408af",
+      "passportAddress": "cae02f0bfafad7429f154e0730ea9da3869a80a6d08a3765ed306b22343408af",
+      "eth_nominated": true,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": false,
+      "confidence": 1.0
+    },
+    "ico_info": {
+      "cfr_currency": "PLN",
+      "cfr": 555491238.1,
+      "ico_start_date": "2017/11/01",
+      "ico_end_date": "2018/07/20",
+      "ico_price_cur": "JPY",
+      "ico_price": 6.164276
+    },
+    "ico_infoico_price_adjusted": 24.076945937,
+    "calculated_data": {
+      "tokens_issued": 96147452.0,
+      "efr_token": 13268878.427891,
+      "eth_rate_start": 78689386.0,
+      "eth_rate_end": 77884604.0,
+      "efr_token_adjusted": 47261572.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.604164025,
+        "funds_raised_adjusted_diff": 3.200488451,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.9,
+      "ico_eth_total": 93349.2,
+      "efr_ico_tx": 7005963.63391,
+      "efr_owner_tx_currency": "EUR",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": -0.831190072,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 63.929692606,
+        "distribution_start_from_ico_start": 42.420123794,
+        "distribution_end_from_ico_end": 13.187375582,
+        "distribution_halflife": "12/20/2017",
+        "funds_balance_eth": 60245.209817913
+      }
+    },
+    "change_log": {
+      "metadata.version": 6,
+      "metadata.ico_address": "38c651373dcd87515df8276c6951325bfa71f56130c823deadc1b4c8287267d4",
+      "ico_info.ico_start_date": "3/16/2018",
+      "ico_info.ico_end_date": "1/4/2018",
+      "ico_info.ico_price": 0.226005,
+      "ico_info.ico_price_adjusted": 0.63751
+    }
+  },
+  {
+    "metadata": {
+      "version": 16,
+      "ico_name": "Bamity",
+      "decimals": 15,
+      "token_contract_address": "0658ac3b6589fb1579a29984f30353c2553abf9103d610f87491ef5c85facf56",
+      "crowdsale_address": "53af30c654ce722037be0d1b185f877167a0efa554590191a044cf5d301f94e9",
+      "owner_address": "76e375bc285d1c5727bb4a469c009c084b6b288319f3f79c2cfa0e7005036297",
+      "funds_address": "66d54969ae35c2f5a1e69539eda9dafbeb33a59761eac8702442889e66867c4f",
+      "token_issuer_address": "56ba81db2d76b37fb4d455f8453514d73d54d460bfb13c55e302d991700346d9",
+      "passportAddress": "56ba81db2d76b37fb4d455f8453514d73d54d460bfb13c55e302d991700346d9",
+      "eth_nominated": false,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": false,
+      "confidence": 0.8
+    },
+    "ico_info": {
+      "cfr_currency": "CNY",
+      "cfr": 564463420.8,
+      "ico_start_date": "2018/10/23",
+      "ico_end_date": "2018/08/30",
+      "ico_price_cur": "IRR",
+      "ico_price": 6.585934
+    },
+    "ico_infoico_price_adjusted": 96.44905383,
+    "calculated_data": {
+      "tokens_issued": 68881376.0,
+      "efr_token": 86149859.048917,
+      "eth_rate_start": 73389590.0,
+      "eth_rate_end": 3546407.7,
+      "efr_token_adjusted": 20579088.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.749672506,
+        "funds_raised_adjusted_diff": 3.85360203,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.2,
+      "ico_eth_total": 49390.7,
+      "efr_ico_tx": 66829170.945636,
+      "efr_owner_tx_currency": "IDR",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": -0.463745592,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 35.530349473,
+        "distribution_start_from_ico_start": 24.371860754,
+        "distribution_end_from_ico_end": 18.304595773,
+        "distribution_halflife": "12/7/2017",
+        "funds_balance_eth": 82030.161060839
+      }
+    },
+    "change_log": {
+      "metadata.version": 3,
+      "metadata.ico_address": "2d41c5957e1a2779130290a8d523676a6631a515929d442c9acbbfa0227f94ba",
+      "ico_info.ico_start_date": "1/24/2018",
+      "ico_info.ico_end_date": "8/19/2018",
+      "ico_info.ico_price": 0.496677,
+      "ico_info.ico_price_adjusted": 0.75692
+    }
+  },
+  {
+    "metadata": {
+      "version": 61,
+      "ico_name": "Biodex",
+      "decimals": 14,
+      "token_contract_address": "69da973eaa5daf673b9369141977444aff4360150b3d7e6a45024e398d00af10",
+      "crowdsale_address": "86261ec62796181f258dbf6f770e3ba03025db1fdc251fec17e860229627e181",
+      "owner_address": "c81695f28494ceb95c2161014bc92a002fa3013923fb982141b45c78e6658a41",
+      "funds_address": "eb87a236875f59196415301d78d962c260c68a9d58840043f159936bc4708497",
+      "token_issuer_address": "f5c57c53dd5b6c64c93e2df1c03e79571c2bc5cc8373a9f08602a8d048595393",
+      "passportAddress": "f5c57c53dd5b6c64c93e2df1c03e79571c2bc5cc8373a9f08602a8d048595393",
+      "eth_nominated": true,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": false,
+      "confidence": 1.0
+    },
+    "ico_info": {
+      "cfr_currency": "IDR",
+      "cfr": 220703240.8,
+      "ico_start_date": "2017/12/22",
+      "ico_end_date": "2018/05/15",
+      "ico_price_cur": "CNY",
+      "ico_price": 5.105971
+    },
+    "ico_infoico_price_adjusted": 31.215722036,
+    "calculated_data": {
+      "tokens_issued": 77095698.0,
+      "efr_token": 22922033.360128,
+      "eth_rate_start": 33073343.0,
+      "eth_rate_end": 77070976.0,
+      "efr_token_adjusted": 63797745.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.516750191,
+        "funds_raised_adjusted_diff": 4.95844523,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.4,
+      "ico_eth_total": 70619.5,
+      "efr_ico_tx": 46952575.95373,
+      "efr_owner_tx_currency": "EUR",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": -0.40724704,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 73.282719276,
+        "distribution_start_from_ico_start": 42.96238213,
+        "distribution_end_from_ico_end": 84.308592969,
+        "distribution_halflife": "10/27/2018",
+        "funds_balance_eth": 28568.86219724
+      }
+    },
+    "change_log": {
+      "metadata.version": 7,
+      "metadata.ico_address": "76838d6ee8799ef9c08efe9f4555b878d7fa4983804089ac5b2507de44a2e46a",
+      "ico_info.ico_start_date": "5/23/2018",
+      "ico_info.ico_end_date": "12/20/2017",
+      "ico_info.ico_price": 0.130692,
+      "ico_info.ico_price_adjusted": 0.93055
+    }
+  },
+  {
+    "metadata": {
+      "version": 19,
+      "ico_name": "Y-find",
+      "decimals": 17,
+      "token_contract_address": "1ea7624afc179aea32a4ff3c94314e7c8d674466cc02a4c874139b2aa55a6487",
+      "crowdsale_address": "e6adf67889f1e79195875878ef3b0fab4ecc332162eaa26a89130ba569b607db",
+      "owner_address": "219c9bc3e0c9de11a0d85ff6f868f61da37df8f80ec910fcc2d69c601f1061f0",
+      "funds_address": "a0dc7d4ba2357ae605489b70ca386a08f2692701a83cb6dbf1a686dd0b0e533c",
+      "token_issuer_address": "2d24970dc1735ed8ced018a42c25425e9248cc1e659f9a936b7dd0ed60a02c9a",
+      "passportAddress": "2d24970dc1735ed8ced018a42c25425e9248cc1e659f9a936b7dd0ed60a02c9a",
+      "eth_nominated": false,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": false,
+      "confidence": 0.3
+    },
+    "ico_info": {
+      "cfr_currency": "EUR",
+      "cfr": 279035639.3,
+      "ico_start_date": "2018/01/08",
+      "ico_end_date": "2018/10/30",
+      "ico_price_cur": "NGN",
+      "ico_price": 9.462182
+    },
+    "ico_infoico_price_adjusted": 18.785668417,
+    "calculated_data": {
+      "tokens_issued": 35377961.0,
+      "efr_token": 48084389.66586,
+      "eth_rate_start": 46856662.0,
+      "eth_rate_end": 61967091.0,
+      "efr_token_adjusted": 68258469.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.005990377,
+        "funds_raised_adjusted_diff": 3.315591361,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": 9283239.919758673,
+      "ico_eth_out": 0.2,
+      "ico_eth_total": 93672.8,
+      "efr_ico_tx": 60151607.688571,
+      "efr_owner_tx_currency": "MXN",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": -0.288195599,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 52.913509182,
+        "distribution_start_from_ico_start": 87.711967556,
+        "distribution_end_from_ico_end": 16.031018252,
+        "distribution_halflife": "1/9/2018",
+        "funds_balance_eth": 64764.549385184
+      }
+    },
+    "change_log": {
+      "metadata.version": 10,
+      "metadata.ico_address": "3a629d77c8fbffa0301d28d29d00231792244d12d8e52bd1e9fe4e91b1658f80",
+      "ico_info.ico_start_date": "11/13/2017",
+      "ico_info.ico_end_date": "7/5/2018",
+      "ico_info.ico_price": 0.732006,
+      "ico_info.ico_price_adjusted": 0.97847
+    }
+  },
+  {
+    "metadata": {
+      "version": 55,
+      "ico_name": "Bitchip",
+      "decimals": 12,
+      "token_contract_address": "7e44e5857bf35f847c05924bbd5a6323a95af0ef0a2c45d0076b3a3176c0bfa3",
+      "crowdsale_address": "949d1ff6817872b5d4209bb7ae5364daf8432f0da95253e880ad622ca5ecfaaa",
+      "owner_address": "2adfa5984dbc0af1c7aa9c5c206b793ca3458a22fc4b9b9a9b355b82f8763734",
+      "funds_address": "5a481ca034a4591b1f2a06ad60496d11b4124a69c30f93d8318e6bc68db81b54",
+      "token_issuer_address": "d4078c4d5df6aba64390185f98554df919787247d490e5130440c92db6c95def",
+      "passportAddress": "d4078c4d5df6aba64390185f98554df919787247d490e5130440c92db6c95def",
+      "eth_nominated": false,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": false,
+      "confidence": 0.2
+    },
+    "ico_info": {
+      "cfr_currency": "EUR",
+      "cfr": 619256904.6,
+      "ico_start_date": "2017/11/30",
+      "ico_end_date": "2018/03/04",
+      "ico_price_cur": "YER",
+      "ico_price": 9.677587
+    },
+    "ico_infoico_price_adjusted": 33.788084941,
+    "calculated_data": {
+      "tokens_issued": 40883776.0,
+      "efr_token": 58760430.087047,
+      "eth_rate_start": 76826043.0,
+      "eth_rate_end": 27533890.0,
+      "efr_token_adjusted": 77118685.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.260462214,
+        "funds_raised_adjusted_diff": 1.371479042,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.6,
+      "ico_eth_total": 37055.9,
+      "efr_ico_tx": 55150178.420314,
+      "efr_owner_tx_currency": "CNY",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": 0.485591306,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 39.157288336,
+        "distribution_start_from_ico_start": 86.166585694,
+        "distribution_end_from_ico_end": 82.020146636,
+        "distribution_halflife": "6/29/2018",
+        "funds_balance_eth": 35629.918366497
+      }
+    },
+    "change_log": {
+      "metadata.version": 0,
+      "metadata.ico_address": "636968a1f0286db2b9d580ddfd225eb57cb6288b340cbd9c2f4e6655d2539658",
+      "ico_info.ico_start_date": "4/8/2018",
+      "ico_info.ico_end_date": "8/16/2018",
+      "ico_info.ico_price": 0.276731,
+      "ico_info.ico_price_adjusted": 0.01639
+    }
+  },
+  {
+    "metadata": {
+      "version": 66,
+      "ico_name": "Bamity",
+      "decimals": 18,
+      "token_contract_address": "347d8547308671ed3ee5e1389c7fe04408e5196e04103cd531d1edd359017f2e",
+      "crowdsale_address": "2e10db42cc5eb29d61f810492c0b6174c2bdc2e1990fc2dcab34c4b9e0c07562",
+      "owner_address": "8d71833aa568a4c8be6690d32ee1385d064d0cd6d97ff03a90e214f4c0457c9d",
+      "funds_address": "1da90c7f1640329b21b5f58b12506045e925e6e153f79716ad2374f1a63c5a98",
+      "token_issuer_address": "ceab039f79b37d24a7ce54880fdc46e7048c84ba19844f52be8d404921129120",
+      "passportAddress": "ceab039f79b37d24a7ce54880fdc46e7048c84ba19844f52be8d404921129120",
+      "eth_nominated": false,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": true,
+      "confidence": 0.7
+    },
+    "ico_info": {
+      "cfr_currency": "IDR",
+      "cfr": 249240709.5,
+      "ico_start_date": "2018/04/21",
+      "ico_end_date": "2017/11/15",
+      "ico_price_cur": "RUB",
+      "ico_price": 5.575184
+    },
+    "ico_infoico_price_adjusted": 39.458794362,
+    "calculated_data": {
+      "tokens_issued": 10443078.0,
+      "efr_token": 71204318.035066,
+      "eth_rate_start": 72859959.0,
+      "eth_rate_end": 74396631.0,
+      "efr_token_adjusted": 78921010.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.673299725,
+        "funds_raised_adjusted_diff": 3.575068332,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.5,
+      "ico_eth_total": 81273.3,
+      "efr_ico_tx": 19548844.308018,
+      "efr_owner_tx_currency": "MKD",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": -0.011600584,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 60.174444349,
+        "distribution_start_from_ico_start": 27.422089838,
+        "distribution_end_from_ico_end": 54.072868259,
+        "distribution_halflife": "2/19/2018",
+        "funds_balance_eth": 49395.916392821
+      }
+    },
+    "change_log": {
+      "metadata.version": 9,
+      "metadata.ico_address": "9441be2b4df472e8f807ec33065cbacefa7a9e8d6dcc0ec934b6035c81643373",
+      "ico_info.ico_start_date": "5/9/2018",
+      "ico_info.ico_end_date": "11/8/2017",
+      "ico_info.ico_price": 0.839303,
+      "ico_info.ico_price_adjusted": 0.65915
+    }
+  },
+  {
+    "metadata": {
+      "version": 65,
+      "ico_name": "Domainer",
+      "decimals": 18,
+      "token_contract_address": "db526b413ce99853c8f09ea1c107c6f3cee5fb83bd0feae0ca701751402cc10f",
+      "crowdsale_address": "62c279574e2ff592729cb8c1b021cf5ab3fddf4585cd10c910c5952276737831",
+      "owner_address": "28eda1106a8992647a4d359e1bea83da4b53ac3e135a484410f2435f29d34436",
+      "funds_address": "bf3380799f99e14d790b508abe7125e5f9bcfaa41dbae5d1ba021fe680a29039",
+      "token_issuer_address": "28d8bc2dbc6e4d3bd0546be66db03994846685ffe8631083ff45f883e2878a5a",
+      "passportAddress": "28d8bc2dbc6e4d3bd0546be66db03994846685ffe8631083ff45f883e2878a5a",
+      "eth_nominated": false,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": false,
+      "confidence": 0.0
+    },
+    "ico_info": {
+      "cfr_currency": "CNY",
+      "cfr": 942720836.0,
+      "ico_start_date": "2018/03/12",
+      "ico_end_date": "2018/05/11",
+      "ico_price_cur": "USD",
+      "ico_price": 5.040573
+    },
+    "ico_infoico_price_adjusted": 51.736590606,
+    "calculated_data": {
+      "tokens_issued": 12318124.0,
+      "efr_token": 66434459.134879,
+      "eth_rate_start": 28158417.0,
+      "eth_rate_end": 72614443.0,
+      "efr_token_adjusted": 38027890.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.310105871,
+        "funds_raised_adjusted_diff": 4.918224217,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.7,
+      "ico_eth_total": 44392.9,
+      "efr_ico_tx": 50255766.84366,
+      "efr_owner_tx_currency": "CNY",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": 0.466515235,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 50.934670834,
+        "distribution_start_from_ico_start": -5.334653889,
+        "distribution_end_from_ico_end": 75.049122418,
+        "distribution_halflife": "8/31/2018",
+        "funds_balance_eth": 97390.096525256
+      }
+    },
+    "change_log": {
+      "metadata.version": 3,
+      "metadata.ico_address": "482c36edb78af86ef857874ff3ba378286e599619635aa56256a8759e3a0e113",
+      "ico_info.ico_start_date": "6/25/2018",
+      "ico_info.ico_end_date": "8/30/2018",
+      "ico_info.ico_price": 0.928597,
+      "ico_info.ico_price_adjusted": 0.00963
+    }
+  },
+  {
+    "metadata": {
+      "version": 63,
+      "ico_name": "Solarbreeze",
+      "decimals": 18,
+      "token_contract_address": "e15c976e178fbbbaa48a8f7e58723da26e6a9572011312f792456f4c310b8187",
+      "crowdsale_address": "bdd80500c0dc607f228451c9bb0f4cb3157fa0a1f99544ad77a07bb0d7420c99",
+      "owner_address": "8eca4c656679fc163202b8e0d4f195c98f28c97066df005b68742553b92bcaa1",
+      "funds_address": "794d95d167938100f6bba247c273b3d14a185fa574de973e6b8eefe56187d2ae",
+      "token_issuer_address": "f6d34054b7b0b700e551ed2beae875a8f34bc947f94a95f46eca5c9ebfb7930e",
+      "passportAddress": "f6d34054b7b0b700e551ed2beae875a8f34bc947f94a95f46eca5c9ebfb7930e",
+      "eth_nominated": true,
+      "token_tx_input_adjustment": true,
+      "owner_is_ico_wallet": false,
+      "confidence": 0.4
+    },
+    "ico_info": {
+      "cfr_currency": "CNY",
+      "cfr": 722481822.6,
+      "ico_start_date": "2018/04/26",
+      "ico_end_date": "2018/10/01",
+      "ico_price_cur": "PEN",
+      "ico_price": 9.9476
+    },
+    "ico_infoico_price_adjusted": 25.842668297,
+    "calculated_data": {
+      "tokens_issued": 8966584.0,
+      "efr_token": 92426559.431647,
+      "eth_rate_start": 30656308.0,
+      "eth_rate_end": 58533378.0,
+      "efr_token_adjusted": 85597894.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.365117909,
+        "funds_raised_adjusted_diff": 4.615139855,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.2,
+      "ico_eth_total": 74685.3,
+      "efr_ico_tx": 32495441.301402,
+      "efr_owner_tx_currency": "SEK",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": -0.971051455,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 78.730270343,
+        "distribution_start_from_ico_start": 71.925717383,
+        "distribution_end_from_ico_end": 24.676256211,
+        "distribution_halflife": "4/4/2018",
+        "funds_balance_eth": 36450.626028955
+      }
+    },
+    "change_log": {
+      "metadata.version": 9,
+      "metadata.ico_address": "04b246bbbcfe7147c27d3c6f33779f6b46796640da5e2dc23e571205ab59daec",
+      "ico_info.ico_start_date": "11/5/2017",
+      "ico_info.ico_end_date": "4/10/2018",
+      "ico_info.ico_price": 0.288175,
+      "ico_info.ico_price_adjusted": 0.92107
+    }
+  },
+  {
+    "metadata": {
+      "version": 69,
+      "ico_name": "Toughjoyfax",
+      "decimals": 12,
+      "token_contract_address": "da7278dbdcdb5d1b613843e2d809c1a95a26aeed707c7cf8d761d43a5656b856",
+      "crowdsale_address": "b909a61ddedf16769c9db0be4cb84f99e468ffa74dc5fbb595cc90a22cfe1a7a",
+      "owner_address": "3e01a1e3a6e8ded3f4a030ca7d5be9bc73604b0eaedde2a8da1a05ab022ae3b6",
+      "funds_address": "c5b2e308409433a2a67bedd5bab37bdae7b0a1bdc6a628dec060ba282d2545ce",
+      "token_issuer_address": "0e11304041b659a96bfcefccb149037c59142b2f74df8a1af0e7c180a79dfc0c",
+      "passportAddress": "0e11304041b659a96bfcefccb149037c59142b2f74df8a1af0e7c180a79dfc0c",
+      "eth_nominated": false,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": true,
+      "confidence": 0.5
+    },
+    "ico_info": {
+      "cfr_currency": "CNY",
+      "cfr": 921582873.1,
+      "ico_start_date": "2018/09/01",
+      "ico_end_date": "2018/09/02",
+      "ico_price_cur": "EUR",
+      "ico_price": 8.906706
+    },
+    "ico_infoico_price_adjusted": 15.918306425,
+    "calculated_data": {
+      "tokens_issued": 9602545.0,
+      "efr_token": 5005718.148635,
+      "eth_rate_start": 10406568.0,
+      "eth_rate_end": 40373756.0,
+      "efr_token_adjusted": 82642165.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.343798358,
+        "funds_raised_adjusted_diff": 1.684647955,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.9,
+      "ico_eth_total": 10599.6,
+      "efr_ico_tx": 39149719.302417,
+      "efr_owner_tx_currency": "CNY",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": -0.436677835,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 19.081626255,
+        "distribution_start_from_ico_start": 0.207292519,
+        "distribution_end_from_ico_end": 64.430500494,
+        "distribution_halflife": "5/20/2018",
+        "funds_balance_eth": 98894.795507061
+      }
+    },
+    "change_log": {
+      "metadata.version": 5,
+      "metadata.ico_address": "95ad72be38a608b62287c6c71ef524a272164ef35513f257d1b58470c4f59033",
+      "ico_info.ico_start_date": "6/27/2018",
+      "ico_info.ico_end_date": "7/21/2018",
+      "ico_info.ico_price": 0.360407,
+      "ico_info.ico_price_adjusted": 0.15475
+    }
+  },
+  {
+    "metadata": {
+      "version": 3,
+      "ico_name": "Y-find",
+      "decimals": 16,
+      "token_contract_address": "01d36870a5e77a5c165584165231c5379696885c6a8d5017ce3ee8e4dbfed64e",
+      "crowdsale_address": "97dccc3076c23316ca8d24ec8f6c14eef84a20347979c354f393c0e7ab1b185d",
+      "owner_address": "f3242ee20c0f4f94cf56b4ab2749e0e36c5762e4ba99a71e7e2106c5c0b4e14c",
+      "funds_address": "65b6b016fd721e41ee9d5876a7a281c15940d41eac3052c921f4501ec615e13a",
+      "token_issuer_address": "f32a3e2b65960735ce61ba8b580748a9df369b0d612dfe040dd360e41a804b60",
+      "passportAddress": "f32a3e2b65960735ce61ba8b580748a9df369b0d612dfe040dd360e41a804b60",
+      "eth_nominated": true,
+      "token_tx_input_adjustment": true,
+      "owner_is_ico_wallet": false,
+      "confidence": 1.0
+    },
+    "ico_info": {
+      "cfr_currency": "CNY",
+      "cfr": 404901449.8,
+      "ico_start_date": "2018/05/20",
+      "ico_end_date": "2018/10/27",
+      "ico_price_cur": "CNY",
+      "ico_price": 5.213564
+    },
+    "ico_infoico_price_adjusted": 91.807417671,
+    "calculated_data": {
+      "tokens_issued": 31995707.0,
+      "efr_token": 52699075.149595,
+      "eth_rate_start": 46168128.0,
+      "eth_rate_end": 36657562.0,
+      "efr_token_adjusted": 49596169.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.243923687,
+        "funds_raised_adjusted_diff": 3.3123955,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.9,
+      "ico_eth_total": 39810.3,
+      "efr_ico_tx": 14849904.189639,
+      "efr_owner_tx_currency": "BRL",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": 0.433756079,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 17.572265768,
+        "distribution_start_from_ico_start": 55.957261829,
+        "distribution_end_from_ico_end": 60.186756001,
+        "distribution_halflife": "3/10/2018",
+        "funds_balance_eth": 10589.363605658
+      }
+    },
+    "change_log": {
+      "metadata.version": 0,
+      "metadata.ico_address": "e126b686e4b75ffd1a8b0cb73262239c750a0402de468832a4f1a27af3ee166e",
+      "ico_info.ico_start_date": "1/22/2018",
+      "ico_info.ico_end_date": "10/31/2018",
+      "ico_info.ico_price": 0.224134,
+      "ico_info.ico_price_adjusted": 0.60484
+    }
+  },
+  {
+    "metadata": {
+      "version": 91,
+      "ico_name": "Zaam-Dox",
+      "decimals": 16,
+      "token_contract_address": "23568ccd227c9e448a46034430e6c330d9ba34c7181e8da8e242a4ff1bfebde3",
+      "crowdsale_address": "de9dbe81bc0c2498cac6c929c4d9b7ca74dff620a15a679326842e0078fe29fd",
+      "owner_address": "59c46688cc459cad14d0d85f0ec0c3cef9138b914e845610583ca13a7a7ccdb2",
+      "funds_address": "e4dda93eae4ab966ce2469ef621b4912cb319a50b7327ce9e374ac9ab8374e60",
+      "token_issuer_address": "319bcf73e9782c86b21fc86d25ed091788fea37fbeaccb36322e6fc06dfcb9b1",
+      "passportAddress": "319bcf73e9782c86b21fc86d25ed091788fea37fbeaccb36322e6fc06dfcb9b1",
+      "eth_nominated": true,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": false,
+      "confidence": 0.2
+    },
+    "ico_info": {
+      "cfr_currency": "IDR",
+      "cfr": 563142802.2,
+      "ico_start_date": "2018/01/29",
+      "ico_end_date": "2018/08/18",
+      "ico_price_cur": "PHP",
+      "ico_price": 6.02566
+    },
+    "ico_infoico_price_adjusted": 45.788081102,
+    "calculated_data": {
+      "tokens_issued": 30215374.0,
+      "efr_token": 22874084.944124,
+      "eth_rate_start": 94875755.0,
+      "eth_rate_end": 83579654.0,
+      "efr_token_adjusted": 30852611.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.331866251,
+        "funds_raised_adjusted_diff": 2.672488251,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.3,
+      "ico_eth_total": 30169.2,
+      "efr_ico_tx": 11106527.4383,
+      "efr_owner_tx_currency": "IDR",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": -0.159476489,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 48.391061702,
+        "distribution_start_from_ico_start": 70.395899767,
+        "distribution_end_from_ico_end": 84.80339533,
+        "distribution_halflife": "9/19/2018",
+        "funds_balance_eth": 10680.1522202
+      }
+    },
+    "change_log": {
+      "metadata.version": 6,
+      "metadata.ico_address": "fae28e9c98d07e5955d2c1f9d8201e14239938b2989c1b41395b5aa431df38f8",
+      "ico_info.ico_start_date": "10/15/2018",
+      "ico_info.ico_end_date": "2/7/2018",
+      "ico_info.ico_price": 0.736274,
+      "ico_info.ico_price_adjusted": 0.85531
+    }
+  },
+  {
+    "metadata": {
+      "version": 31,
+      "ico_name": "Voltsillam",
+      "decimals": 10,
+      "token_contract_address": "01dd1e6b83b250a7da53c12f1c3df5279c511bf4adb86dd0a5bbdbbb5b18a662",
+      "crowdsale_address": "396d8069b1248da84fc660e1875f89ffd329a19314b07f46c89b796ba319dad9",
+      "owner_address": "c231fb76b34c3ddf0deed3df6b28848c15fae1b66d685ff857a824e3ca7a986e",
+      "funds_address": "33ab9e57716d1d0c19f947e17f5362e9e4c13f26419ea747fb1a40467b4bea14",
+      "token_issuer_address": "a4cdc4405efae814e05162635644c7d77fa96b0fb4c237b29b50415abc9ea1f0",
+      "passportAddress": "a4cdc4405efae814e05162635644c7d77fa96b0fb4c237b29b50415abc9ea1f0",
+      "eth_nominated": false,
+      "token_tx_input_adjustment": true,
+      "owner_is_ico_wallet": false,
+      "confidence": 0.8
+    },
+    "ico_info": {
+      "cfr_currency": "EUR",
+      "cfr": 346079868.1,
+      "ico_start_date": "2018/02/13",
+      "ico_end_date": "2018/06/08",
+      "ico_price_cur": "IDR",
+      "ico_price": 9.731169
+    },
+    "ico_infoico_price_adjusted": 19.472633257,
+    "calculated_data": {
+      "tokens_issued": 15469683.0,
+      "efr_token": 88383551.329602,
+      "eth_rate_start": 72962504.0,
+      "eth_rate_end": 5636610.7,
+      "efr_token_adjusted": 7484108.8,
+      "token_check_result": {
+        "funds_raised_diff": 0.235853599,
+        "funds_raised_adjusted_diff": 2.6866664,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.2,
+      "ico_eth_total": 25315.5,
+      "efr_ico_tx": 92423727.7916,
+      "efr_owner_tx_currency": "CNY",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": 0.640850756,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 24.311727072,
+        "distribution_start_from_ico_start": 57.574829661,
+        "distribution_end_from_ico_end": 69.3583051,
+        "distribution_halflife": "8/22/2018",
+        "funds_balance_eth": 3928.114165443
+      }
+    },
+    "change_log": {
+      "metadata.version": 1,
+      "metadata.ico_address": "dd002315c46b1e270ad557c3b70a8060998ffff13849c2e21840cccb416aba0e",
+      "ico_info.ico_start_date": "8/13/2018",
+      "ico_info.ico_end_date": "12/16/2017",
+      "ico_info.ico_price": 0.367346,
+      "ico_info.ico_price_adjusted": 0.87031
+    }
+  },
+  {
+    "metadata": {
+      "version": 95,
+      "ico_name": "Stronghold",
+      "decimals": 16,
+      "token_contract_address": "34c3dc3f28f18c7ef2a72c4df98da4eb21cc08c23d3922f87bfc3523946ea55c",
+      "crowdsale_address": "36ef4f61163d79faf15e84a607634142a2e34cd43c346443dfb69e002bd2b8c2",
+      "owner_address": "56dd3f495385ce2e158918caf43603b3992fc3e9581c7584120281e0bf5edd13",
+      "funds_address": "823f6258c92bf5d5f30761d49638fbb44c7cfaff26685f2a1d569c2c91161a68",
+      "token_issuer_address": "d95cd014cd0df5b06d336433617c87ccab14bffeece3bd80b9a69a187812508b",
+      "passportAddress": "d95cd014cd0df5b06d336433617c87ccab14bffeece3bd80b9a69a187812508b",
+      "eth_nominated": true,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": false,
+      "confidence": 0.0
+    },
+    "ico_info": {
+      "cfr_currency": "EUR",
+      "cfr": 531066448.5,
+      "ico_start_date": "2018/09/20",
+      "ico_end_date": "2018/05/07",
+      "ico_price_cur": "ARS",
+      "ico_price": 7.295613
+    },
+    "ico_infoico_price_adjusted": 78.466613797,
+    "calculated_data": {
+      "tokens_issued": 37712085.0,
+      "efr_token": 22884594.302424,
+      "eth_rate_start": 36092542.0,
+      "eth_rate_end": 9505607.0,
+      "efr_token_adjusted": 18495278.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.535162171,
+        "funds_raised_adjusted_diff": 1.364371989,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.8,
+      "ico_eth_total": 41700.6,
+      "efr_ico_tx": 96804009.36394,
+      "efr_owner_tx_currency": "EGP",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": 0.37861716,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 61.159083979,
+        "distribution_start_from_ico_start": 38.723793033,
+        "distribution_end_from_ico_end": 12.369181025,
+        "distribution_halflife": "4/19/2018",
+        "funds_balance_eth": 52774.970559806
+      }
+    },
+    "change_log": {
+      "metadata.version": 8,
+      "metadata.ico_address": "c70bde54af88a9db928455f2de0a05e1440fff28e6a164820ec313d7afdd767f",
+      "ico_info.ico_start_date": "2/9/2018",
+      "ico_info.ico_end_date": "8/11/2018",
+      "ico_info.ico_price": 0.877986,
+      "ico_info.ico_price_adjusted": 0.79816
+    }
+  },
+  {
+    "metadata": {
+      "version": 34,
+      "ico_name": "Prodder",
+      "decimals": 17,
+      "token_contract_address": "fc843b1b68064b3206b663712fa269bab6071495b92df0edb9e1bfb6dac4ed67",
+      "crowdsale_address": "da96ad2355a4f70e349f7a734b18791cbc73bcab9e404df20a67524f02f8f3b2",
+      "owner_address": "56ca3858d85d58df7faeecadd49b9dd98b5f546c81b52281480f8da4e6d48cf7",
+      "funds_address": "911939a20dbf130d69a0933b58a0e5ceb01d0eadd70704098dbe568e294361b1",
+      "token_issuer_address": "850fab0933426b631c23988a653bf9bc7c165fe00149899d0815aac542124c1a",
+      "passportAddress": "850fab0933426b631c23988a653bf9bc7c165fe00149899d0815aac542124c1a",
+      "eth_nominated": false,
+      "token_tx_input_adjustment": true,
+      "owner_is_ico_wallet": true,
+      "confidence": 0.3
+    },
+    "ico_info": {
+      "cfr_currency": "AFN",
+      "cfr": 46058867.0,
+      "ico_start_date": "2018/06/10",
+      "ico_end_date": "2017/11/14",
+      "ico_price_cur": "CNY",
+      "ico_price": 9.257542
+    },
+    "ico_infoico_price_adjusted": 24.575543725,
+    "calculated_data": {
+      "tokens_issued": 95383677.0,
+      "efr_token": 17818990.443109,
+      "eth_rate_start": 47969012.0,
+      "eth_rate_end": 96092321.0,
+      "efr_token_adjusted": 14394806.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.082278133,
+        "funds_raised_adjusted_diff": 3.424204311,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": 3323592.092061856,
+      "ico_eth_out": 0.1,
+      "ico_eth_total": 99582.0,
+      "efr_ico_tx": 27248090.310639,
+      "efr_owner_tx_currency": "VND",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": 0.229915204,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 19.173125918,
+        "distribution_start_from_ico_start": 33.101402083,
+        "distribution_end_from_ico_end": 81.211856757,
+        "distribution_halflife": "12/16/2017",
+        "funds_balance_eth": 54166.043994271
+      }
+    },
+    "change_log": {
+      "metadata.version": 1,
+      "metadata.ico_address": "46d1a6199c0e6af92479d320943f3ad103646eeb3167b3baf823291846ab0961",
+      "ico_info.ico_start_date": "12/29/2017",
+      "ico_info.ico_end_date": "8/14/2018",
+      "ico_info.ico_price": 0.776156,
+      "ico_info.ico_price_adjusted": 0.16992
+    }
+  },
+  {
+    "metadata": {
+      "version": 6,
+      "ico_name": "Bitchip",
+      "decimals": 17,
+      "token_contract_address": "c133bc5ed2ed9055181b2dc3a95b5ee1f12d97a6b116058b2e37400066c4ed2a",
+      "crowdsale_address": "21723a9af2a910c43bcfb7d9f03907afce7ff8b06a1fdfc6693246ff55427c41",
+      "owner_address": "6960b905b7a4321d7880256e8dba08fb3633b2309da2b462a8e9f0741a561cb2",
+      "funds_address": "15cd11932d96a805fd202296bf5e651e2d348344d6e39606e73b9ff8ffc38b4f",
+      "token_issuer_address": "5b370c2240a402331059fb21aaa44bb26188e834e86e0262853be7db9d49de9f",
+      "passportAddress": "5b370c2240a402331059fb21aaa44bb26188e834e86e0262853be7db9d49de9f",
+      "eth_nominated": true,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": true,
+      "confidence": 0.5
+    },
+    "ico_info": {
+      "cfr_currency": "RUB",
+      "cfr": 764279120.6,
+      "ico_start_date": "2018/02/19",
+      "ico_end_date": "2017/11/09",
+      "ico_price_cur": "RSD",
+      "ico_price": 7.775144
+    },
+    "ico_infoico_price_adjusted": 83.941770916,
+    "calculated_data": {
+      "tokens_issued": 93716547.0,
+      "efr_token": 63984047.315887,
+      "eth_rate_start": 52939341.0,
+      "eth_rate_end": 88810694.0,
+      "efr_token_adjusted": 27714291.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.150003259,
+        "funds_raised_adjusted_diff": 1.434593065,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.8,
+      "ico_eth_total": 97467.9,
+      "efr_ico_tx": 37269815.896652,
+      "efr_owner_tx_currency": "BRL",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": 0.290906814,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 65.95154946,
+        "distribution_start_from_ico_start": 47.435009591,
+        "distribution_end_from_ico_end": 44.379316299,
+        "distribution_halflife": "11/5/2017",
+        "funds_balance_eth": 14009.273349263
+      }
+    },
+    "change_log": {
+      "metadata.version": 5,
+      "metadata.ico_address": "fa1f8f725043262ca3ceae93d4025d21695ca77e46e272fb86ee84fa80e9fcc4",
+      "ico_info.ico_start_date": "12/5/2017",
+      "ico_info.ico_end_date": "12/8/2017",
+      "ico_info.ico_price": 0.67632,
+      "ico_info.ico_price_adjusted": 0.3774
+    }
+  },
+  {
+    "metadata": {
+      "version": 11,
+      "ico_name": "Bigtax",
+      "decimals": 12,
+      "token_contract_address": "922cd540803a07ac2a891e9f0efde2277cfc5aad2484ebfe3529a71b9307ec9d",
+      "crowdsale_address": "1a643bc29cde108a55bf42d035df872fef5ae20c43fc795e8f69d145f58f1e7a",
+      "owner_address": "9df214c2df9fe5a8e61b00c2122793641705421248601951b7345a7c51f4b807",
+      "funds_address": "b17ccd083278a019e354b6b6f46eb9755beff860c0c2ba80deaa9e9ee0315b5e",
+      "token_issuer_address": "9e7ebee8c6e22fe88dfdda5264019f9dfe3f8542ca60e7860c62e90a52aef535",
+      "passportAddress": "9e7ebee8c6e22fe88dfdda5264019f9dfe3f8542ca60e7860c62e90a52aef535",
+      "eth_nominated": true,
+      "token_tx_input_adjustment": true,
+      "owner_is_ico_wallet": false,
+      "confidence": 0.7
+    },
+    "ico_info": {
+      "cfr_currency": "MXN",
+      "cfr": 953200167.5,
+      "ico_start_date": "2017/11/04",
+      "ico_end_date": "2018/07/20",
+      "ico_price_cur": "CNY",
+      "ico_price": 5.976012
+    },
+    "ico_infoico_price_adjusted": 40.500394011,
+    "calculated_data": {
+      "tokens_issued": 55223644.0,
+      "efr_token": 15416908.09522,
+      "eth_rate_start": 86911291.0,
+      "eth_rate_end": 98334720.0,
+      "efr_token_adjusted": 22111068.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.598259364,
+        "funds_raised_adjusted_diff": 2.583867865,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": 3184186.073646828,
+      "ico_eth_out": 0.4,
+      "ico_eth_total": 41721.5,
+      "efr_ico_tx": 57410504.320884,
+      "efr_owner_tx_currency": "CNY",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": -0.830675947,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 29.781286491,
+        "distribution_start_from_ico_start": 32.638636815,
+        "distribution_end_from_ico_end": 38.632914849,
+        "distribution_halflife": "5/24/2018",
+        "funds_balance_eth": 73338.035719914
+      }
+    },
+    "change_log": {
+      "metadata.version": 2,
+      "metadata.ico_address": "da40f6056aca3bf6ab5d67328e6c2724516a759430ab8e3737fae573d0a31c86",
+      "ico_info.ico_start_date": "2/5/2018",
+      "ico_info.ico_end_date": "5/27/2018",
+      "ico_info.ico_price": 0.871774,
+      "ico_info.ico_price_adjusted": 0.30316
+    }
+  },
+  {
+    "metadata": {
+      "version": 14,
+      "ico_name": "Otcom",
+      "decimals": 15,
+      "token_contract_address": "ad85e8bb0250a87c53539be33fac93479ed3526d0e1d21d86f13f46f206adc83",
+      "crowdsale_address": "6f372066a16ae20be5bdd97c9628e2ab286f55eb67854a9770948db0186dedd8",
+      "owner_address": "e5e84cba95c09425f00b3462a8a3517e882011b45ec547a3a7a8a86aae0749ef",
+      "funds_address": "0ab91b44318ead66926e06abb559608ea068f239ae5470cbab77b9d2c686965d",
+      "token_issuer_address": "2f8029f61bcad62bf116c78cbb8657cec0de788e64c2c605d0a00368f36540fd",
+      "passportAddress": "2f8029f61bcad62bf116c78cbb8657cec0de788e64c2c605d0a00368f36540fd",
+      "eth_nominated": true,
+      "token_tx_input_adjustment": true,
+      "owner_is_ico_wallet": true,
+      "confidence": 0.5
+    },
+    "ico_info": {
+      "cfr_currency": "IDR",
+      "cfr": 247646888.5,
+      "ico_start_date": "2018/01/18",
+      "ico_end_date": "2017/12/22",
+      "ico_price_cur": "CNY",
+      "ico_price": 8.195223
+    },
+    "ico_infoico_price_adjusted": 80.995859353,
+    "calculated_data": {
+      "tokens_issued": 26806660.0,
+      "efr_token": 4370413.770418,
+      "eth_rate_start": 96521391.0,
+      "eth_rate_end": 51616673.0,
+      "efr_token_adjusted": 86369072.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.893188093,
+        "funds_raised_adjusted_diff": 4.006645265,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.1,
+      "ico_eth_total": 14421.5,
+      "efr_ico_tx": 36590018.203101,
+      "efr_owner_tx_currency": "NGN",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": 0.918368873,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 14.315067843,
+        "distribution_start_from_ico_start": 5.268104488,
+        "distribution_end_from_ico_end": 71.346413876,
+        "distribution_halflife": "12/28/2017",
+        "funds_balance_eth": 52510.74526038
+      }
+    },
+    "change_log": {
+      "metadata.version": 8,
+      "metadata.ico_address": "0bb1cbc569b2397b5e821edfa224011e63d622a75d72a8d1c7b7a84145532926",
+      "ico_info.ico_start_date": "12/15/2017",
+      "ico_info.ico_end_date": "5/6/2018",
+      "ico_info.ico_price": 0.280141,
+      "ico_info.ico_price_adjusted": 0.98256
+    }
+  },
+  {
+    "metadata": {
+      "version": 37,
+      "ico_name": "Lotlux",
+      "decimals": 11,
+      "token_contract_address": "b074ea855ee76742466448b06d8541304707daf58cc30cde0b3ab802f802a9e4",
+      "crowdsale_address": "481de7b7bcab0e5053cc8b282a30a8b14aff49a0cdb82523c227a92d5434a24d",
+      "owner_address": "bf5c7a4771ae61a69e809a9e2d06faf18f2ee588d93eefc317bc2e041794d751",
+      "funds_address": "cd340f1c670b4f27e1d8891f5dfd149c303cbec861e5e22e7e010444b4405f58",
+      "token_issuer_address": "6f6301fdf535b65722db2bacf9dd7e49ffcbd3bf9d7c2c970ce05e5ac1127e72",
+      "passportAddress": "6f6301fdf535b65722db2bacf9dd7e49ffcbd3bf9d7c2c970ce05e5ac1127e72",
+      "eth_nominated": false,
+      "token_tx_input_adjustment": true,
+      "owner_is_ico_wallet": true,
+      "confidence": 0.8
+    },
+    "ico_info": {
+      "cfr_currency": "CNY",
+      "cfr": 310981850.4,
+      "ico_start_date": "2018/07/15",
+      "ico_end_date": "2018/10/25",
+      "ico_price_cur": "CNY",
+      "ico_price": 9.066483
+    },
+    "ico_infoico_price_adjusted": 56.651172459,
+    "calculated_data": {
+      "tokens_issued": 5288191.8,
+      "efr_token": 97242084.378149,
+      "eth_rate_start": 3553271.3,
+      "eth_rate_end": 97153419.0,
+      "efr_token_adjusted": 32903967.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.730529891,
+        "funds_raised_adjusted_diff": 3.350890444,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.2,
+      "ico_eth_total": 12262.6,
+      "efr_ico_tx": 40259424.162887,
+      "efr_owner_tx_currency": "SLL",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": 0.212440591,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 19.651945832,
+        "distribution_start_from_ico_start": 39.219129494,
+        "distribution_end_from_ico_end": 18.577379415,
+        "distribution_halflife": "7/27/2018",
+        "funds_balance_eth": 92930.059814446
+      }
+    },
+    "change_log": {
+      "metadata.version": 5,
+      "metadata.ico_address": "0c51b595d0309ebbe86d2ea3cd33705d1ac6e95c97c827a3bb5160716041b625",
+      "ico_info.ico_start_date": "5/27/2018",
+      "ico_info.ico_end_date": "10/26/2018",
+      "ico_info.ico_price": 0.193587,
+      "ico_info.ico_price_adjusted": 0.9176
+    }
+  },
+  {
+    "metadata": {
+      "version": 100,
+      "ico_name": "Lotlux",
+      "decimals": 17,
+      "token_contract_address": "4c4893530bbb5ba6aba237ba0d3d9a04ce30976e063e631f7242b64b3cfc184c",
+      "crowdsale_address": "25967228dd948322c21e0bf83e1e5bdbfe9103785db86bff38b60bc942d9bfec",
+      "owner_address": "8b543530a65988dbb2a24aa73ddface95f744d2791c0d6384c9540fcfb48b67f",
+      "funds_address": "0d3bddc19593d5760b514ccff9aea0480afca85be63f22a6445ec27214cf5767",
+      "token_issuer_address": "d30c9568176fb228143ceea6fe16852118e572fce2ea0f594a000262d5582b28",
+      "passportAddress": "d30c9568176fb228143ceea6fe16852118e572fce2ea0f594a000262d5582b28",
+      "eth_nominated": true,
+      "token_tx_input_adjustment": false,
+      "owner_is_ico_wallet": true,
+      "confidence": 0.6
+    },
+    "ico_info": {
+      "cfr_currency": "ARS",
+      "cfr": 696305987.4,
+      "ico_start_date": "2018/03/17",
+      "ico_end_date": "2018/06/23",
+      "ico_price_cur": "BGN",
+      "ico_price": 9.69663
+    },
+    "ico_infoico_price_adjusted": 44.004644794,
+    "calculated_data": {
+      "tokens_issued": 31696942.0,
+      "efr_token": 94031092.626988,
+      "eth_rate_start": 60772142.0,
+      "eth_rate_end": 16048946.0,
+      "efr_token_adjusted": 94783495.0,
+      "token_check_result": {
+        "funds_raised_diff": 0.41903068,
+        "funds_raised_adjusted_diff": 3.237090092,
+        "funds_raised_check": "PASSED"
+      },
+      "ico_eth_in": "error: precision too large.",
+      "ico_eth_out": 0.6,
+      "ico_eth_total": 41752.9,
+      "efr_ico_tx": 20581171.134206,
+      "efr_owner_tx_currency": "RUB",
+      "ico_wallet_check_result": {
+        "funds_raised_diff": 0.141832246,
+        "funds_raised_check": "PASSED"
+      },
+      "metrics": {
+        "distribution_days": 25.038383497,
+        "distribution_start_from_ico_start": 97.154152515,
+        "distribution_end_from_ico_end": 74.50697647,
+        "distribution_halflife": "12/6/2017",
+        "funds_balance_eth": 94416.202852158
+      }
+    },
+    "change_log": {
+      "metadata.version": 7,
+      "metadata.ico_address": "a8f05fe0cc198577f052d7b345e54e0eb36c4f8abe52a572a0915724e3aea0e4",
+      "ico_info.ico_start_date": "5/11/2018",
+      "ico_info.ico_end_date": "5/25/2018",
+      "ico_info.ico_price": 0.726473,
+      "ico_info.ico_price_adjusted": 0.60177
+    }
+  }
+]

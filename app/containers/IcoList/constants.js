@@ -1,0 +1,31 @@
+/*
+ *
+ * IcoList constants
+ *
+ */
+
+export const SELECT_PAGE = 'app/IcoList/SELECT_PAGE';
+
+export const FETCH_ICO_LIST_REQUEST = 'app/IcoList/FETCH_ICO_LIST_REQUEST';
+export const FETCH_ICO_LIST_SUCCESS = 'app/IcoList/FETCH_ICO_LIST_SUCCESS';
+export const FETCH_ICO_LIST_FAILURE = 'app/IcoList/FETCH_ICO_LIST_FAILURE';
+
+export const FETCH_ICO_LIST_PER_PAGE_REQUEST =
+  'app/IcoList/FETCH_ICO_LIST_PER_PAGE_REQUEST';
+export const FETCH_ICO_LIST_PER_PAGE_SUCCESS =
+  'app/IcoList/FETCH_ICO_LIST_PER_PAGE_SUCCESS';
+export const FETCH_ICO_LIST_PER_PAGE_FAILURE =
+  'app/IcoList/FETCH_ICO_LIST_PER_PAGE_FAILURE';
+
+export const SET_PASSPORT_ADDRESSES = 'app/IcoList/SET_PASSPORT_ADDRESSES';
+
+export const SET_PASSPORT_DATA = 'app/IcoList/SET_PASSPORT_DATA';
+
+export const SET_PASSPORTS_DATA = 'app/IcoList/SET_PASSPORTS_DATA';
+
+export const NAVIGATE_ICO_DETAILS = 'app/IcoList/NAVIGATE_ICO_DETAILS';
+
+export const FETCH_PASSPORT_DETAILS_FOR_CURRENT_PAGE =
+  'app/IcoList/SET_PASSPORT_DETAILS_FOR_CURRENT_PAGE';
+
+export const ITEMS_PER_PAGE = 8;
