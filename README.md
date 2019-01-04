@@ -1,15 +1,14 @@
-## ICO Rating Web
+## ICO Analyzer Web App
 
 Frontend application for ico passport
 
-
-ICO Passport is an application by monetha.io that analyses ICOs and aggregate the main information about particular ICO in order to show whether the ICO is more scam or legit one. However it does not indicate any public advice/decision, but just presents the analysis of public data about the ico.
+ICO Analyzer is an application written by monetha.io that analyses ICOs and aggregate the main information about them in order to show whether the ICO is more reputable and can be trusted. However it does not indicate any public advice/decision, but just presents the analysis of public data about the ico.
 
 ### Steps to setup
 
 navigate into the project directory:
 
-* `cd ico-rating-web`
+* `cd ico-analyzer-web-app`
 
 install necessary dependencies:
 
