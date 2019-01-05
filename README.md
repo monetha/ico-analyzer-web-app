@@ -1,4 +1,4 @@
-## Monetha ICO Analyzer
+# Monetha ICO Analyzer
 
 Monetha’s ICO Analyzer gives its users a way to estimate how much money a blockchain project has raised during the Initial Coin Offering. It achieves this by checking the wallet addresses associated with the crowdsale and comparing that data with what information the project has made available to the public. The data is then recorded and stored safely on the blockchain in a designated ICO [passport](https://github.com/monetha/reputation-contracts). If necessary, the analysis can be rerun multiple times by any person providing additional details that they know about the project. Each run leaves a separate entry in the passport.
 
@@ -24,16 +24,16 @@ Monetha’s ICO Analyzer makes use of the Payments layer at two points. Transact
 * upon creating a new ICO passport. The creator is charged a small gas fee for deploying a smart contract on the blockchain;
 * upon starting the analysis. The requestor is asked to pay a small service fee held in an escrow account until the process is completed and funds are refunded in case if analysis fails
 
-
 ## Build status
 
 [![Build Status](https://travis-ci.org/monetha/ico-analyzer-web-app.svg?branch=master)](https://travis-ci.org/monetha/ico-analyzer-web-app)
- 
+
 ## Tech/framework used
 
 <b>Built with</b>
-- [React Redux](https://github.com/reduxjs/react-redux)
-- [Monetha Reputation JS SDK](https://github.com/monetha/reputation-js-sdk)
+
+* [React Redux](https://github.com/reduxjs/react-redux)
+* [Monetha Reputation JS SDK](https://github.com/monetha/reputation-js-sdk)
 
 ## Features
 
@@ -52,9 +52,17 @@ Navigate to the project directory:
 
 Install necessary dependencies:
 
+`npm install`
+
+or
+
 `yarn install`
 
 Start the node.js development server by:
+
+`npm start`
+
+or
 
 `yarn start`
 
@@ -71,6 +79,7 @@ Server should be running on `https://localhost:3000`.
 Ensure the bug was not already reported by searching on GitHub under [issues](https://github.com/monetha/ico-analyzer-web-app/issues). If you're unable to find an open issue addressing the bug, open a [new issue](https://github.com/monetha/ico-analyzer-web-app/issues/new).
 
 #### Write detailed information
+
 Detailed information is very helpful to understand an issue.
 
 For example:
@@ -86,9 +95,6 @@ Pull Requests are always welcome.
 
 When you edit the code, please run `npm run build` to check the formatting of your code before you git commit.
 Ensure the PR description clearly describes the problem and solution. It should include:
+
 * The operating system on which you tested.
-* The Zulip-Desktop version on which you tested.
 * The relevant issue number, if applicable.
-
-
-
