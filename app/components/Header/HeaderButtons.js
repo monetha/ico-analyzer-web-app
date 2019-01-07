@@ -5,6 +5,7 @@ const HeaderButtons = styled.div`
   text-align: right;
   display: inline-flex;
   justify-content: flex-end;
+
   @media (max-width: 767px) {
     display: inline-flex;
     justify-content: center;

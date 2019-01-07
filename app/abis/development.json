@@ -874,7 +874,7 @@
     ]
   },
   "PassportFactory": {
-    "at": "0x87b7Ec2602Da6C9e4D563d788e1e29C064A364a2",
+    "at": "0x438bbf17582346f2bb4c47da0fd33231f688e805",
     "abi": [
       {
         "constant": false,

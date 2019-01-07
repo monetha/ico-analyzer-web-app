@@ -5,9 +5,9 @@ const BannerFooter = styled.span`
   font-size: 16px;
   width: 100%;
   display: inline-block;
-  padding: 10px 0;
+  padding: 10px 15px;
   @media (max-width: 767px) {
-    padding: 10px 15px;
+    font-size: 14px;
   }
 `;
 

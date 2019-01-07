@@ -1,12 +1,35 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
 import ItemLabel from './Itemlabel';
 import ItemValue from './ItemValue';
 import CopyLogoWrapper from './CopyLogoWrapper';
-import Tooltip from '../../components/Tooltip';
 import Image from '../../components/Image';
 import infoIcon from '../../images/info.png';
+import { DynamicTooltip } from '../../components/DynamicTooltip';
+
+const Row = styled.tr`
+  @media (max-width: 767px) {
+    display: block;
+    padding: 0 20px;
+    padding-top: 20px;
+
+    & > td {
+      display: block;
+      padding: 0 !important;
+    }
+
+    &:last-child {
+      padding-bottom: 15px;
+    }
+  }
+`;
+
+const LabelImage = styled(Image)`
+  padding-left: 10px;
+  padding-bottom: 4px;
+`;
 
 export const truncateAddress = address =>
   `${address.slice(0, 11)}...${address.slice(35)}`;
@@ -21,14 +44,14 @@ const DetailItem = ({
   clipboards,
   onCopy,
 }) => (
-  <tr>
+  <Row>
     <td>
       <ItemLabel>
         {label}
         {tooltipMessage && (
-          <Tooltip tooltipMessage={tooltipMessage}>
-            <Image src={infoIcon} alt="info-icon" />
-          </Tooltip>
+          <DynamicTooltip content={tooltipMessage}>
+            <LabelImage width="24px" src={infoIcon} alt="info-icon" />
+          </DynamicTooltip>
         )}
       </ItemLabel>
     </td>
@@ -44,7 +67,7 @@ const DetailItem = ({
         )}
       </ItemValue>
     </td>
-  </tr>
+  </Row>
 );
 
 DetailItem.propTypes = {
@@ -52,7 +75,7 @@ DetailItem.propTypes = {
   type: PropTypes.string,
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   needsCopyIcon: PropTypes.bool,
-  tooltipMessage: PropTypes.object,
+  tooltipMessage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   clipboards: PropTypes.object,
   onCopy: PropTypes.func,
   valuePostfix: PropTypes.any,

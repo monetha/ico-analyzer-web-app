@@ -5,7 +5,8 @@ const InfoWrapper = styled.span`
   top: -2px;
   left: 5px;
 
-  &:hover {
+  &:hover,
+  &.open {
     div {
       display: block;
       width: 250px;

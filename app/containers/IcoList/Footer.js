@@ -10,7 +10,7 @@ const Footer = styled.div`
     cursor: pointer;
   }
   @media (max-width: 767px) {
-    padding: 5px 0;
+    padding: 20px 0;
   }
 `;
 

@@ -10,6 +10,8 @@ import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import { compose, bindActionCreators } from 'redux';
 import { FormattedMessage } from 'react-intl';
+import { push } from 'connected-react-router';
+import styled from 'styled-components';
 
 import injectReducer from 'utils/injectReducer';
 import formatNumberToDisplay from 'utils/formatNumberToDisplay';
@@ -17,13 +19,14 @@ import RelativeLayout from 'components/RelativeLayout';
 import { selectFormattedDetails, selectCurrentIcoVersion } from './selectors';
 import { selectClipboards } from '../App/selectors';
 import reducer from './reducer';
-import messages from './messages';
+import messages, { createCustomMessages } from './messages';
 import { reanalyseStart, switchVersion, prepareDetailPage } from './actions';
 import { addToClipboard } from '../App/actions';
 import PageWrapper from './PageWrapper';
 import Versions from './Versions';
 import FlexBox from '../../components/FlexBox';
 import EmptyDiv from '../../components/EmptyDiv';
+import HollowButton from '../../components/HollowButton';
 import IcoDetailCard from './IcoDetailCard';
 import CalculateCard from './CalculateCard';
 import DetailItemHeader from './DetailItemHeader';
@@ -37,7 +40,29 @@ import VersionWrapper from './VersionWrapper';
 import StatusCheckImage from './StatusCheckImage';
 import PrimaryButton from '../../components/PrimaryButton';
 import PageHeader from '../../components/H3';
-import Tooltip from '../../components/Tooltip';
+import { DynamicTooltip } from '../../components/DynamicTooltip';
+import ItemValue from './ItemValue';
+
+const ICOPassportAddressValue = styled(ItemValue)`
+  text-align: left;
+`;
+
+const StatusCheckTooltipContainer = styled.div`
+  display: inline-block;
+`;
+
+const ActionButtonsContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+
+  & > * + * {
+    margin-left: 20px;
+  }
+
+  @media (max-width: 1024px) {
+    margin-top: 15px;
+  }
+`;
 
 class IcoDetailPage extends React.Component {
   constructor(props) {
@@ -60,6 +85,7 @@ class IcoDetailPage extends React.Component {
       currentVersion,
       clipboards,
       onCopy,
+      onBack,
     } = this.props;
 
     if (!icoDetails) {
@@ -94,27 +120,24 @@ class IcoDetailPage extends React.Component {
     });
 
     const capitalInfo = [
-      'cfr_currency',
-      'cfr',
-      'eth_rate_start',
-      'eth_rate_end',
-    ].map(key => ({
-      label: messages[key].defaultMessage,
-      value: icoDetails[key],
-      tooltipMessage: messages[`${key}Tooltip`],
-    }));
-
-    capitalInfo.splice(
-      2,
-      0,
+      {
+        label: messages.cfr_currency.defaultMessage,
+        value: icoDetails.cfr_currency,
+        tooltipMessage: messages.cfr_currencyTooltip,
+      },
+      {
+        label: messages.cfr.defaultMessage,
+        value: formatNumberToDisplay(icoDetails.cfr),
+        tooltipMessage: messages.cfrTooltip,
+      },
       {
         label: messages.icoPrice.defaultMessage,
-        value: formatNumberToDisplay(icoDetails.icoPrice),
+        value: formatNumberToDisplay(icoDetails.icoPrice, 10000),
         tooltipMessage: messages.icoPriceTooltip,
       },
       {
         label: messages.ico_price_adjusted.defaultMessage,
-        value: formatNumberToDisplay(icoDetails.ico_price_adjusted),
+        value: formatNumberToDisplay(icoDetails.ico_price_adjusted, 10000),
         tooltipMessage: messages.ico_price_adjustedTooltip,
       },
       {
@@ -125,7 +148,17 @@ class IcoDetailPage extends React.Component {
         label: messages.icoEndDate.defaultMessage,
         value: icoDetails.icoEndDate.format('DD MMM YYYY'),
       },
-    );
+      {
+        label: messages.eth_rate_start.defaultMessage,
+        value: formatNumberToDisplay(icoDetails.eth_rate_start),
+        tooltipMessage: messages.eth_rate_startTooltip,
+      },
+      {
+        label: messages.eth_rate_end.defaultMessage,
+        value: formatNumberToDisplay(icoDetails.eth_rate_end),
+        tooltipMessage: messages.eth_rate_endTooltip,
+      },
+    ];
 
     const tokensCheckDetails = [
       'tokens_issued',
@@ -143,7 +176,7 @@ class IcoDetailPage extends React.Component {
       {
         label: messages.fundsRaisedDiff.defaultMessage,
         value: formatNumberToDisplay(
-          icoDetails.token_check_result.funds_raised_diff,
+          icoDetails.token_check_result.funds_raised_diff * 100,
         ),
         tooltipMessage: messages.fundsRaisedDiffTooltip,
         valuePostfix: '%',
@@ -151,7 +184,7 @@ class IcoDetailPage extends React.Component {
       {
         label: messages.adjustedFundsRaisedDiff.defaultMessage,
         value: formatNumberToDisplay(
-          icoDetails.token_check_result.funds_raised_adjusted_diff,
+          icoDetails.token_check_result.funds_raised_adjusted_diff * 100,
         ),
         tooltipMessage: messages.adjustedFundsRaisedDiffTooltip,
         valuePostfix: '%',
@@ -162,22 +195,24 @@ class IcoDetailPage extends React.Component {
       {
         label: messages.ico_eth_in.defaultMessage,
         tooltipMessage: messages.ico_eth_inTooltip,
-        value: icoDetails.ico_eth_in,
+        value: formatNumberToDisplay(icoDetails.ico_eth_in),
       },
       {
         label: messages.ico_eth_total.defaultMessage,
         tooltipMessage: messages.ico_eth_totalTooltip,
-        value: icoDetails.ico_eth_total,
+        value: formatNumberToDisplay(icoDetails.ico_eth_total),
       },
       {
         label: messages.efr_ico_tx.defaultMessage,
         tooltipMessage: messages.efr_ico_txTooltip,
-        value: icoDetails.efr_ico_tx,
+        value: formatNumberToDisplay(icoDetails.efr_ico_tx),
       },
       {
         label: messages.fundsRaisedDiff.defaultMessage,
         tooltipMessage: messages.fundsRaisedDiffTooltip,
-        value: icoDetails.ico_wallet_check_result.funds_raised_diff,
+        value: formatNumberToDisplay(
+          icoDetails.ico_wallet_check_result.funds_raised_diff * 100,
+        ),
         valuePostfix: '%',
       },
     ];
@@ -191,17 +226,17 @@ class IcoDetailPage extends React.Component {
       {
         label: messages.distribution_start_from_ico_start.defaultMessage,
         tooltipMessage: messages.distribution_start_from_ico_startTooltip,
-        value: icoDetails.icoStartDate.format('DD MMM YYYY'),
+        value: icoDetails.metrics.distribution_start_from_ico_start,
       },
       {
         label: messages.distribution_end_from_ico_end.defaultMessage,
         tooltipMessage: messages.distribution_end_from_ico_endTooltip,
-        value: icoDetails.icoEndDate.format('DD MMM YYYY'),
+        value: icoDetails.metrics.distribution_end_from_ico_end,
       },
       {
         label: messages.funds_balance_eth.defaultMessage,
         tooltipMessage: messages.funds_balance_ethTooltip,
-        value: icoDetails.metrics.funds_balance_eth,
+        value: formatNumberToDisplay(icoDetails.metrics.funds_balance_eth),
       },
     ];
 
@@ -237,6 +272,10 @@ class IcoDetailPage extends React.Component {
             onCopy={onCopy}
           />
           <IcoDetailCard
+            headerMessageTooltip={
+              createCustomMessages({ icoName: icoDetails.icoName })
+                .icoDetailsHeaderTooltip
+            }
             headerMessage={messages.icoDetails}
             details={capitalInfo}
           />
@@ -254,10 +293,20 @@ class IcoDetailPage extends React.Component {
                   borderBottom="none"
                   borderRight="none"
                 >
-                  <FormattedMessage {...messages.tokensCheck} />
-                  <StatusCheckImage
-                    status={icoDetails.token_check_result.funds_raised_check}
-                  />
+                  <FlexBox>
+                    <FormattedMessage {...messages.tokensCheck} />
+                    <StatusCheckTooltipContainer>
+                      <DynamicTooltip
+                        content={messages.tokensCheckStatusTooltip}
+                      >
+                        <StatusCheckImage
+                          status={
+                            icoDetails.token_check_result.funds_raised_check
+                          }
+                        />
+                      </DynamicTooltip>
+                    </StatusCheckTooltipContainer>
+                  </FlexBox>
                 </BorderedItem>
                 <BorderedItem
                   borderLeft="none"
@@ -276,12 +325,19 @@ class IcoDetailPage extends React.Component {
               </FlexBox>
               <FlexBox column flex={2}>
                 <BorderedItem borderTop="none" borderBottom="none">
-                  <FormattedMessage {...messages.ethCheck} />
-                  <StatusCheckImage
-                    status={
-                      icoDetails.ico_wallet_check_result.funds_raised_check
-                    }
-                  />
+                  <FlexBox>
+                    <FormattedMessage {...messages.ethCheck} />
+                    <StatusCheckTooltipContainer>
+                      <DynamicTooltip content={messages.ethCheckStatusTooltip}>
+                        <StatusCheckImage
+                          status={
+                            icoDetails.ico_wallet_check_result
+                              .funds_raised_check
+                          }
+                        />
+                      </DynamicTooltip>
+                    </StatusCheckTooltipContainer>
+                  </FlexBox>
                 </BorderedItem>
                 <BorderedTable>
                   <table>
@@ -324,22 +380,29 @@ class IcoDetailPage extends React.Component {
           <FlexBox>
             <FlexBox>
               <RelativeLayout>
-                <FormattedMessage {...messages.passportAddress} />
-                :&nbsp;
-                {icoDetails.passportAddress}
-                <CopyLogoWrapper
-                  showCopied={clipboards.passportAddress}
-                  onCopy={() =>
-                    onCopy('passportAddress', icoDetails.passportAddress)
-                  }
-                />
+                <ItemLabel>
+                  <FormattedMessage {...messages.passportAddress} />
+                </ItemLabel>
+                <ICOPassportAddressValue>
+                  {icoDetails.passportAddress}
+                  <CopyLogoWrapper
+                    forceInline
+                    showCopied={clipboards.passportAddress}
+                    onCopy={() =>
+                      onCopy('passportAddress', icoDetails.passportAddress)
+                    }
+                  />
+                </ICOPassportAddressValue>
               </RelativeLayout>
             </FlexBox>
-            <Tooltip tooltipMessage={messages.reanalyseTooltip} leftAlign>
-              <PrimaryButton onClick={() => reanalyse(icoDetails)}>
-                Rerun analyzer
-              </PrimaryButton>
-            </Tooltip>
+            <ActionButtonsContainer>
+              <HollowButton onClick={onBack}>Back</HollowButton>
+              <DynamicTooltip content={messages.reanalyseTooltip}>
+                <PrimaryButton onClick={() => reanalyse(icoDetails)}>
+                  Rerun analyzer
+                </PrimaryButton>
+              </DynamicTooltip>
+            </ActionButtonsContainer>
           </FlexBox>
         </PaddedView>
       </PageWrapper>
@@ -355,6 +418,7 @@ IcoDetailPage.propTypes = {
   currentVersion: PropTypes.number,
   clipboards: PropTypes.object,
   onCopy: PropTypes.func,
+  onBack: PropTypes.func,
 };
 
 const mapStateToProps = createStructuredSelector({
@@ -370,6 +434,7 @@ const mapDispatchToProps = dispatch =>
       switchPassportVersion: switchVersion,
       prepareDataForDetailsPage: prepareDetailPage,
       onCopy: addToClipboard,
+      onBack: () => push('/'),
     },
     dispatch,
   );

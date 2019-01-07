@@ -13,13 +13,17 @@ const tableDefaults = {
   showPageSizeOptions: false,
   minRows: 0,
   NoDataComponent: () => null,
+  column: {
+    ...ReactTableDefaults.column,
+    minWidth: 50,
+    sortable: false,
+  },
 
   // basic table styles
   style: { border: 'none' },
   getTrGroupProps: () => ({
     style: {
       border: 'none',
-      minHeight: 60,
       background: '#fff',
       borderRadius: 10,
       marginTop: 10,
@@ -51,6 +55,7 @@ const tableDefaults = {
       whiteSpace: 'normal',
       display: 'flex',
       alignItems: 'center',
+      overflow: 'initial',
     },
   }),
 };

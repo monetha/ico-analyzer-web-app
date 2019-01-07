@@ -6,8 +6,9 @@
 
 import { ADD_DISPLAY_MESSAGE, SET_INFO_TYPE, RESET_INFO } from './constants';
 
-export const addDisplayMessage = message => ({
+export const addDisplayMessage = (key, message) => ({
   type: ADD_DISPLAY_MESSAGE,
+  key,
   message,
 });
 

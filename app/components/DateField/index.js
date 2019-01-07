@@ -36,7 +36,7 @@ const DateField = props => {
       />
       <EmptyDiv sizeX={2} />
       <DateInput
-        timeM={value}
+        timeM={currentValue}
         selectedDate={currentValue.date()}
         onChange={e => handleOnChange('date', e)}
       />

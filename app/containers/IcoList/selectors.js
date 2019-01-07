@@ -16,9 +16,34 @@ export const selectPassportsValue = createSelector(
   substate => substate.getIn(['passports', 'value']),
 );
 
+export const selectisFetchingPassports = createSelector(
+  selectIcoListDomain,
+  substate => substate.getIn(['passports', 'isFetching']),
+);
+
+export const selectPassportFetchError = createSelector(
+  selectIcoListDomain,
+  substate => substate.get('error'),
+);
+
+export const selectfetchedItemIndex = createSelector(
+  selectIcoListDomain,
+  substate => substate.get('fetchedItemIndex'),
+);
+
+export const selectDoneFetchingAllPassports = createSelector(
+  selectIcoListDomain,
+  substate => substate.get('doneFetchingAllPassports'),
+);
+
 export const selectPassportsData = createSelector(
   selectIcoListDomain,
-  substate => substate.getIn(['passports', 'data']).toJS(),
+  icoList => icoList.getIn(['passports', 'data']).toJS(),
+);
+
+export const selectPassportsDataByPage = createSelector(
+  selectIcoListDomain,
+  icoList => icoList.getIn(['passports', 'data', icoList.get('selectedPage')]),
 );
 
 export const selectAllPassports = createSelector(
@@ -28,12 +53,16 @@ export const selectAllPassports = createSelector(
 );
 
 export const makeSelectPassports = passportAddresses =>
-  createSelector(selectPassportsData, data =>
-    passportAddresses.map(address => data[address]),
+  createSelector(
+    selectPassportsData,
+    data => passportAddresses.map(address => data[address]),
   );
 
 export const makeSelectPassport = passportAddress =>
-  createSelector(selectPassportsData, data => data[passportAddress]);
+  createSelector(
+    selectPassportsData,
+    data => data[passportAddress],
+  );
 
 export const selectSelectedPage = createSelector(
   selectIcoListDomain,
@@ -45,7 +74,10 @@ export const selectSelectedPage = createSelector(
  */
 
 const makeSelectIcoList = () =>
-  createSelector(selectIcoListDomain, substate => substate.toJS());
+  createSelector(
+    selectIcoListDomain,
+    substate => substate.toJS(),
+  );
 
 export default makeSelectIcoList;
 export { selectIcoListDomain };

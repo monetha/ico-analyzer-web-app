@@ -26,12 +26,20 @@ export const selectDecimals = createSelector(
   substate => substate.get('decimals'),
 );
 
+export const selectPassportAddress = createSelector(
+  selectEditIcoPageDomain,
+  substate => substate.get('passportAddress'),
+);
+
 /**
  * Default selector used by EditIcoPage
  */
 
 const makeSelectEditIcoPage = () =>
-  createSelector(selectEditIcoPageDomain, substate => substate.toJS());
+  createSelector(
+    selectEditIcoPageDomain,
+    substate => substate.toJS(),
+  );
 
 export default makeSelectEditIcoPage;
 export { selectEditIcoPageDomain };

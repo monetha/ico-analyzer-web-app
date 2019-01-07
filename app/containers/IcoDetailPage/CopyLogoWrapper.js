@@ -18,24 +18,49 @@ const CopiedMessage = styled.div`
   font-weight: normal;
   img {
     margin-right: 4px;
+
+    @media (max-width: 767px) {
+      margin-left: 8px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    position: static;
+    display: inline-block;
   }
 `;
 
-const CopyLogoWrapper = ({ onCopy, showCopied }) => (
-  <Wrapper onClick={onCopy}>
-    <Image width="15" src={CopyIcon} alt="copy" />
-    {showCopied && (
-      <CopiedMessage>
-        <Image width="15" src={RightIcon} alt="copy" />
-        Copied to clipboard
-      </CopiedMessage>
-    )}
-  </Wrapper>
-);
+const InlineCopiedMessage = styled(CopiedMessage)`
+  position: static;
+  display: inline-block;
+  img {
+    margin-left: 8px;
+  }
+`;
+
+const CopyLogoWrapper = ({ onCopy, showCopied, forceInline = false }) => {
+  let Message = CopiedMessage;
+  if (forceInline) {
+    Message = InlineCopiedMessage;
+  }
+
+  return (
+    <Wrapper onClick={onCopy}>
+      <Image width="15" src={CopyIcon} alt="copy" />
+      {showCopied && (
+        <Message>
+          <Image width="15" src={RightIcon} alt="copy" />
+          Copied
+        </Message>
+      )}
+    </Wrapper>
+  );
+};
 
 CopyLogoWrapper.propTypes = {
   onCopy: PropTypes.func,
   showCopied: PropTypes.bool,
+  forceInline: PropTypes.bool,
 };
 
 export default CopyLogoWrapper;

@@ -15,6 +15,7 @@ import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'connected-react-router/immutable';
 import history from 'utils/history';
 import 'sanitize.css/sanitize.css';
+import 'styles/global.scss';
 
 // Import root app
 import App from 'containers/App';
@@ -25,6 +26,9 @@ import LanguageProvider from 'containers/LanguageProvider';
 // Load the favicon and the .htaccess file
 /* eslint-disable import/no-unresolved, import/extensions */
 import '!file-loader?name=[name].[ext]!./images/favicon.ico';
+import '!file-loader?name=[name].[ext]&outputPath=images/!./images/loader@1x.gif';
+import '!file-loader?name=[name].[ext]&outputPath=images/!./images/loader@2x.gif';
+import '!file-loader?name=[name].[ext]&outputPath=images/!./images/loader@3x.gif';
 import 'file-loader?name=.htaccess!./.htaccess';
 /* eslint-enable import/no-unresolved, import/extensions */
 
@@ -75,11 +79,4 @@ if (!window.Intl) {
     });
 } else {
   render(translationMessages);
-}
-
-// Install ServiceWorker and AppCache in the end since
-// it's not most important operation and if main code fails,
-// we do not want it installed
-if (process.env.NODE_ENV === 'production') {
-  require('offline-plugin/runtime').install(); // eslint-disable-line global-require
 }

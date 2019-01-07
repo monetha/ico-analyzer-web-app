@@ -17,6 +17,18 @@ export const SHOW_COPY_TO_CLIPBOARD = 'app/App/SHOW_COPY_TO_CLIPBOARD';
 
 export const HIDE_COPY_TO_CLIPBOARD = 'app/App/HIDE_COPY_TO_CLIPBOARD';
 
+export const SHOW_POPUP = 'app/App/SHOW_POPUP';
+
+export const HIDE_POPUP = 'app/App/HIDE_POPUP';
+
+export const POPUP_ACCEPTED = 'app/App/POPUP_ACCEPTED';
+
+export const ACCEPT_COOKIE_POLICY = 'app/App/ACCEPT_COOKIE_POLICY';
+
+export const CHECK_COOKIE_POLICY_STATUS = 'app/App/CHECK_COOKIE_POLICY_STATUS';
+
+export const SET_COOKIE_POLICY_STATUS = 'app/App/SET_COOKIE_POLICY_STATUS';
+
 export const MAINNET_URL =
   'https://mainnet.infura.io/v3/1f09dda6cce44da68213cacb1ea9bb90';
 export const ROPSTEN_URL =
@@ -29,6 +41,8 @@ export const FACT_PROVIDER_ADDRESS =
 export const FACT_KEY = 'ICO Data';
 
 export const SET_METAMASK_ENABLED = 'app/App/SET_METAMASK_ENABLED';
+
+export const REDIRECT = 'app/App/REDIRECT';
 
 export const ENABLE_METAMASK_REQUEST = 'app/App/ENABLE_METAMASK_REQUEST';
 

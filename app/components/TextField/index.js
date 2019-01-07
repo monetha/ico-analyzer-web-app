@@ -17,47 +17,77 @@ const Wrapper = styled.div`
   margin: 10px 0;
 `;
 
-function TextField(props) {
-  const onBlur = props.onBlur || noop;
-  const shouldRenderLabel = !props.renderLabel && props.label;
-  return (
-    <Wrapper>
-      {props.renderLabel && props.renderLabel(props)}
-      {shouldRenderLabel && (
-        <Label>
-          <FormattedMessage {...props.label} />
-          {props.required && <Estrick />}
-          {props.tooltipMessage && (
-            <Tooltip
-              tooltipMessage={props.tooltipMessage}
-              tooltipWidth={props.tooltipWidth}
-              leftAlign={props.leftAlign}
-            >
-              <Image src={infoIcon} alt="info-icon" />
-            </Tooltip>
-          )}
-        </Label>
-      )}
-      <FormattedMessage {...props.placeholder}>
-        {msg => (
-          <Input
-            placeholder={msg}
-            onChange={e => props.onChange(e, props)}
-            type={props.type}
-            value={props.value}
-            disabled={props.disabled}
-            onBlur={e => onBlur(e, props)}
-            error={props.error}
-          />
+class TextField extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      isHovered: false,
+    };
+  }
+
+  render() {
+    const { props } = this;
+
+    const onBlur = props.onBlur || noop;
+    const shouldRenderLabel = !props.renderLabel && props.label;
+
+    return (
+      <Wrapper
+        onMouseEnter={this.onMouseEnter}
+        onMouseLeave={this.onMouseLeave}
+      >
+        {props.renderLabel && props.renderLabel(props)}
+        {shouldRenderLabel && (
+          <Label>
+            <FormattedMessage {...props.label} />
+            {props.required && <Estrick />}
+            {props.tooltipMessage && (
+              <Tooltip
+                isOpen={this.state.isHovered}
+                tooltipMessage={props.tooltipMessage}
+                tooltipWidth={props.tooltipWidth}
+                leftAlign={props.leftAlign}
+              >
+                <Image width="16px" src={infoIcon} alt="info-icon" />
+              </Tooltip>
+            )}
+          </Label>
         )}
-      </FormattedMessage>
-      {props.error && (
-        <FormattedMessage {...props.error}>
-          {msg => <ErrorMessage>{msg}</ErrorMessage>}
+        <FormattedMessage {...props.placeholder}>
+          {msg => (
+            <Input
+              placeholder={msg}
+              onChange={e => props.onChange(e, props)}
+              type={props.type}
+              value={props.value}
+              disabled={props.disabled}
+              onBlur={e => onBlur(e, props)}
+              onPaste={e => props.onChange(e, props)}
+              error={props.error}
+            />
+          )}
         </FormattedMessage>
-      )}
-    </Wrapper>
-  );
+        {props.error && (
+          <FormattedMessage {...props.error}>
+            {msg => <ErrorMessage>{msg}</ErrorMessage>}
+          </FormattedMessage>
+        )}
+      </Wrapper>
+    );
+  }
+
+  onMouseEnter = () => {
+    this.setState({
+      isHovered: true,
+    });
+  };
+
+  onMouseLeave = () => {
+    this.setState({
+      isHovered: false,
+    });
+  };
 }
 
 TextField.propTypes = {

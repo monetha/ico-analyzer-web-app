@@ -4,6 +4,7 @@ const DetailCard = styled.div`
   background-color: #fff;
   border-radius: 10px;
   padding-bottom: 10px;
+  height: 100%;
   h3 {
     font-size: 22px;
     margin: 0;

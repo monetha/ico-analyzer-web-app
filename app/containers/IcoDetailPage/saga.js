@@ -3,6 +3,7 @@ import { push } from 'connected-react-router';
 import keys from 'lodash/keys';
 import constructMomentFromDate from 'utils/constructMomentFromDate';
 import sdk from 'reputation-sdk';
+import config from 'config';
 
 import {
   SET_ICO_DETAILS,
@@ -10,8 +11,9 @@ import {
   SWITCH_VERSION,
   PREPARE_DETAIL_PAGE,
 } from './constants';
-import { FACT_KEY, FACT_PROVIDER_ADDRESS, NETWORK } from '../App/constants';
 import { setCurrentIcoDetails, setIcoDetails } from './actions';
+import { addDisplayMessage } from '../InfoPage/actions';
+import messages from './messages';
 import { selectRawDetails } from './selectors';
 import { prefillEditIcopassForm } from '../EditIcoPage/actions';
 import { startLoader, stopLoader } from '../App/actions';
@@ -45,7 +47,7 @@ export function* prepareToReanalyse(action) {
 export function* switchVersion(action) {
   yield put(startLoader());
   const icoDetails = yield select(selectRawDetails);
-  const Reader = new sdk.PassportReader(NETWORK);
+  const Reader = new sdk.PassportReader(config.PROVIDER_URL);
 
   const historyDetails = yield Reader.readPassportHistory(
     icoDetails.metadata.passportAddress,
@@ -61,7 +63,7 @@ export function* switchVersion(action) {
   for (let pIndex = 0; pIndex < transactions.length; pIndex += 1) {
     const txBlock = yield Reader.getTrxData(transactions[pIndex]);
     const txDataString = txBlock.params[1].value;
-    const txData = JSON.parse(txDataString);
+    const txData = JSON.parse(hex2str(txDataString.slice(2)));
 
     if (txData.metadata.version === action.version) {
       passportDetails = txData;
@@ -78,10 +80,11 @@ export function* prepareDetailPage(action) {
   try {
     yield put(startLoader());
 
-    const FactReader = new sdk.FactReader(passportAddress, NETWORK);
-    const passport = yield FactReader.getString(
-      FACT_PROVIDER_ADDRESS,
-      FACT_KEY,
+    const FactReader = new sdk.FactReader(config.PROVIDER_URL);
+    FactReader.setContract(passportAddress);
+    const passport = yield FactReader.getTxDataBlockNumber(
+      config.FACT_PROVIDER_ADDRESS,
+      config.FACT_KEY,
     );
 
     if (passport.res !== null) {
@@ -101,9 +104,23 @@ export function* prepareDetailPage(action) {
     yield put(stopLoader());
     console.error(`Error fetching passport ${passportAddress}`);
     console.error(error);
+    yield put(
+      addDisplayMessage('invalidPassportAddress', {
+        ...messages.invalidPassportAddress,
+      }),
+    );
+
+    yield put(push('/info'));
   }
 }
 
+function hex2str(hexx) {
+  const hex = hexx.toString(); // force conversion
+  let str = '';
+  for (let i = 0; i < hex.length; i += 2)
+    str += String.fromCharCode(parseInt(hex.substr(i, 2), 16));
+  return str;
+}
 export default function* icoDetailsSaga() {
   yield takeEvery(SET_ICO_DETAILS, saveCurrentIcoDetails);
   yield takeEvery(REANALYSE_START, prepareToReanalyse);

@@ -6,6 +6,7 @@ const HeaderText = styled.div`
   white-space: nowrap;
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   padding-left: 18px;
+  cursor: pointer;
 `;
 
 export default HeaderText;

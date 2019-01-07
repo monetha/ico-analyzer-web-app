@@ -16,12 +16,17 @@ export default defineMessages({
   analyzerContent: {
     id: `${scope}.analyzerContent`,
     defaultMessage:
-      'Monetha’s and ICO’s Analyzer aggregates and analyzes the main information about ICOs to estimate the amount of funds they have raised. It then stores the data in a decentralized reputation passport on the blockchain. This allows anyone interested to verify an ICO&apos;s performance in an objective and censorship-resistant manner. The project showcases Monetha Reputation Framework–its Payments and Reputation layers–in action.',
+      'Find out the status of your favorite ICO project! Verify its performance in an objective and censorship resistant manner.',
+  },
+  icoNameTooltip: {
+    id: `${scope}.icoNameTooltip`,
+    defaultMessage:
+      'We take data from icorating.com, so the project’s name should match its URL: e. g. monetha-mth for Monetha',
   },
   analyzerFooter: {
     id: `${scope}.analyzerFooter`,
     defaultMessage:
-      'The information contained on this website is provided for informative purposes and should not be considered as investment or any other kind of advice or recommendation.',
+      'DISCLAIMER: The information contained on this website is provided for informative purposes and should not be considered as investment or any other kind of advice or recommendation.',
   },
   header: {
     id: `${scope}.header`,
@@ -29,11 +34,11 @@ export default defineMessages({
   },
   footer: {
     id: `${scope}.footer`,
-    defaultMessage: 'Powered by Monetha Reputation Framework (TUMAS)',
+    defaultMessage: 'Powered by Monetha Reputation Framework',
   },
   fetchingListDataLoaderMessage: {
     id: `${scope}.fetchingListDataLoaderMessage`,
     defaultMessage:
-      'Fetching data from the blockchain. This might take a few moments',
+      'Fetching data from the blockchain. \nThis might take a few moments',
   },
 });

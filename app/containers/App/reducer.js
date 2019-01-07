@@ -14,6 +14,10 @@ import {
   ENABLE_METAMASK_SUCCESS,
   HIDE_COPY_TO_CLIPBOARD,
   SHOW_COPY_TO_CLIPBOARD,
+  HIDE_POPUP,
+  SHOW_POPUP,
+  POPUP_ACCEPTED,
+  SET_COOKIE_POLICY_STATUS,
 } from './constants';
 
 export const initialState = fromJS({
@@ -23,6 +27,11 @@ export const initialState = fromJS({
   metamask: {
     enabled: false,
   },
+  popup: {
+    visible: false,
+    message: undefined,
+  },
+  cookiePolicyStatus: true,
 });
 
 function appReducer(state = initialState, action) {
@@ -33,8 +42,22 @@ function appReducer(state = initialState, action) {
     case STOP_LOADER:
       return state.set('isLoading', false).delete('loaderText');
 
+    case SHOW_POPUP:
+      return state
+        .setIn(['popup', 'visible'], true)
+        .setIn(['popup', 'message'], action.message);
+
+    case POPUP_ACCEPTED:
+    case HIDE_POPUP:
+      return state
+        .setIn(['popup', 'visible'], false)
+        .setIn(['popup', 'message'], undefined);
+
     case SET_METAMASK_ENABLED:
       return state.setIn(['metamask', 'enabled'], true);
+
+    case SET_COOKIE_POLICY_STATUS:
+      return state.set('cookiePolicyStatus', action.status);
 
     case SHOW_COPY_TO_CLIPBOARD:
       return state.setIn(['clipboards', action.clipboardId], true);

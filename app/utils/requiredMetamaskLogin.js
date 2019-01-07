@@ -23,11 +23,10 @@ export default WrappedComponent => {
             <Span>You do not have metamask installed</Span>
             <br />
             <Span>
-              Please install metamask from
+              Please install the
               <Link href="https://metamask.io/" target="_blank">
-                &nbsp;Metamask&nbsp;
+                &nbsp;Metamask extension&nbsp;
               </Link>
-              Homepage
             </Span>
           </MessageBox>
         );
@@ -37,7 +36,10 @@ export default WrappedComponent => {
         return (
           <MessageBox>
             <div>
-              <Span>No Metamask logged user found.</Span>
+              <Span>
+                No Metamask user found. Please login into Metamask and press
+                &quot;Analyze ICO&quot; to continue.
+              </Span>
               &nbsp;
               <Span>Please login into metamask to continue</Span>
             </div>

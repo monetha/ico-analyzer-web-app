@@ -12,6 +12,7 @@ const Wrapper = styled.span`
 const StatusCheckImage = ({ status }) => (
   <Wrapper>
     <Image
+      height="20px"
       alt="status-logo"
       src={status === 'Passed' ? PassedLogo : FailedLogo}
     />

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const PageWrapper = styled.div`
-  padding: 0 25%;
+  padding: 0 25% 40px;
   h3 {
     font-size: 32px;
     font-weight: bold;

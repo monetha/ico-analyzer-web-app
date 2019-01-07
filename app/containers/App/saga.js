@@ -1,13 +1,22 @@
 import { takeEvery, put, call } from 'redux-saga/effects';
 import { delay } from 'redux-saga';
+import { push } from 'connected-react-router';
 import copy from 'copy-to-clipboard';
-import { ENABLE_METAMASK_REQUEST, ADD_TO_CLIPBOARD } from './constants';
+import config from 'config';
+import {
+  ENABLE_METAMASK_REQUEST,
+  ADD_TO_CLIPBOARD,
+  REDIRECT,
+  ACCEPT_COOKIE_POLICY,
+  CHECK_COOKIE_POLICY_STATUS,
+} from './constants';
 import { TX_REJECTED } from '../../utils/MonethaError/constants';
 import {
   enableMetamaskFailure,
   enableMetamaskSuccess,
   showCopyToClipboard,
   hideCopyToClipboard,
+  setCookiePolicyStatus,
 } from './actions';
 
 export function* enableMetamask() {
@@ -41,7 +50,28 @@ export function* copyToClipboard(action) {
   yield put(hideCopyToClipboard(clipboardId));
 }
 
+export function* redirectSaga(action) {
+  yield put(push(action.path));
+}
+
+export function* acceptCookiePolicy() {
+  try {
+    localStorage.setItem(config.COOKIE_POLICY_STORAGE_KEY, true);
+    yield put(setCookiePolicyStatus(true));
+  } catch (error) {
+    yield put(setCookiePolicyStatus(false));
+  }
+}
+
+export function* checkCookiePolicyStatus() {
+  const status = localStorage.getItem(config.COOKIE_POLICY_STORAGE_KEY);
+  yield put(setCookiePolicyStatus(status));
+}
+
 export default function* createIcoSaga() {
   yield takeEvery(ENABLE_METAMASK_REQUEST, enableMetamask);
   yield takeEvery(ADD_TO_CLIPBOARD, copyToClipboard);
+  yield takeEvery(REDIRECT, redirectSaga);
+  yield takeEvery(CHECK_COOKIE_POLICY_STATUS, checkCookiePolicyStatus);
+  yield takeEvery(ACCEPT_COOKIE_POLICY, acceptCookiePolicy);
 }

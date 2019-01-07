@@ -5,12 +5,15 @@ const ItemValue = styled.div`
   text-align: right;
   font-weight: bold;
   position: relative;
+  word-wrap: break-word;
+  word-break: break-word;
+  white-space: nowrap;
+
   @media (max-width: 767px) {
     text-align: left;
-    width: 50px;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    white-space: normal;
   }
 `;
 

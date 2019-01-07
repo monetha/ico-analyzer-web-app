@@ -30,22 +30,35 @@ export default defineMessages({
     id: `${scope}.createText`,
     defaultMessage: 'Create Pass',
   },
+  backButtonText: {
+    id: `${scope}.backButtonText`,
+    defaultMessage: 'Back',
+  },
   createSuccess: {
     id: `${scope}.createSuccess`,
     defaultMessage:
       'Congratulations, your passport is sucessfully created at address. You will be redirect to analyse page shortly.',
   },
+  icoLoadingMessage: {
+    id: `${scope}.icoLoadingMessage`,
+    defaultMessage:
+      'We are creating ICO passport, it can take few moments. \nThe exact time depends on the Ethereum network load',
+  },
   connectToMetamaskMessage: {
     id: `${scope}.connectToMetamaskMessage`,
     defaultMessage:
-      'please allow monetha to connect with your metamask account to create a passport',
+      'Please allow monetha to connect with your metamask account to create a passport',
+  },
+  confirmPassCreationInMetamask: {
+    id: `${scope}.confirmPassCreationInMetamask`,
+    defaultMessage: 'Please confirm passport creation transaction in metamask',
   },
 });
 
-export const createCustomMessages = passportAddress =>
+export const createCustomMessages = ({ passportAddress, timeout }) =>
   defineMessages({
     createSuccess: {
       id: `${scope}.createSuccess`,
-      defaultMessage: `Congratulations, your passport is sucessfully created at address ${passportAddress}. You will be redirect to analyse page shortly.`,
+      defaultMessage: `The passport has been successfully created at address ${passportAddress}. You will be redirected to Analyze ICO page in ${timeout}.`,
     },
   });

@@ -1,0 +1,47 @@
+.ReactTable {
+  .rt-th {
+    white-space: normal;
+  }
+
+  // #region -------------- Mobile styles -------------------------------------------------------------------
+
+  @media (max-width: 767px) {
+    font-size: 12px;
+
+    .rt-th {
+      font-size: 11px;
+      padding: 0px 10px !important;
+      vertical-align: middle !important;
+    }
+
+    .rt-td {
+      padding: 5px 10px !important;
+      word-break: break-word;
+      word-wrap: break-word;
+
+      button {
+        font-size: 10px;
+      }
+    }
+  }
+
+  // #endregion
+
+  // #region -------------- ICO table -------------------------------------------------------------------
+
+  .ico-pass-address {
+    word-break: normal;
+    word-wrap: normal;
+
+    > div {
+      overflow: hidden;
+    }
+
+    [class^='generateColumns__Text'] {
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  // #endregion
+}

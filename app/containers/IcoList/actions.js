@@ -14,9 +14,13 @@ import {
   FETCH_ICO_LIST_PER_PAGE_SUCCESS,
   SET_PASSPORT_ADDRESSES,
   SET_PASSPORT_DATA,
-  SET_PASSPORTS_DATA,
+  ADD_PASSPORTS_DATA,
   NAVIGATE_ICO_DETAILS,
   FETCH_PASSPORT_DETAILS_FOR_CURRENT_PAGE,
+  SET_DONE_FETCHING_FOR_ALL_PASSPORTS,
+  FETCH_NEXT_PAGE,
+  SET_FETCHED_ITEM_INDEX,
+  CLEAR_PASSPORTS_DATA,
 } from './constants';
 
 export const selectPage = selectedPage => ({
@@ -63,17 +67,33 @@ export const setPassportData = (passportAddress, data) => ({
   data,
 });
 
-export const setPassportsData = (passportAddress, data) => ({
-  type: SET_PASSPORTS_DATA,
-  passportAddress,
+export const addPassportsData = data => ({
+  type: ADD_PASSPORTS_DATA,
   data,
+});
+
+export const setFetchedItemIndex = fetchedItemIndex => ({
+  type: SET_FETCHED_ITEM_INDEX,
+  fetchedItemIndex,
 });
 
 export const fetchPassportDetailsForCurrentPage = () => ({
   type: FETCH_PASSPORT_DETAILS_FOR_CURRENT_PAGE,
 });
 
+export const setDoneFetchingForAllPassports = () => ({
+  type: SET_DONE_FETCHING_FOR_ALL_PASSPORTS,
+});
+
+export const fetchNextPage = () => ({
+  type: FETCH_NEXT_PAGE,
+});
+
 export const navigateToIcoDetails = icoPass => ({
   type: NAVIGATE_ICO_DETAILS,
   icoPass,
+});
+
+export const clearPassportsData = () => ({
+  type: CLEAR_PASSPORTS_DATA,
 });

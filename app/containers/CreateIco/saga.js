@@ -1,32 +1,25 @@
 import { takeEvery, put } from 'redux-saga/effects';
 import sdk from 'reputation-sdk';
 import { push } from 'connected-react-router';
+import config from 'config';
 
 import MonethaError from 'utils/MonethaError';
 import convertCallbackToPromise from 'utils/convertCallbackToPromise';
 import { waitForTxToFinish } from 'utils/web3';
-import abis from '../../abis/development.json';
 import { CREATE_ICO_PASSPORT } from './constants';
-import { createCustomMessages } from './messages';
-import { setFormSumbissionError } from './actions';
+import messages from './messages';
+import { setFormSumbissionError, createIcoPassportSuccess } from './actions';
 import { startLoader, stopLoader } from '../App/actions';
-import { NETWORK } from '../App/constants';
-import { addDisplayMessage } from '../InfoPage/actions';
 import { setPassportAddress } from '../EditIcoPage/actions';
-import {
-  setRedirectPath,
-  setRedirectTimeout,
-  setRedirectPageName,
-} from '../RedirectHandler/actions';
 
 export function* createIcoPassport() {
   try {
     // Start showing loader before creating passport
-    yield put(startLoader());
+    yield put(startLoader(messages.confirmPassCreationInMetamask));
 
     const PassportFactory = new sdk.PassportGenerator(
-      NETWORK,
-      abis.PassportFactory.at,
+      config.PROVIDER_URL,
+      config.PASSPORT_FACTORY_ADDRESS,
     );
 
     const rawTx = yield PassportFactory.createPassport(
@@ -38,6 +31,8 @@ export function* createIcoPassport() {
       rawTx,
     );
 
+    // set loader message for better UI feedback
+    yield put(startLoader(messages.icoLoadingMessage));
     const txReceipt = yield waitForTxToFinish(txHash);
 
     let passportAddress = txReceipt.logs[0].topics[1];
@@ -47,15 +42,8 @@ export function* createIcoPassport() {
     // Stop showing loader after creating passport
     yield put(stopLoader());
 
-    yield put(setRedirectPath(`/analyse-icopass/${passportAddress}`));
-    yield put(setRedirectTimeout(15));
-    yield put(setRedirectPageName('Analyse ICO Page'));
-
-    // set messages
-    yield put(
-      addDisplayMessage(createCustomMessages(passportAddress).createSuccess),
-    );
-    yield put(push('/info'));
+    yield put(push(`/analyse-icopass/${passportAddress}`));
+    yield put(createIcoPassportSuccess());
   } catch (err) {
     const error = new MonethaError(err);
     yield put(setFormSumbissionError(error.formattedMessage));

@@ -1,6 +1,6 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
-import { withRouter, Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 import Wrapper from './Wrapper';
@@ -11,29 +11,45 @@ import Image from '../Image';
 import EmptyDiv from '../EmptyDiv';
 import messages from './messages';
 import HeaderButtons from './HeaderButtons';
+import HardRedirectLink from '../Link';
 
-import MonethaLogo from '../../images/monetha-logo.png';
+import MonethaLogo from '../../images/monetha-logo-beta.png';
 
 const Header = props => (
   <Wrapper>
     <LogoWrapper>
-      <Link to="/">
-        <Image src={MonethaLogo} alt="monetha-logo" />
-      </Link>
-      <HeaderText>
+      <HardRedirectLink href="https://www.monetha.io" target="_blank">
+        <Image height="32px" src={MonethaLogo} alt="monetha-logo" />
+      </HardRedirectLink>
+      <HeaderText
+        onClick={() => {
+          if (props.history.location.pathname === '/') {
+            props.selectPage(0);
+          }
+
+          props.history.push('/');
+        }}
+      >
         <FormattedMessage {...messages.headerText} />
       </HeaderText>
     </LogoWrapper>
 
     <EmptyDiv sizeX={8} />
     <HeaderButtons justifyContent="flex-end">
-      <GhostButton onClick={() => props.history.push('/create-icopass')}>
+      <GhostButton
+        width="165px"
+        emphasized
+        onClick={() => props.history.push('/create-icopass')}
+      >
         <FormattedMessage {...messages.createButtonText} />
       </GhostButton>
       <EmptyDiv sizeX={2} />
-      <GhostButton onClick={() => props.history.push('/')}>
-        <FormattedMessage {...messages.listButtonText} />
-      </GhostButton>
+
+      {props.history.location.pathname !== '/' && (
+        <GhostButton onClick={() => props.history.push('/')}>
+          <FormattedMessage {...messages.listButtonText} />
+        </GhostButton>
+      )}
     </HeaderButtons>
     <EmptyDiv sizeX={2} />
   </Wrapper>
@@ -41,6 +57,7 @@ const Header = props => (
 
 Header.propTypes = {
   history: PropTypes.object.isRequired,
+  selectPage: PropTypes.func.isRequired,
 };
 
 export default withRouter(Header);

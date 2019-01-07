@@ -4,7 +4,7 @@
  *
  */
 
-import { fromJS } from 'immutable';
+import { fromJS, List } from 'immutable';
 import {
   SELECT_PAGE,
   FETCH_ICO_LIST_REQUEST,
@@ -15,17 +15,20 @@ import {
   FETCH_ICO_LIST_PER_PAGE_SUCCESS,
   SET_PASSPORT_ADDRESSES,
   SET_PASSPORT_DATA,
+  ADD_PASSPORTS_DATA,
+  SET_DONE_FETCHING_FOR_ALL_PASSPORTS,
+  SET_FETCHED_ITEM_INDEX,
+  CLEAR_PASSPORTS_DATA,
 } from './constants';
 
-import data from './fixture.json';
-
 export const initialState = fromJS({
-  data,
   selectedPage: 0,
   isFetching: false,
+  fetchedItemIndex: -1,
+  doneFetchingAllPassports: false,
   passports: {
     value: [],
-    data: {},
+    data: [],
     isFetching: false,
   },
 });
@@ -44,6 +47,12 @@ function icoListReducer(state = initialState, action) {
     case FETCH_ICO_LIST_SUCCESS:
       return state.set('isFetching', false);
 
+    case SET_DONE_FETCHING_FOR_ALL_PASSPORTS:
+      return state.set('doneFetchingAllPassports', true);
+
+    case SET_FETCHED_ITEM_INDEX:
+      return state.set('fetchedItemIndex', action.fetchedItemIndex);
+
     case FETCH_ICO_LIST_PER_PAGE_REQUEST:
       return state.setIn(['passports', 'isFetching'], true);
 
@@ -55,6 +64,12 @@ function icoListReducer(state = initialState, action) {
     case FETCH_ICO_LIST_PER_PAGE_SUCCESS:
       return state.setIn(['passports', 'isFetching'], false);
 
+    case ADD_PASSPORTS_DATA:
+      return state.setIn(
+        ['passports', 'data'],
+        state.getIn(['passports', 'data']).push(List(action.data)),
+      );
+
     case SET_PASSPORT_ADDRESSES:
       return state.setIn(['passports', 'value'], action.passportAddresses);
 
@@ -63,6 +78,9 @@ function icoListReducer(state = initialState, action) {
         ['passports', 'data', action.passportAddress],
         action.data,
       );
+
+    case CLEAR_PASSPORTS_DATA:
+      return initialState;
 
     default:
       return state;

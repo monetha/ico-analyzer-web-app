@@ -4,6 +4,7 @@
  *
  */
 import {
+  REDIRECT,
   START_LOADER,
   STOP_LOADER,
   SET_METAMASK_ENABLED,
@@ -13,6 +14,12 @@ import {
   HIDE_COPY_TO_CLIPBOARD,
   SHOW_COPY_TO_CLIPBOARD,
   ADD_TO_CLIPBOARD,
+  SHOW_POPUP,
+  HIDE_POPUP,
+  POPUP_ACCEPTED,
+  ACCEPT_COOKIE_POLICY,
+  CHECK_COOKIE_POLICY_STATUS,
+  SET_COOKIE_POLICY_STATUS,
 } from './constants';
 
 export const startLoader = message => ({
@@ -22,6 +29,37 @@ export const startLoader = message => ({
 
 export const stopLoader = () => ({
   type: STOP_LOADER,
+});
+
+export const showPopup = message => ({
+  type: SHOW_POPUP,
+  message,
+});
+
+export const hidePopup = () => ({
+  type: HIDE_POPUP,
+});
+
+export const popupAccepted = () => ({
+  type: POPUP_ACCEPTED,
+});
+
+export const acceptCookiePolicy = () => ({
+  type: ACCEPT_COOKIE_POLICY,
+});
+
+export const checkCookiePolicyStatus = () => ({
+  type: CHECK_COOKIE_POLICY_STATUS,
+});
+
+export const setCookiePolicyStatus = status => ({
+  type: SET_COOKIE_POLICY_STATUS,
+  status,
+});
+
+export const redirect = path => ({
+  type: REDIRECT,
+  path,
 });
 
 export const setMetamaskEnabled = () => ({

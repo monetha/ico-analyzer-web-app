@@ -8,8 +8,9 @@ describe('InfoPage actions', () => {
       const expected = {
         type: ADD_DISPLAY_MESSAGE,
         message: testMessage,
+        key: 'key',
       };
-      expect(addDisplayMessage(testMessage)).toEqual(expected);
+      expect(addDisplayMessage('key', testMessage)).toEqual(expected);
     });
   });
 });

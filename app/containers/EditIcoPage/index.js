@@ -12,6 +12,7 @@ import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import { compose, bindActionCreators } from 'redux';
 import isValidDateRange from 'utils/isValidDateRange';
+import { push } from 'connected-react-router';
 
 import injectReducer from 'utils/injectReducer';
 import makeSelectEditIcoPage from './selectors';
@@ -32,6 +33,7 @@ import PageWrapper from './PageWrapper';
 import EditIcoForm from './EditIcoForm';
 import FieldDescription from './FieldDescription';
 import requiredMetamaskLogin from '../../utils/requiredMetamaskLogin';
+import { extractICONameFromUrl } from '../../utils/ico';
 
 class EditIcoPage extends React.Component {
   constructor(props) {
@@ -60,11 +62,16 @@ class EditIcoPage extends React.Component {
         const value = formatValue
           ? formatValue(e.target.value)
           : e.target.value;
-        this.props.updateFormData(fieldName, value);
-
         const isDateRange = moment.isMoment(value);
 
-        if (props.required && error && e.target.value) {
+        const finalValue = typeof value === 'string' ? value.trim() : value;
+
+        this.props.updateFormData(fieldName, finalValue);
+
+        if (
+          (props.required && error && e.target.value) ||
+          (error && !props.required)
+        ) {
           this.props.unsetFormDataError(fieldName);
         }
 
@@ -107,6 +114,7 @@ class EditIcoPage extends React.Component {
     const formArtifacts = {
       '/analyse-icopass/:id': {
         onSubmit: this.props.analyseNewIco,
+        onBack: this.props.navigateToList,
         pageHeaderMessage: messages.analyseMessage,
         pageDescriptionMessage: messages.analyseDescription,
         inFormHeading: createCustomMessages({
@@ -125,9 +133,11 @@ class EditIcoPage extends React.Component {
       },
       '/reanalyse-icopass/:id': {
         onSubmit: this.props.reanalyseIco,
+        onBack: () => this.props.navigateToDetails(params.id),
         pageHeaderMessage: {
           id: 'icoName',
-          defaultMessage: icoName || 'icoName',
+          defaultMessage:
+            extractICONameFromUrl(icoName) || icoName || 'ICO name',
         },
         inFormHeading: messages.rerunHeading,
         inFormContent: messages.rerunContent,
@@ -143,12 +153,7 @@ class EditIcoPage extends React.Component {
           'icoStartDate',
           'icoEndDate',
         ],
-        disabledFields: [
-          'icoName',
-          'decimals',
-          'tokenContractAddress',
-          'ownerAddress',
-        ],
+        disabledFields: ['icoName', 'decimals', 'tokenContractAddress'],
         isAnalysing: false,
       },
     };
@@ -165,6 +170,7 @@ class EditIcoPage extends React.Component {
       disabledFields,
       inFormHeading,
       inFormContent,
+      onBack,
       pageDescriptionMessage,
     } = this.extractFormArtifactsFromUrl();
 
@@ -183,6 +189,8 @@ class EditIcoPage extends React.Component {
           createUpdateHandler={this.createUpdateHandler}
           onSubmit={onSubmit}
           submitButtonText={buttonText}
+          onBack={onBack}
+          backButtonText={messages.backButtonText}
           errors={this.props.editIcoPage.errors}
           fields={fields}
           disabledFields={disabledFields}
@@ -205,6 +213,8 @@ EditIcoPage.propTypes = {
   setFormDataError: PropTypes.func.isRequired,
   unsetFormDataError: PropTypes.func.isRequired,
   reanalyseIco: PropTypes.func.isRequired,
+  navigateToList: PropTypes.func.isRequired,
+  navigateToDetails: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = createStructuredSelector({
@@ -221,6 +231,9 @@ const mapDispatchToProps = dispatch =>
       setFormDataError,
       unsetFormDataError,
       prepareToEditIcopassStart,
+      navigateToDetails: passportAddress =>
+        push(`/ico-list/${passportAddress}`),
+      navigateToList: () => push('/'),
     },
     dispatch,
   );

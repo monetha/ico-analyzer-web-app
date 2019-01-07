@@ -11,6 +11,8 @@ const BorderedItem = styled.div`
   }
   @media (max-width: 1024px) {
     padding-top: 0;
+    border-left: 0;
+    border-right: 0;
   }
 `;
 

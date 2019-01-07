@@ -9,6 +9,7 @@ import {
   UNSET_REDIRECT_PATH,
   SET_REDIRECT_TIMEOUT,
   SET_REDIRECT_PAGE_NAME,
+  CLEAR_REDIRECT_ARTIFACTS,
 } from './constants';
 
 export const setRedirectPath = redirectPath => ({
@@ -27,5 +28,10 @@ export const setRedirectTimeout = timeout => ({
 
 export const setRedirectPageName = pageName => ({
   type: SET_REDIRECT_PAGE_NAME,
+  pageName,
+});
+
+export const clearRedirectArtifacts = pageName => ({
+  type: CLEAR_REDIRECT_ARTIFACTS,
   pageName,
 });

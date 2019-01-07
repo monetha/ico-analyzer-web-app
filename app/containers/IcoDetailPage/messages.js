@@ -13,6 +13,11 @@ export default defineMessages({
     id: `${scope}.icoName`,
     defaultMessage: 'ICO Name',
   },
+  icoNameTooltip: {
+    id: `${scope}.icoNameTooltip`,
+    defaultMessage:
+      'We take data from icorating.com, so the project’s name should match its URL: e. g. monetha-mth for Monetha',
+  },
   decimals: {
     id: `${scope}.decimals`,
     defaultMessage: 'Decimals',
@@ -84,7 +89,7 @@ export default defineMessages({
   },
   passportAddress: {
     id: `${scope}.fundAddress`,
-    defaultMessage: 'ICO pass address',
+    defaultMessage: 'ICO passport address',
   },
   ownerAddress: {
     id: `${scope}.ownerAddress`,
@@ -121,7 +126,7 @@ export default defineMessages({
   },
   icoDetails: {
     id: `${scope}.icoDetails`,
-    defaultMessage: 'ICo details',
+    defaultMessage: 'ICO details',
   },
   calculatedData: {
     id: `${scope}.calculatedData`,
@@ -251,4 +256,27 @@ export default defineMessages({
     id: `${scope}.reanalyseTooltip`,
     defaultMessage: 'The exact time depends on the Ethereum network load',
   },
+  tokensCheckStatusTooltip: {
+    id: `${scope}.passedTooltip`,
+    defaultMessage:
+      'The check passes when the difference between reported funds raised and estimated funds raised by tokens is no more than 10% in favor of the former. A larger difference may be accepted to account for ETH price fluctuations: e.g. up to 30% if the price drops by 30% in the course of the ICO.',
+  },
+  ethCheckStatusTooltip: {
+    id: `${scope}.failedStatusTooltip`,
+    defaultMessage:
+      'The check passes when the difference between reported funds raised and estimated funds raised by ETH is no more than 10% in favor of the former. A larger difference may be accepted to account for ETH price fluctuations: e.g. up to 30% if the price drops by 30% in the course of the ICO.',
+  },
+  invalidPassportAddress: {
+    id: `${scope}.invalidPassportAddress`,
+    defaultMessage:
+      'The ICO Passport you are trying to access is incorrect. Please try again with a correct URL.',
+  },
 });
+
+export const createCustomMessages = ({ icoName }) =>
+  defineMessages({
+    icoDetailsHeaderTooltip: {
+      id: `${scope}.icoDetailsHeaderTooltip`,
+      defaultMessage: `Data taken from the project’s icorating.com page https://icorating.com/ico/${icoName}.`,
+    },
+  });

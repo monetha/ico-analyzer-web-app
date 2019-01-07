@@ -1,65 +1,35 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import PaginationItem, {
-  PrevPaginationItem,
-  NextPaginationItem,
-} from './PaginationItems';
+import { PrevPaginationItem, NextPaginationItem } from './PaginationItems';
 import Wrapper from './Wrapper';
 
 class Pagination extends Component {
   renderPaginationItems() {
     const {
-      itemsPerPage,
-      itemsCount,
-      onSelect,
-      selectedPage,
-      getPaginationItem,
+      isDisabledNext,
+      isDisabledPrev,
+      onClickNext,
+      onClickPrev,
     } = this.props;
 
-    const totalPageCount = Math.floor(itemsCount / itemsPerPage);
     const paginationItems = [];
 
-    const isFirstPage = selectedPage === 0;
-    const isLastPage = selectedPage === totalPageCount - 1;
-    const hasOnlyOnePage = itemsCount < itemsPerPage;
+    paginationItems.push(
+      <PrevPaginationItem
+        key="prev-button"
+        disabled={isDisabledPrev}
+        onClick={onClickPrev}
+      />,
+    );
 
-    if (totalPageCount) {
-      paginationItems.push(
-        <PrevPaginationItem
-          key={0}
-          pageNumber={selectedPage}
-          isSelected={isFirstPage}
-          onSelect={onSelect}
-        />,
-      );
-    }
-
-    for (let page = 1; page <= totalPageCount; page += 1) {
-      if (getPaginationItem) {
-        paginationItems.push(getPaginationItem(page, totalPageCount));
-      } else {
-        paginationItems.push(
-          <PaginationItem
-            key={page}
-            pageNumber={page}
-            isSelected={page === selectedPage + 1}
-            onSelect={onSelect}
-          />,
-        );
-      }
-    }
-
-    if (totalPageCount) {
-      paginationItems.push(
-        <NextPaginationItem
-          key={totalPageCount + 1}
-          pageNumber={selectedPage}
-          isSelected={isLastPage || hasOnlyOnePage}
-          onSelect={onSelect}
-        />,
-      );
-    }
+    paginationItems.push(
+      <NextPaginationItem
+        key="next-button"
+        disabled={isDisabledNext}
+        onClick={onClickNext}
+      />,
+    );
 
     return paginationItems;
   }
@@ -70,11 +40,10 @@ class Pagination extends Component {
 }
 
 Pagination.propTypes = {
-  itemsPerPage: PropTypes.number.isRequired,
-  itemsCount: PropTypes.number.isRequired,
-  selectedPage: PropTypes.number.isRequired,
-  onSelect: PropTypes.func.isRequired,
-  getPaginationItem: PropTypes.func,
+  isDisabledNext: PropTypes.bool,
+  isDisabledPrev: PropTypes.bool,
+  onClickNext: PropTypes.func.isRequired,
+  onClickPrev: PropTypes.func.isRequired,
 };
 
 export default Pagination;

@@ -1,9 +1,10 @@
-import { takeEvery, put, call, select } from 'redux-saga/effects';
+import { takeEvery, put, call, select, take, race } from 'redux-saga/effects';
 import isEmpty from 'lodash/isEmpty';
-import axios from 'axios';
+import config from 'config';
 import sdk from 'reputation-sdk';
 import omit from 'lodash/omit';
 import keys from 'lodash/keys';
+import find from 'lodash/find';
 import { push } from 'connected-react-router';
 import convertCallbackToPromise from 'utils/convertCallbackToPromise';
 import MonethaError from 'utils/MonethaError';
@@ -11,13 +12,13 @@ import isValidAddress from 'utils/isValidAddress';
 import isValidDecimal from 'utils/isValidDecimal';
 import isValidDateRange from 'utils/isValidDateRange';
 import calcUpdatedVersion from 'utils/calcUpdatedVersion';
+import sanitzeDecmials from 'utils/sanitzeDecmials';
 import constructMomentFromDate from 'utils/constructMomentFromDate';
 import {
   getContractInstance,
   waitForTxToFinish,
   hasTxFailed,
 } from 'utils/web3';
-import { FACT_KEY, FACT_PROVIDER_ADDRESS, NETWORK } from '../App/constants';
 import abi from '../../abis/development.json';
 import {
   ANALYSE_NEW_ICO,
@@ -26,7 +27,8 @@ import {
   PREFILL_EDIT_ICOPASS_FORM,
 } from './constants';
 import messages from './messages';
-import { startLoader, stopLoader } from '../App/actions';
+import { startLoader, stopLoader, showPopup } from '../App/actions';
+import { POPUP_ACCEPTED, HIDE_POPUP } from '../App/constants';
 import {
   setFormDataError,
   setFormSumbissionError,
@@ -37,15 +39,16 @@ import {
   prepareToEditIcopassFinish,
   updateFormData,
 } from './actions';
-import makeSelectEditIcoPage, {
-  selectAnalyseFormErrors,
-  selectDecimals,
-} from './selectors';
+import makeSelectEditIcoPage, { selectAnalyseFormErrors } from './selectors';
 import {
   selectRawDetails,
   selectCurrentIcoVersion,
 } from '../IcoDetailPage/selectors';
-import { reanalyseFinish } from '../IcoDetailPage/actions';
+import {
+  reanalyseFinish,
+  setIcoDetails,
+  setCurrentIcoVersion,
+} from '../IcoDetailPage/actions';
 import {
   setRedirectPath,
   setRedirectTimeout,
@@ -53,6 +56,10 @@ import {
 } from '../RedirectHandler/actions';
 import { addDisplayMessage } from '../InfoPage/actions';
 import { makeSelectLocation } from '../App/selectors';
+import { Fees } from '../../const/fees';
+import { weiToEth } from '../../utils/ethConvert';
+import { ICORatingUrlPrefix } from '../../const/ico';
+import { extractICONameFromUrl } from '../../utils/ico';
 
 export function* analyseNewIco() {
   const {
@@ -69,7 +76,7 @@ export function* analyseNewIco() {
     metadata: {
       icoName,
       version: calcUpdatedVersion(version),
-      decimals,
+      decimals: sanitzeDecmials(decimals),
       ownerAddress,
       passportAddress,
       crowdsaleAddress,
@@ -92,84 +99,119 @@ export function* processPaymentAndAnalyse(requestData) {
       throw new Error('Missing required field values');
     }
 
-    // gasLimit and transaction amount
-    const value = 10000000000000000;
-    const gas = '3000000';
-    const txFee = 100000000000;
-    const tokenAddress = '0x0';
+    const sanitizedRequestData = sanitizeAnalysisRequestData(requestData);
 
-    // Using Timestamp to generate a random int id
-    const orderId = Date.now();
-
-    // Address of the current metamask account
-    const accountAddress = window.web3.eth.accounts[0];
-
-    // Start showing loader before making invoking contract methods
-    yield put(startLoader());
-
-    const paymentProcessor = getContractInstance(
-      abi.PaymentProcessor.abi,
-      abi.PaymentProcessor.at,
+    yield put(
+      showPopup({
+        ...messages.confirmationMessage,
+        values: { fee: weiToEth(Fees.serviceFee) },
+      }),
     );
+    const [accepted] = yield race([take(POPUP_ACCEPTED), take(HIDE_POPUP)]);
 
-    // Invoking addOrder
-    const addOrderTxHash = yield convertCallbackToPromise(
-      paymentProcessor.addOrder,
-      orderId,
-      value,
-      accountAddress,
-      accountAddress,
-      txFee,
-      tokenAddress,
-      {
-        gas,
-      },
-    );
+    if (accepted) {
+      // gasLimit and transaction amount
+      const tokenAddress = '0x0';
 
-    // Wait until addOrder transaction finishes
-    const adddOrderTxBlock = yield waitForTxToFinish(addOrderTxHash);
-    if (hasTxFailed(adddOrderTxBlock)) {
-      throw new Error('Transaction failed');
-    }
+      // Using Timestamp to generate a random int id
+      const orderId = Date.now();
 
-    // Invoking securePay
-    const securePayTxHash = yield convertCallbackToPromise(
-      paymentProcessor.securePay,
-      orderId,
-      {
-        value,
-        gas,
-      },
-    );
+      // Address of the current metamask account
+      const accountAddress = window.web3.eth.accounts[0];
 
-    const url = 'https://lambda.monetha.io/ico-analyzer';
-    const data = {
-      ...requestData,
-      metadata: {
-        ...requestData.metadata,
-        txHash: securePayTxHash,
+      // Start showing loader before making invoking contract methods
+      yield put(startLoader(messages.confirmStorageFeeInMetamask));
+
+      window.onbeforeunload = e => {
+        const ev = e || window.event;
+
+        // For IE and Firefox prior to version 4
+        if (ev) {
+          ev.returnValue =
+            'Passport creation procedure will be lost if window is close. Are you sure?';
+        }
+
+        // For Safari
+        return 'Passport creation procedure will be lost if window is close. Are you sure?';
+      };
+
+      const paymentProcessor = getContractInstance(
+        abi.PaymentProcessor.abi,
+        config.PAYMENT_PROCESSOR_ADDRESS,
+      );
+
+      // Invoking addOrder
+      const addOrderTxHash = yield convertCallbackToPromise(
+        paymentProcessor.addOrder,
         orderId,
-      },
-    };
+        Fees.serviceFee,
+        accountAddress,
+        accountAddress,
+        Fees.serviceFeeTXFee,
+        tokenAddress,
+        {
+          gas: Fees.serviceFeeGAS.toString(),
+        },
+      );
 
-    fetch(url, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(data),
-    });
+      yield put(startLoader(messages.transactionExecutionMessage));
 
-    yield put(stopLoader());
-    yield put(setRedirectPath('/'));
-    yield put(setRedirectTimeout(15));
-    yield put(setRedirectPageName('ICO List Page'));
+      // Wait until addOrder transaction finishes
+      const adddOrderTxBlock = yield waitForTxToFinish(addOrderTxHash);
+      if (hasTxFailed(adddOrderTxBlock)) {
+        throw new Error('Transaction failed');
+      }
 
-    // set messages
-    yield put(addDisplayMessage(messages.analyseSuccess));
+      yield put(startLoader(messages.confirmMonethaFeeInMetamask));
 
-    yield put(push('/info'));
+      // Invoking securePay
+      const securePayTxHash = yield convertCallbackToPromise(
+        paymentProcessor.securePay,
+        orderId,
+        {
+          value: Fees.serviceFee,
+          gas: Fees.serviceFeeGAS.toString(),
+        },
+      );
+
+      const url = 'https://lambda.monetha.io/ico-analyzer';
+      const data = {
+        ...sanitizedRequestData,
+        metadata: {
+          ...sanitizedRequestData.metadata,
+          txHash: securePayTxHash,
+          accountAddress,
+          orderId,
+        },
+      };
+
+      fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      window.onbeforeunload = null;
+
+      yield put(stopLoader());
+      yield put(setRedirectPath('/'));
+      yield put(setRedirectTimeout(15));
+      yield put(setRedirectPageName('ICO List Page'));
+
+      // set messages
+      yield put(
+        addDisplayMessage('analyseSuccess', {
+          ...messages.analyseSuccess,
+          values: { fee: weiToEth(Fees.serviceFee) },
+        }),
+      );
+
+      yield put(push('/info'));
+    }
   } catch (err) {
+    window.onbeforeunload = null;
     const error = new MonethaError(err);
     yield put(setFormSumbissionError(error.formattedMessage));
     yield put(stopLoader());
@@ -177,7 +219,6 @@ export function* processPaymentAndAnalyse(requestData) {
 }
 
 export function* reanalyseNewIco() {
-  // TODO: add flow for reanalyse new passport.
   const rawDetails = yield select(selectRawDetails);
   const {
     icoName,
@@ -223,26 +264,36 @@ export function* reanalyseNewIco() {
 }
 
 export function* validateAnalysisData() {
-  // yield call(validateIcoName);
+  const analysisData = yield select(makeSelectEditIcoPage());
   yield call(validateRequiredFields);
-  yield call(validateDecimalsFields);
+  yield call(validateDecimalsFields, analysisData);
   yield call(validateAddressFields);
+  yield call(validateIcoPrice, analysisData);
+  yield call(validateIcoName, analysisData);
 }
 
-export function* validateIcoName() {
-  const { icoName } = yield select(makeSelectEditIcoPage);
-  const url = `https://icorating.com/ico/${icoName}`;
+export function* validateIcoPrice(analysisData) {
+  const { icoPrice } = analysisData;
+  const minLimit = 0.000000000000000001;
+  const maxLimit = 9999999;
 
-  const res = yield axios.get(url);
-  if (res.status === 404) {
+  if (icoPrice < minLimit || icoPrice > maxLimit) {
+    yield put(setFormDataError('icoPrice', messages.invalidIcoPrice));
+  }
+}
+
+export function* validateIcoName(analysisData) {
+  const { icoName } = analysisData;
+
+  if (!icoName || !extractICONameFromUrl(icoName)) {
     yield put(setFormDataError('icoName', messages.invalidIcoNameErrorMessage));
   }
 }
 
-export function* validateDecimalsFields() {
-  const decimals = yield select(selectDecimals);
+export function* validateDecimalsFields(analysisData) {
+  const { decimals } = analysisData;
 
-  if (decimals && !isValidDecimal(decimals)) {
+  if (!isValidDecimal(decimals)) {
     yield put(
       setFormDataError('decimals', messages.invalidDecimalsErrorMessage),
     );
@@ -250,7 +301,7 @@ export function* validateDecimalsFields() {
 }
 
 export function* validateRequiredFields() {
-  const formData = yield select(makeSelectEditIcoPage());
+  const analysisData = yield select(makeSelectEditIcoPage());
   const location = yield select(makeSelectLocation());
   const isAnalysing = location.pathname.includes('/analyse-icopass/');
   const conditionalRequiredFields = isAnalysing ? [] : ['cfr', 'icoPrice'];
@@ -258,15 +309,14 @@ export function* validateRequiredFields() {
   const requiredFields = [
     'icoName',
     'tokenContractAddress',
-    'ownerAddress',
     'acceptedT&C',
     ...conditionalRequiredFields,
   ];
 
   for (let field = 0; field < requiredFields.length; field += 1) {
     const fieldName = requiredFields[field];
-    const error = formData.errors[fieldName];
-    const value = formData[requiredFields[field]];
+    const error = analysisData.errors[fieldName];
+    const value = analysisData[requiredFields[field]];
 
     if (!error && !value) {
       const errorMessage =
@@ -280,8 +330,7 @@ export function* validateRequiredFields() {
 }
 
 export function* validateAddressFields() {
-  const formData = yield select(makeSelectEditIcoPage());
-  const requiredFields = ['ownerAddress'];
+  const analysisData = yield select(makeSelectEditIcoPage());
   const addressFields = [
     'ownerAddress',
     'crowdsaleAddress',
@@ -290,8 +339,8 @@ export function* validateAddressFields() {
 
   for (let field = 0; field < addressFields.length; field += 1) {
     const fieldName = addressFields[field];
-    const error = formData.errors[fieldName];
-    const value = formData[addressFields[field]];
+    const error = analysisData.errors[fieldName];
+    const value = analysisData[addressFields[field]];
 
     if (!isEmpty(value) && !error && !isValidAddress(value)) {
       yield put(
@@ -300,19 +349,33 @@ export function* validateAddressFields() {
           messages.invalidAddressErrorMessage,
         ),
       );
-    } else if (error && !requiredFields[addressFields[field]] && value) {
+    } else if (isEmpty(value) && !error) {
       yield put(unsetFormDataError(addressFields[field]));
     }
   }
+}
+
+function sanitizeAnalysisRequestData(requestData) {
+  const copy = { ...requestData };
+  copy.metadata = { ...copy.metadata };
+
+  copy.metadata.icoName = extractICONameFromUrl(copy.metadata.icoName);
+
+  return copy;
 }
 
 export function* prefillEditIcoForm(action) {
   const { fields, icoDetails } = action;
 
   for (let fieldIndex = 0; fieldIndex < fields.length; fieldIndex += 1) {
-    yield put(
-      updateFormData(fields[fieldIndex], icoDetails[fields[fieldIndex]]),
-    );
+    const field = fields[fieldIndex];
+    let value = icoDetails[field];
+
+    if (field === 'icoName') {
+      value = `${ICORatingUrlPrefix}${value}`;
+    }
+
+    yield put(updateFormData(field, value));
   }
 }
 
@@ -322,10 +385,41 @@ export function* prepareEditPage() {
   const isAnalysing = location.pathname.includes('/analyse-icopass/');
   const passportAddress = location.pathname.split('/')[2];
 
-  if (isAnalysing) {
-    yield call(prepareToAnalyse, passportAddress);
+  const Reader = new sdk.PassportReader(config.PROVIDER_URL);
+  const passportList = yield Reader.getPassportLists(
+    config.PASSPORT_FACTORY_ADDRESS,
+    config.PASSPORT_FACTORY_START_BLOCK,
+  );
+  const exists = find(
+    passportList,
+    passport => `0x${passport.passportAddress}` === passportAddress,
+  );
+
+  if (exists) {
+    const FactReader = new sdk.FactReader(config.PROVIDER_URL);
+    FactReader.setContract(passportAddress);
+    const passport = yield FactReader.getTxDataBlockNumber(
+      config.FACT_PROVIDER_ADDRESS,
+      config.FACT_KEY,
+    );
+    if (passport.res == null) {
+      yield call(prepareToAnalyse, passportAddress);
+    } else {
+      if (isAnalysing) {
+        yield put(push(`/reanalyse-icopass/${passportAddress}`));
+      }
+      yield call(prepareToReanalyse, passport);
+    }
   } else {
-    yield call(prepareToReanalyse, passportAddress);
+    // set messages
+    yield put(
+      addDisplayMessage(
+        'invalidPassportAddress',
+        messages.invalidPassportAddress,
+      ),
+    );
+
+    yield put(push('/info'));
   }
 
   yield put(stopLoader());
@@ -336,13 +430,12 @@ export function* prepareToAnalyse(passportAddress) {
   yield put(setPassportAddress(passportAddress));
 }
 
-export function* prepareToReanalyse(passportAddress) {
-  const FactReader = new sdk.FactReader(passportAddress, NETWORK);
-  const passport = yield FactReader.getString(FACT_PROVIDER_ADDRESS, FACT_KEY);
-
+export function* prepareToReanalyse(passport) {
   if (passport.res !== null) {
     const data = JSON.parse(passport.res);
 
+    yield put(setIcoDetails(data));
+    yield put(setCurrentIcoVersion(data.metadata.version));
     const icoDetails = {
       icoName: data.metadata.icoName,
       decimals: data.metadata.decimals,

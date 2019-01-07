@@ -11,11 +11,11 @@ export const scope = 'app.components.Header';
 export default defineMessages({
   createButtonText: {
     id: `${scope}.create-button-text`,
-    defaultMessage: 'Create ICO Pass',
+    defaultMessage: 'Analyze ICO',
   },
   listButtonText: {
     id: `${scope}.list-button-text`,
-    defaultMessage: 'List of ICOs',
+    defaultMessage: 'Back to list',
   },
   headerText: {
     id: `${scope}.headerText`,

@@ -13,6 +13,10 @@ export default defineMessages({
     id: `${scope}.analyseMessage`,
     defaultMessage: 'Analyze the ICO passport ',
   },
+  backButtonText: {
+    id: `${scope}.backButtonText`,
+    defaultMessage: 'Back',
+  },
   analyseDescription: {
     id: `${scope}.analyseDescription`,
     defaultMessage:
@@ -20,7 +24,7 @@ export default defineMessages({
   },
   icoAddress: {
     id: `${scope}.icoAddress`,
-    defaultMessage: 'ICO pass address:',
+    defaultMessage: 'ICO passport address:',
   },
   rerunHeading: {
     id: `${scope}.rerunHeading`,
@@ -33,16 +37,16 @@ export default defineMessages({
   },
   icoNameLabel: {
     id: `${scope}.icoNameLabel`,
-    defaultMessage: 'ICO Name',
+    defaultMessage: 'icorating.com ICO URL',
   },
   icoNameTooltip: {
     id: `${scope}.icoNameTooltip`,
     defaultMessage:
-      'We take data from icorating.com, so the project’s name should match its URL: e. g. monetha-mth for Monetha (https://icorating.com/ico/monetha-mth/)',
+      'We take data from icorating.com, e. g. for Monetha url will be https://icorating.com/ico/monetha-mth',
   },
   icoNamePlaceholder: {
     id: `${scope}.icoNamePlaceholder`,
-    defaultMessage: 'Enter ICO name',
+    defaultMessage: 'Enter icorating.com url for ICO',
   },
   decimalsLabel: {
     id: `${scope}.decimalsLabel`,
@@ -165,6 +169,10 @@ export default defineMessages({
     id: `${scope}.blankFieldErrorMessage`,
     defaultMessage: 'This field can not be left blank',
   },
+  invalidIcoNameErrorMessage: {
+    id: `${scope}.invalidIcoNameErrorMessage`,
+    defaultMessage: 'ICO url is not valid',
+  },
   invalidAddressErrorMessage: {
     id: `${scope}.invalidAddressErrorMessage`,
     defaultMessage: 'You have provided an invalid address',
@@ -177,6 +185,16 @@ export default defineMessages({
     id: `${scope}.invalidDateRangeErrorMessage`,
     defaultMessage: 'Ico Start Date must be earlier than Ico End Date. ',
   },
+  invalidPassportAddress: {
+    id: `${scope}.invalidPassportAddress`,
+    defaultMessage:
+      'The ICO Passport you are trying to access is incorrect. Please try again with a correct URL.',
+  },
+  invalidIcoPrice: {
+    id: `${scope}.invalidPassportAddress`,
+    defaultMessage:
+      'The ICO Price must be between 0.000000000000000001 and 9999999',
+  },
   ownerAddressTooltipMessage: {
     id: `${scope}.ownerAddressTooltipMessage`,
     defaultMessage:
@@ -185,11 +203,36 @@ export default defineMessages({
   analyseSuccess: {
     id: `${scope}.analyseSuccess`,
     defaultMessage:
-      'We are analyzing the ICO. Once the analysis is completed, a new entry will be created in its ICO passport.',
+      'We are analyzing the ICO. Once the analysis is completed, a new entry will be created in the top of the analyzed ICOs list. \nIn the case of failed analysis, a service fee of {fee} ETH will be refunded to your wallet address.',
   },
   acceptDisclaimer: {
     id: `${scope}.acceptDisclaimer`,
-    defaultMessage: 'You must read and accept terms of service.',
+    defaultMessage:
+      'I understand that the data provided here is for informative purposes only.',
+  },
+  acceptDisclaimerErrorMessage: {
+    id: `${scope}.acceptDisclaimerErrorMessage`,
+    defaultMessage:
+      'In order to run the analyzer, please, read the disclaimer and agree with that.',
+  },
+  confirmationMessage: {
+    id: `${scope}.confirmationMessage`,
+    defaultMessage:
+      'To complete the action, you will be asked to pay and confirm two fees: \n1) A gas fee for storing data on the blockchain \n2) Our service fee ({fee} ETH + the gas fee)',
+  },
+  confirmStorageFeeInMetamask: {
+    id: `${scope}.confirmStorageFeeInMetamask`,
+    defaultMessage: 'Please confirm storage transaction in metamask',
+  },
+  confirmMonethaFeeInMetamask: {
+    id: `${scope}.confirmMonethaFeeInMetamask`,
+    defaultMessage:
+      'Please confirm Monetha service fee transaction in metamask',
+  },
+  transactionExecutionMessage: {
+    id: `${scope}.transactionExecutionMessage`,
+    defaultMessage:
+      'Transaction is being processed, it can take few moments. \nThe exact time depends on the Ethereum network load. \nDo not close this page.',
   },
 });
 
@@ -197,6 +240,6 @@ export const createCustomMessages = ({ passportAddress }) =>
   defineMessages({
     passportAddressMessage: {
       id: `${scope}.passportAddressMessage`,
-      defaultMessage: `ICO pass address: ${passportAddress}`,
+      defaultMessage: `ICO passport address: ${passportAddress}`,
     },
   });

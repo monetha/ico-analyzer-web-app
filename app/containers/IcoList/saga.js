@@ -1,12 +1,22 @@
-import { takeEvery, put, select, fork, join, call } from 'redux-saga/effects';
+import {
+  takeEvery,
+  put,
+  select,
+  call,
+  fork,
+  cancel,
+  take,
+} from 'redux-saga/effects';
 import sdk from 'reputation-sdk';
-import { push } from 'connected-react-router';
+import config from 'config';
+import { push, LOCATION_CHANGE } from 'connected-react-router';
 import {
   FETCH_ICO_LIST_REQUEST,
   FETCH_PASSPORT_DETAILS_FOR_CURRENT_PAGE,
   NAVIGATE_ICO_DETAILS,
+  ITEMS_PER_PAGE,
+  FETCH_NEXT_PAGE,
 } from './constants';
-import { FACT_KEY, FACT_PROVIDER_ADDRESS, NETWORK } from '../App/constants';
 import {
   fetchIcoListFailure,
   fetchIcoListSuccess,
@@ -14,20 +24,42 @@ import {
   fetchIcoListPerPageRequest,
   fetchIcoListPerPageSuccess,
   setPassportAddresses,
-  setPassportData,
-  setPassportsData,
+  addPassportsData,
   fetchPassportDetailsForCurrentPage,
+  setDoneFetchingForAllPassports,
+  selectPage,
+  setFetchedItemIndex,
+  clearPassportsData,
 } from './actions';
 import { startLoader, stopLoader } from '../App/actions';
-import abis from '../../abis/development.json';
-import { selectPassportsValue } from './selectors';
+import {
+  selectPassportsValue,
+  selectSelectedPage,
+  selectfetchedItemIndex,
+} from './selectors';
 import { setIcoDetails, setCurrentIcoVersion } from '../IcoDetailPage/actions';
+import messages from './messages';
 
 export function* fetchIcoList() {
+  // Reset all passport data
+  yield put(clearPassportsData());
+
+  yield put(startLoader(messages.fetchingListDataLoaderMessage));
+
+  const task = yield fork(performLocationAwaredPassportListFetch);
+  yield take(LOCATION_CHANGE);
+  yield put(stopLoader());
+  yield cancel(task);
+}
+
+export function* performLocationAwaredPassportListFetch() {
   let passportAddresses;
   try {
-    const Reader = new sdk.PassportReader(NETWORK);
-    const passports = yield Reader.getPassportLists(abis.PassportFactory.at);
+    const Reader = new sdk.PassportReader(config.PROVIDER_URL);
+    const passports = yield Reader.getPassportLists(
+      config.PASSPORT_FACTORY_ADDRESS,
+      config.PASSPORT_FACTORY_START_BLOCK,
+    );
     passportAddresses = passports.map(passport => passport.passportAddress);
 
     // sort addresses for newest first.
@@ -37,62 +69,81 @@ export function* fetchIcoList() {
     yield put(setPassportAddresses(passportAddresses));
     yield put(fetchIcoListSuccess());
 
-    // initialize empty passports list
-    yield fork(initEmptyPassports);
-
     // start fetching passports to be shown on the selected page
     yield put(fetchPassportDetailsForCurrentPage());
   } catch (err) {
     console.error(err);
-    yield put(fetchIcoListFailure(err));
+    const error = {
+      message: 'Oops, something went wrong. Please try refreshing the page.',
+    };
+    yield put(fetchIcoListFailure(error));
   }
 }
 
-export function* initEmptyPassports() {
-  const passportAddresses = yield select(selectPassportsValue);
-  const emptyPassports = passportAddresses.map(address => ({ [address]: {} }));
-
-  yield put(setPassportsData(emptyPassports));
+export function* fetchCurrentPagePassportDetails() {
+  const task = yield fork(performLocationAwaredfetch);
+  yield take(LOCATION_CHANGE);
+  yield put(stopLoader());
+  yield cancel(task);
 }
 
-export function* fetchCurrentPagePassportDetails() {
+export function* performLocationAwaredfetch() {
   try {
     // start loader before fetching details
-    yield put(startLoader());
+    yield put(startLoader(messages.fetchingListDataLoaderMessage));
     yield put(fetchIcoListPerPageRequest());
 
-    // const selectedPage = yield select(selectSelectedPage);
     const passportAddresses = yield select(selectPassportsValue);
 
-    // Ignoring pagination logic as not all the passport have data
-    //
-    // // calculating items to be fetched
-    // let startIndex = selectedPage * ITEMS_PER_PAGE;
-    // startIndex = startIndex ? startIndex - 1 : 0;
-    // const endIndex = startIndex + ITEMS_PER_PAGE;
+    const fetchedPassports = [];
+    const totalPassports = passportAddresses.length;
 
-    // const passportsOnSelectedPage = passportAddresses.slice(
-    //   startIndex,
-    //   endIndex,
-    // );
-    // const availablePassports = yield select(selectPassportsData);
-    // const passportsToBeFetched = passportAddresses.filter(
-    //   passportAddress => !availablePassports[passportAddress],
-    // );
-
-    const tasks = [];
+    const FactReader = new sdk.FactReader(config.PROVIDER_URL);
 
     // start fetching all required passports in parallel
-    for (let pIndex = 0; pIndex < passportAddresses.length; pIndex += 1) {
-      const task = yield fork(
+    const lastFetchedIndex = yield select(selectfetchedItemIndex);
+    const startIndex = lastFetchedIndex + 1;
+    let fetchedUptoIndex = startIndex;
+    for (let pIndex = startIndex; pIndex < totalPassports; pIndex += 1) {
+      let passport = yield call(
         fetchPassportByAddress,
         passportAddresses[pIndex],
+        FactReader,
       );
-      tasks.push(task);
+
+      fetchedUptoIndex = pIndex;
+
+      // If passport was not found - create empty entry
+      if (!passport) {
+        passport = {
+          metadata: {
+            passportAddress: `0x${passportAddresses[pIndex]}`,
+          },
+        };
+      }
+
+      fetchedPassports.push(passport);
+
+      const fetchedEnoughPassportForSelectedPage =
+        fetchedPassports.length === ITEMS_PER_PAGE;
+      const fetchedAllPassports =
+        fetchedUptoIndex === passportAddresses.length - 1;
+
+      if (fetchedAllPassports) {
+        yield put(setDoneFetchingForAllPassports());
+      }
+
+      if (fetchedEnoughPassportForSelectedPage || fetchedAllPassports) {
+        yield put(setFetchedItemIndex(pIndex));
+        break;
+      }
+    }
+
+    if (fetchedPassports.length) {
+      yield put(addPassportsData(fetchedPassports));
     }
 
     // wait for all passports to be fetched
-    yield join(...tasks);
     yield put(stopLoader());
     yield put(fetchIcoListPerPageSuccess());
   } catch (error) {
@@ -102,22 +153,31 @@ export function* fetchCurrentPagePassportDetails() {
   }
 }
 
-export function* fetchPassportByAddress(passportAddress) {
+export function* fetchPassportByAddress(passportAddress, FactReader) {
+  let passport;
   try {
-    const FactReader = new sdk.FactReader(passportAddress, NETWORK);
-    const passport = yield FactReader.getString(
-      FACT_PROVIDER_ADDRESS,
-      FACT_KEY,
+    FactReader.setContract(`0x${passportAddress}`);
+    const result = yield FactReader.getTxDataBlockNumber(
+      config.FACT_PROVIDER_ADDRESS,
+      config.FACT_KEY,
     );
 
-    if (passport.res !== null) {
-      const data = JSON.parse(passport.res);
-      yield put(setPassportData(passportAddress, data));
+    if (result.res !== null) {
+      passport = JSON.parse(result.res);
     }
+
+    return passport;
   } catch (error) {
-    console.error(`Error fetching passport ${passportAddress}`);
-    console.error(error);
+    console.error(`Error fetching passport ${passportAddress}\n`, error);
+    return passport;
   }
+}
+
+export function* fetchNextPage() {
+  const selectedPage = yield select(selectSelectedPage);
+
+  yield put(selectPage(selectedPage + 1));
+  yield put(fetchPassportDetailsForCurrentPage());
 }
 
 export function* setDetailsToDisplay(icoPass) {
@@ -133,6 +193,7 @@ export function* prepareAndNavigateToIcoDetails(action) {
 export default function* icoDetailsSaga() {
   yield takeEvery(FETCH_ICO_LIST_REQUEST, fetchIcoList);
   yield takeEvery(NAVIGATE_ICO_DETAILS, prepareAndNavigateToIcoDetails);
+  yield takeEvery(FETCH_NEXT_PAGE, fetchNextPage);
   yield takeEvery(
     FETCH_PASSPORT_DETAILS_FOR_CURRENT_PAGE,
     fetchCurrentPagePassportDetails,

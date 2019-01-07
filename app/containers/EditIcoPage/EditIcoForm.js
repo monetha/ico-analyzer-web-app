@@ -19,6 +19,7 @@ import TextField from '../../components/TextField';
 import Label from '../../components/TextField/Label';
 import ErrorMessage from '../../components/TextField/ErrorMessage';
 import PrimaryButton from '../../components/PrimaryButton';
+import HollowButton from '../../components/HollowButton';
 import FlexBox from '../../components/FlexBox';
 import FloatedView from '../../components/FloatedView';
 import EmptyDiv from '../../components/EmptyDiv';
@@ -29,6 +30,8 @@ import InFormContent from './InFormContent';
 function EditIcoForm(props) {
   const {
     onSubmit,
+    onBack,
+    backButtonText,
     createUpdateHandler,
     submitButtonText,
     fields,
@@ -38,7 +41,7 @@ function EditIcoForm(props) {
     inFormContent,
   } = props;
 
-  const isFormDisabled = !isEmpty(omit(errors, ['submit', 'crowdsaleAddress']));
+  const isFormDisabled = !isEmpty(omit(errors, ['submit']));
 
   return (
     <FormWrapper>
@@ -83,7 +86,6 @@ function EditIcoForm(props) {
         <EmptyDiv sizeX={3} />
         <TextField
           label={messages.ownerAddressLabel}
-          required
           disabled={disabledFields.includes('ownerAddress')}
           tooltipMessage={messages.ownerAddressTooltipMessage}
           placeholder={messages.ownerAddressPlaceholder}
@@ -162,7 +164,7 @@ function EditIcoForm(props) {
       )}
       <EmptyDiv sizeY={2} />
       <TermsWrapper>
-        <p>Disclaimer</p>
+        <p>DISCLAIMER</p>
         <input
           type="checkbox"
           {...createUpdateHandler(null, null, cbProps => ({
@@ -173,31 +175,38 @@ function EditIcoForm(props) {
               } else {
                 cbProps.setFormDataError(
                   'acceptedT&C',
-                  messages.acceptDisclaimer,
+                  messages.acceptDisclaimerErrorMessage,
                 );
               }
             },
           }))}
         />
         <span>
-          I understand that the data provided here is for informative&nbsp;
-          purposes only
+          <FormattedMessage {...messages.acceptDisclaimer} />
         </span>
         <br />
       </TermsWrapper>
-      <FloatedView float="right">
-        <FormattedMessage {...submitButtonText}>
-          {msg => (
-            <PrimaryButton disabled={isFormDisabled} onClick={onSubmit}>
-              {msg}
-            </PrimaryButton>
-          )}
-        </FormattedMessage>
+      <FloatedView margin="10px" float="right">
+        <FlexBox>
+          <FormattedMessage {...backButtonText}>
+            {msg => <HollowButton onClick={onBack}>{msg}</HollowButton>}
+          </FormattedMessage>
+          <EmptyDiv />
+          <FormattedMessage {...submitButtonText}>
+            {msg => (
+              <PrimaryButton disabled={isFormDisabled} onClick={onSubmit}>
+                {msg}
+              </PrimaryButton>
+            )}
+          </FormattedMessage>
+        </FlexBox>
       </FloatedView>
-      {errors['acceptedT&C'] && (
+      {errors['acceptedT&C'] ? (
         <FormattedMessage {...errors['acceptedT&C']}>
           {msg => <ErrorMessage>{msg}</ErrorMessage>}
         </FormattedMessage>
+      ) : (
+        <EmptyDiv sizeY={2.5} />
       )}
     </FormWrapper>
   );
@@ -205,6 +214,7 @@ function EditIcoForm(props) {
 
 EditIcoForm.propTypes = {
   onSubmit: PropTypes.func.isRequired,
+  onBack: PropTypes.func.isRequired,
   createUpdateHandler: PropTypes.func.isRequired,
   submitButtonText: PropTypes.object,
   fields: PropTypes.array,

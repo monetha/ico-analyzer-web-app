@@ -1,9 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
-import Tooltip from '../../components/Tooltip';
+import { DynamicTooltip } from '../../components/DynamicTooltip';
+import infoIcon from '../../images/info.png';
+import Image from '../../components/Image';
+import messages from './messages';
+
 const Text = styled.div`
   text-align: left;
   flex: 1;
+  display: flex;
+`;
+
+const IcoTooltipImage = styled(Image)`
+  margin-left: 10px;
+  margin-bottom: 4px;
 `;
 
 const getBackgroundStyles = props =>
@@ -29,30 +39,38 @@ const Button = styled.button`
 
 const generateColumns = onSelect => [
   {
-    Header: <Text>Ico Name</Text>,
+    Header: (
+      <Text>
+        Ico Name
+        <DynamicTooltip content={messages.icoNameTooltip}>
+          <IcoTooltipImage width="16px" src={infoIcon} alt="info-icon" />
+        </DynamicTooltip>
+      </Text>
+    ),
     id: 'name',
-    accessor: data => data.metadata.icoName,
+    accessor: data => data.metadata.icoName || '',
     maxWidth: 250,
   },
   {
-    Header: <Text>ICO pass address</Text>,
+    Header: <Text>ICO Passport address</Text>,
     id: 'icoPassAddress',
+    className: 'ico-pass-address',
     accessor: data => (
-      <Tooltip tooltipMessage={data.metadata.passportAddress}>
-        <Text>{`${data.metadata.passportAddress.slice(0, 12)}...`}</Text>
-      </Tooltip>
+      <DynamicTooltip content={data.metadata.passportAddress}>
+        <Text>{data.metadata.passportAddress}</Text>
+      </DynamicTooltip>
     ),
   },
   {
     id: 'startDate',
     Header: <Text>Sale Start</Text>,
-    accessor: d => <div>{d.ico_info.ico_start_date}</div>,
+    accessor: d => <div>{(d.ico_info && d.ico_info.ico_start_date) || ''}</div>,
     maxWidth: 150,
   },
   {
     id: 'endDate',
     Header: <Text>Sale End</Text>,
-    accessor: d => <div>{d.ico_info.ico_end_date}</div>,
+    accessor: d => <div>{(d.ico_info && d.ico_info.ico_end_date) || ''}</div>,
     maxWidth: 150,
   },
   {
@@ -62,7 +80,7 @@ const generateColumns = onSelect => [
         type="button"
         onClick={() => onSelect(props.original)} // eslint-disable-line
       >
-        Report
+        {props.original.ico_info ? 'Details' : 'Analyse'} {/*eslint-disable-line */}
       </Button>
     ),
     maxWidth: 150,

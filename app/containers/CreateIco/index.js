@@ -10,6 +10,7 @@ import { connect } from 'react-redux';
 import { FormattedMessage } from 'react-intl';
 import { createStructuredSelector } from 'reselect';
 import { compose, bindActionCreators } from 'redux';
+import { push } from 'connected-react-router';
 
 import injectReducer from 'utils/injectReducer';
 import infoPageReducer from '../InfoPage/reducer';
@@ -21,11 +22,13 @@ import createIcoReducer from './reducer';
 import messages from './messages';
 import EmptyDiv from '../../components/EmptyDiv';
 import PrimaryButton from '../../components/PrimaryButton';
+import HollowButton from '../../components/HollowButton';
 import requiredMetamaskLogin from '../../utils/requiredMetamaskLogin';
 import PageWrapper from './PageWrapper';
 import Header from './Header';
 import Message from './Message';
 import MetamaskConnectSection from '../../components/MetamaskConnectSection';
+import FlexBox from '../../components/FlexBox';
 
 class CreateIco extends React.Component {
   constructor(props) {
@@ -45,16 +48,24 @@ class CreateIco extends React.Component {
           {msg => <Message>{msg}</Message>}
         </FormattedMessage>
         <EmptyDiv sizeY={2} />
-        <FormattedMessage {...messages.createButtonText}>
-          {msg => (
-            <PrimaryButton
-              onClick={this.props.createIcoPassport}
-              disabled={!this.props.isMetamaskEnabled}
-            >
-              {msg}
-            </PrimaryButton>
-          )}
-        </FormattedMessage>
+        <FlexBox column alignItems="center">
+          <FormattedMessage {...messages.createButtonText}>
+            {msg => (
+              <PrimaryButton
+                onClick={this.props.createIcoPassport}
+                disabled={!this.props.isMetamaskEnabled}
+              >
+                {msg}
+              </PrimaryButton>
+            )}
+          </FormattedMessage>
+          <EmptyDiv sizeY={2} />
+          <FormattedMessage {...messages.backButtonText}>
+            {msg => (
+              <HollowButton onClick={this.props.onBack}>{msg}</HollowButton>
+            )}
+          </FormattedMessage>
+        </FlexBox>
         {!this.props.isMetamaskEnabled && (
           <div>
             <EmptyDiv sizeY={2} />
@@ -91,6 +102,7 @@ const mapDispatchToProps = dispatch =>
     {
       createIcoPassport,
       enableMetamaskRequest,
+      onBack: () => push('/'),
     },
     dispatch,
   );

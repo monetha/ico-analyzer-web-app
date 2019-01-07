@@ -6,9 +6,9 @@ import Message from './Message';
 
 import InfoWrapper from './InfoWrapper';
 
-const Tooltip = ({ children, tooltipMessage, ...restProps }) => (
+const Tooltip = ({ children, tooltipMessage, isOpen, ...restProps }) => (
   <Wrapper>
-    <InfoWrapper>
+    <InfoWrapper className={isOpen ? 'open' : null}>
       {children}
       <Message {...restProps}>
         {typeof tooltipMessage === 'object' && (
