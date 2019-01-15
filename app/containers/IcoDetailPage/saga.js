@@ -82,13 +82,13 @@ export function* prepareDetailPage(action) {
 
     const FactReader = new sdk.FactReader(config.PROVIDER_URL);
     FactReader.setContract(passportAddress);
-    const passport = yield FactReader.getTxDataBlockNumber(
+    const passport = yield FactReader.getTxdata(
       config.FACT_PROVIDER_ADDRESS,
       config.FACT_KEY,
     );
 
-    if (passport.res !== null) {
-      const data = JSON.parse(passport.res);
+    if (passport) {
+      const data = JSON.parse(passport);
       data.ico_info.icoStartDate = constructMomentFromDate(
         data.ico_info.ico_start_date,
       );

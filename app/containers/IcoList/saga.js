@@ -56,7 +56,7 @@ export function* performLocationAwaredPassportListFetch() {
   let passportAddresses;
   try {
     const Reader = new sdk.PassportReader(config.PROVIDER_URL);
-    const passports = yield Reader.getPassportLists(
+    const passports = yield Reader.getPassportsList(
       config.PASSPORT_FACTORY_ADDRESS,
       config.PASSPORT_FACTORY_START_BLOCK,
     );
@@ -157,13 +157,13 @@ export function* fetchPassportByAddress(passportAddress, FactReader) {
   let passport;
   try {
     FactReader.setContract(`0x${passportAddress}`);
-    const result = yield FactReader.getTxDataBlockNumber(
+    const result = yield FactReader.getTxdata(
       config.FACT_PROVIDER_ADDRESS,
       config.FACT_KEY,
     );
 
-    if (result.res !== null) {
-      passport = JSON.parse(result.res);
+    if (result) {
+      passport = JSON.parse(result);
     }
 
     return passport;

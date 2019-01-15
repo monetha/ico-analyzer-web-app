@@ -386,7 +386,7 @@ export function* prepareEditPage() {
   const passportAddress = location.pathname.split('/')[2];
 
   const Reader = new sdk.PassportReader(config.PROVIDER_URL);
-  const passportList = yield Reader.getPassportLists(
+  const passportList = yield Reader.getPassportsList(
     config.PASSPORT_FACTORY_ADDRESS,
     config.PASSPORT_FACTORY_START_BLOCK,
   );
@@ -398,11 +398,12 @@ export function* prepareEditPage() {
   if (exists) {
     const FactReader = new sdk.FactReader(config.PROVIDER_URL);
     FactReader.setContract(passportAddress);
-    const passport = yield FactReader.getTxDataBlockNumber(
+    const passport = yield FactReader.getTxdata(
       config.FACT_PROVIDER_ADDRESS,
       config.FACT_KEY,
     );
-    if (passport.res == null) {
+
+    if (!passport) {
       yield call(prepareToAnalyse, passportAddress);
     } else {
       if (isAnalysing) {
@@ -431,8 +432,8 @@ export function* prepareToAnalyse(passportAddress) {
 }
 
 export function* prepareToReanalyse(passport) {
-  if (passport.res !== null) {
-    const data = JSON.parse(passport.res);
+  if (passport) {
+    const data = JSON.parse(passport);
 
     yield put(setIcoDetails(data));
     yield put(setCurrentIcoVersion(data.metadata.version));
