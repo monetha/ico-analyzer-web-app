@@ -122,7 +122,7 @@ export function* performLocationAwaredfetch() {
       if (!passport) {
         passport = {
           metadata: {
-            passportAddress: `0x${passportAddresses[pIndex]}`,
+            passportAddress: passportAddresses[pIndex],
           },
         };
       }

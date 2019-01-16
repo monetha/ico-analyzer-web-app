@@ -386,14 +386,14 @@ export function* prepareEditPage() {
   const isAnalysing = location.pathname.includes('/analyse-icopass/');
   const passportAddress = location.pathname.split('/')[2];
 
-  const Reader = new sdk.PassportReader(getWeb3(), config.PROVIDER_URL);
-  const passportList = yield Reader.getPassportsList(
+  const reader = new sdk.PassportReader(getWeb3(), config.PROVIDER_URL);
+  const passportList = yield reader.getPassportsList(
     config.PASSPORT_FACTORY_ADDRESS,
     config.PASSPORT_FACTORY_START_BLOCK,
   );
   const exists = find(
     passportList,
-    passport => `0x${passport.passportAddress}` === passportAddress,
+    passport => `${passport.passportAddress}` === passportAddress,
   );
 
   if (exists) {
