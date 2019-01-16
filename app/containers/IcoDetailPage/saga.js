@@ -18,6 +18,7 @@ import { selectRawDetails } from './selectors';
 import { prefillEditIcopassForm } from '../EditIcoPage/actions';
 import { startLoader, stopLoader } from '../App/actions';
 import { setDetailsToDisplay } from '../IcoList/saga';
+import { getWeb3 } from '../../services/web3Provider';
 
 export function* saveCurrentIcoDetails(action) {
   const icoPass = {
@@ -47,7 +48,7 @@ export function* prepareToReanalyse(action) {
 export function* switchVersion(action) {
   yield put(startLoader());
   const icoDetails = yield select(selectRawDetails);
-  const Reader = new sdk.PassportReader(config.PROVIDER_URL);
+  const Reader = new sdk.PassportReader(getWeb3(), config.PROVIDER_URL);
 
   const historyDetails = yield Reader.readPassportHistory(
     icoDetails.metadata.passportAddress,
@@ -80,8 +81,11 @@ export function* prepareDetailPage(action) {
   try {
     yield put(startLoader());
 
-    const FactReader = new sdk.FactReader(config.PROVIDER_URL);
-    FactReader.setContract(passportAddress);
+    const FactReader = new sdk.FactReader(
+      getWeb3(),
+      config.PROVIDER_URL,
+      passportAddress,
+    );
     const passport = yield FactReader.getTxdata(
       config.FACT_PROVIDER_ADDRESS,
       config.FACT_KEY,

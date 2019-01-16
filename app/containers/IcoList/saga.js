@@ -39,6 +39,7 @@ import {
 } from './selectors';
 import { setIcoDetails, setCurrentIcoVersion } from '../IcoDetailPage/actions';
 import messages from './messages';
+import { getWeb3 } from '../../services/web3Provider';
 
 export function* fetchIcoList() {
   // Reset all passport data
@@ -55,7 +56,7 @@ export function* fetchIcoList() {
 export function* performLocationAwaredPassportListFetch() {
   let passportAddresses;
   try {
-    const Reader = new sdk.PassportReader(config.PROVIDER_URL);
+    const Reader = new sdk.PassportReader(getWeb3(), config.PROVIDER_URL);
     const passports = yield Reader.getPassportsList(
       config.PASSPORT_FACTORY_ADDRESS,
       config.PASSPORT_FACTORY_START_BLOCK,
@@ -98,13 +99,17 @@ export function* performLocationAwaredfetch() {
     const fetchedPassports = [];
     const totalPassports = passportAddresses.length;
 
-    const FactReader = new sdk.FactReader(config.PROVIDER_URL);
-
     // start fetching all required passports in parallel
     const lastFetchedIndex = yield select(selectfetchedItemIndex);
     const startIndex = lastFetchedIndex + 1;
     let fetchedUptoIndex = startIndex;
     for (let pIndex = startIndex; pIndex < totalPassports; pIndex += 1) {
+      const FactReader = new sdk.FactReader(
+        getWeb3(),
+        config.PROVIDER_URL,
+        passportAddresses[pIndex],
+      );
+
       let passport = yield call(
         fetchPassportByAddress,
         passportAddresses[pIndex],
@@ -153,11 +158,10 @@ export function* performLocationAwaredfetch() {
   }
 }
 
-export function* fetchPassportByAddress(passportAddress, FactReader) {
+export function* fetchPassportByAddress(passportAddress, factReader) {
   let passport;
   try {
-    FactReader.setContract(`0x${passportAddress}`);
-    const result = yield FactReader.getTxdata(
+    const result = yield factReader.getTxdata(
       config.FACT_PROVIDER_ADDRESS,
       config.FACT_KEY,
     );
