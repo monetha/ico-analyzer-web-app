@@ -5,7 +5,7 @@ const isProduction = process.env.NODE_ENV === 'production';
 
 const config = {
   FACT_KEY: 'ICO Data',
-  COOKIE_POLICY_STORAGE_KEY: 'cokkie_policy_accepted',
+  COOKIE_POLICY_STORAGE_KEY: 'cookie_policy_accepted',
 
   PROVIDER_URL: isProduction
     ? production.PROVIDER_URL
