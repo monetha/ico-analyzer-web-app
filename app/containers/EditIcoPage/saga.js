@@ -60,6 +60,7 @@ import { Fees } from '../../const/fees';
 import { weiToEth } from '../../utils/ethConvert';
 import { ICORatingUrlPrefix } from '../../const/ico';
 import { extractICONameFromUrl } from '../../utils/ico';
+import { getWeb3 } from '../../services/web3Provider';
 
 export function* analyseNewIco() {
   const {
@@ -385,24 +386,28 @@ export function* prepareEditPage() {
   const isAnalysing = location.pathname.includes('/analyse-icopass/');
   const passportAddress = location.pathname.split('/')[2];
 
-  const Reader = new sdk.PassportReader(config.PROVIDER_URL);
-  const passportList = yield Reader.getPassportLists(
+  const reader = new sdk.PassportReader(getWeb3(), config.PROVIDER_URL);
+  const passportList = yield reader.getPassportsList(
     config.PASSPORT_FACTORY_ADDRESS,
     config.PASSPORT_FACTORY_START_BLOCK,
   );
   const exists = find(
     passportList,
-    passport => `0x${passport.passportAddress}` === passportAddress,
+    passport => `${passport.passportAddress}` === passportAddress,
   );
 
   if (exists) {
-    const FactReader = new sdk.FactReader(config.PROVIDER_URL);
-    FactReader.setContract(passportAddress);
-    const passport = yield FactReader.getTxDataBlockNumber(
+    const FactReader = new sdk.FactReader(
+      getWeb3(),
+      config.PROVIDER_URL,
+      passportAddress,
+    );
+    const passport = yield FactReader.getTxdata(
       config.FACT_PROVIDER_ADDRESS,
       config.FACT_KEY,
     );
-    if (passport.res == null) {
+
+    if (!passport) {
       yield call(prepareToAnalyse, passportAddress);
     } else {
       if (isAnalysing) {
@@ -431,8 +436,8 @@ export function* prepareToAnalyse(passportAddress) {
 }
 
 export function* prepareToReanalyse(passport) {
-  if (passport.res !== null) {
-    const data = JSON.parse(passport.res);
+  if (passport) {
+    const data = JSON.parse(passport);
 
     yield put(setIcoDetails(data));
     yield put(setCurrentIcoVersion(data.metadata.version));

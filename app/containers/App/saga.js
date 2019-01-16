@@ -65,7 +65,8 @@ export function* acceptCookiePolicy() {
 
 export function* checkCookiePolicyStatus() {
   const status = localStorage.getItem(config.COOKIE_POLICY_STORAGE_KEY);
-  yield put(setCookiePolicyStatus(status));
+  const statusBool = status ? JSON.parse(status) : false;
+  yield put(setCookiePolicyStatus(statusBool));
 }
 
 export default function* createIcoSaga() {

@@ -11,6 +11,7 @@ import messages from './messages';
 import { setFormSumbissionError, createIcoPassportSuccess } from './actions';
 import { startLoader, stopLoader } from '../App/actions';
 import { setPassportAddress } from '../EditIcoPage/actions';
+import { getWeb3 } from '../../services/web3Provider';
 
 export function* createIcoPassport() {
   try {
@@ -18,7 +19,7 @@ export function* createIcoPassport() {
     yield put(startLoader(messages.confirmPassCreationInMetamask));
 
     const PassportFactory = new sdk.PassportGenerator(
-      config.PROVIDER_URL,
+      getWeb3(),
       config.PASSPORT_FACTORY_ADDRESS,
     );
 
