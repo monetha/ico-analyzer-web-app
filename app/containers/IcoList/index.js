@@ -49,7 +49,7 @@ import Pagination from '../../components/Pagination';
 import GhostButton from '../../components/GhostButton';
 import Link from '../../components/Link';
 import Image from '../../components/Image';
-import MonethaLogo from '../../images/monetha-logo.png';
+import MonethaLogo from '../../images/monetha-logo.svg';
 import PrimaryButton from '../../components/PrimaryButton';
 
 const refreshImg = require('images/refresh.png');
