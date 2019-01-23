@@ -13,7 +13,7 @@ import messages from './messages';
 import HeaderButtons from './HeaderButtons';
 import HardRedirectLink from '../Link';
 
-import MonethaLogo from '../../images/monetha-logo-beta.png';
+import MonethaLogo from '../../images/monetha-logo.svg';
 
 const Header = props => (
   <Wrapper>
