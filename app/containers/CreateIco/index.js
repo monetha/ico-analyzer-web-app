@@ -48,6 +48,10 @@ class CreateIco extends React.Component {
           {msg => <Message>{msg}</Message>}
         </FormattedMessage>
         <EmptyDiv sizeY={2} />
+        <FormattedMessage {...messages.paybackAfterPayment}>
+          {msg => <Message fontWeight="bold">{msg}</Message>}
+        </FormattedMessage>
+        <EmptyDiv sizeY={3} />
         <FlexBox column alignItems="center">
           <FormattedMessage {...messages.createButtonText}>
             {msg => (

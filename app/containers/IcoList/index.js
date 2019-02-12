@@ -73,6 +73,11 @@ const ListBottomButtonsContainer = styled.div`
   padding-top: 20px;
 `;
 
+const PaybackDescription = styled.div`
+  margin-top: 20px;
+  text-align: center;
+`;
+
 const RefreshButton = styled.button`
   margin-left: 15px;
   &:hover {
@@ -183,6 +188,10 @@ class IcoList extends React.Component {
               <FormattedMessage {...headerMessages.createButtonText} />
             </GhostButton>
           </ListBottomButtonsContainer>
+
+          <PaybackDescription>
+            <FormattedMessage {...messages.paybackDescription} />
+          </PaybackDescription>
         </PageWrapper>
 
         <Footer>
