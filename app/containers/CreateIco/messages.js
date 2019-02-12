@@ -26,6 +26,11 @@ export default defineMessages({
     defaultMessage:
       'To create an ICO passport, you will have to pay a small transaction fee. It is needed to cover the expenses for deploying a smart contract on the blockchain. Afterwards, you will be able to enter data and start the analysis.',
   },
+  paybackAfterPayment: {
+    id: `${scope}.paybackAfterPayment`,
+    defaultMessage:
+      'You will also receive some MTH vouchers to your wallet address. They can be used for discounts in the Monetha ecosystem.',
+  },
   createButtonText: {
     id: `${scope}.createText`,
     defaultMessage: 'Create Pass',

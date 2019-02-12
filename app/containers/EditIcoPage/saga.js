@@ -120,6 +120,9 @@ export function* processPaymentAndAnalyse(requestData) {
       // Address of the current metamask account
       const accountAddress = window.web3.eth.accounts[0];
 
+      // Voucher parameter
+      const vouchersApply = 0;
+
       // Start showing loader before making invoking contract methods
       yield put(startLoader(messages.confirmStorageFeeInMetamask));
 
@@ -150,6 +153,7 @@ export function* processPaymentAndAnalyse(requestData) {
         accountAddress,
         Fees.serviceFeeTXFee,
         tokenAddress,
+        vouchersApply,
         {
           gas: Fees.serviceFeeGAS.toString(),
         },
