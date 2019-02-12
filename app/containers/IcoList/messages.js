@@ -41,4 +41,9 @@ export default defineMessages({
     defaultMessage:
       'Fetching data from the blockchain. \nThis might take a few moments',
   },
+  paybackDescription: {
+    id: `${scope}.paybackDescription`,
+    defaultMessage:
+      'You will also receive some MTH vouchers to your wallet address',
+  },
 });
