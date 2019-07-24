@@ -1,6 +1,6 @@
 /**
  *
- * EditIcoPage: Common page to be used for creating new ICO passport and update existing one.
+ * EditIcoPage: Common page to be used for creating new ICO Identity and update existing one.
  *
  */
 
