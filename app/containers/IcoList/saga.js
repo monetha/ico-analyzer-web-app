@@ -172,7 +172,7 @@ export function* fetchPassportByAddress(passportAddress, factReader) {
 
     return passport;
   } catch (error) {
-    console.error(`Error fetching passport ${passportAddress}\n`, error);
+    console.error(`Error fetching identity ${passportAddress}\n`, error);
     return passport;
   }
 }

@@ -132,11 +132,11 @@ export function* processPaymentAndAnalyse(requestData) {
         // For IE and Firefox prior to version 4
         if (ev) {
           ev.returnValue =
-            'Passport creation procedure will be lost if window is close. Are you sure?';
+            'Identity creation procedure will be lost if window is close. Are you sure?';
         }
 
         // For Safari
-        return 'Passport creation procedure will be lost if window is close. Are you sure?';
+        return 'Identity creation procedure will be lost if window is close. Are you sure?';
       };
 
       const paymentProcessor = getContractInstance(

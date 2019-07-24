@@ -106,7 +106,7 @@ export function* prepareDetailPage(action) {
     yield put(stopLoader());
   } catch (error) {
     yield put(stopLoader());
-    console.error(`Error fetching passport ${passportAddress}`);
+    console.error(`Error fetching identity ${passportAddress}`);
     console.error(error);
     yield put(
       addDisplayMessage('invalidPassportAddress', {

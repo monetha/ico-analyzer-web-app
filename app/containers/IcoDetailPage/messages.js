@@ -89,7 +89,7 @@ export default defineMessages({
   },
   passportAddress: {
     id: `${scope}.fundAddress`,
-    defaultMessage: 'ICO passport address',
+    defaultMessage: 'ICO Identity address',
   },
   ownerAddress: {
     id: `${scope}.ownerAddress`,
@@ -269,7 +269,7 @@ export default defineMessages({
   invalidPassportAddress: {
     id: `${scope}.invalidPassportAddress`,
     defaultMessage:
-      'The ICO Passport you are trying to access is incorrect. Please try again with a correct URL.',
+      'The ICO identity you are trying to access is incorrect. Please try again with a correct URL.',
   },
 });
 
