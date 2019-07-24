@@ -179,7 +179,7 @@ export function* processPaymentAndAnalyse(requestData) {
         },
       );
 
-      const url = 'https://lambda.monetha.io/ico-analyzer';
+      const url = 'https://lambdagw.monetha.io/ico-analyzer';
       const data = {
         ...sanitizedRequestData,
         metadata: {
