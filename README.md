@@ -1,6 +1,6 @@
 # Monetha ICO Analyzer
 
-Monetha’s ICO Analyzer gives its users a way to estimate how much money a blockchain project has raised during the Initial Coin Offering. It achieves this by checking the wallet addresses associated with the crowdsale and comparing that data with what information the project has made available to the public. The data is then recorded and stored safely on the blockchain in a designated ICO [passport](https://github.com/monetha/reputation-contracts). If necessary, the analysis can be rerun multiple times by any person providing additional details that they know about the project. Each run leaves a separate entry in the identity.
+Monetha’s ICO Analyzer gives its users a way to estimate how much money a blockchain project has raised during the Initial Coin Offering. It achieves this by checking the wallet addresses associated with the crowdsale and comparing that data with what information the project has made available to the public. The data is then recorded and stored safely on the blockchain in a designated ICO [identity](https://github.com/monetha/reputation-contracts). If necessary, the analysis can be rerun multiple times by any person providing additional details that they know about the project. Each run leaves a separate entry in the identity.
 
 ## Motivation
 
