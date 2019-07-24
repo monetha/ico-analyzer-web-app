@@ -1,6 +1,6 @@
 # Monetha ICO Analyzer
 
-Monetha’s ICO Analyzer gives its users a way to estimate how much money a blockchain project has raised during the Initial Coin Offering. It achieves this by checking the wallet addresses associated with the crowdsale and comparing that data with what information the project has made available to the public. The data is then recorded and stored safely on the blockchain in a designated ICO [passport](https://github.com/monetha/reputation-contracts). If necessary, the analysis can be rerun multiple times by any person providing additional details that they know about the project. Each run leaves a separate entry in the passport.
+Monetha’s ICO Analyzer gives its users a way to estimate how much money a blockchain project has raised during the Initial Coin Offering. It achieves this by checking the wallet addresses associated with the crowdsale and comparing that data with what information the project has made available to the public. The data is then recorded and stored safely on the blockchain in a designated ICO [passport](https://github.com/monetha/reputation-contracts). If necessary, the analysis can be rerun multiple times by any person providing additional details that they know about the project. Each run leaves a separate entry in the identity.
 
 ## Motivation
 
@@ -12,7 +12,7 @@ The ICO Analyzer makes use of Monetha’s Decentralized Reputation Framework, na
 
 You can read more about the Reputation layer [here](https://github.com/monetha/reputation-layer)
 
-Monetha’s ICO Analyzer demonstrates a simplified use case for the Reputation layer. It allows the user to create a Reputation Passport for an ICO and make a data request. Monetha, which functions as a Facts Provider, aggregates (using the websites icorating.com and etherscan.io) and calculates defined metrics and insights. The results are then displayed in the form of a simple pass/fail check, summarising the plurality of criteria involved in the analysis.
+Monetha’s ICO Analyzer demonstrates a simplified use case for the Reputation layer. It allows the user to create a Reputational Identity for an ICO and make a data request. Monetha, which functions as a Facts Provider, aggregates (using the websites icorating.com and etherscan.io) and calculates defined metrics and insights. The results are then displayed in the form of a simple pass/fail check, summarising the plurality of criteria involved in the analysis.
 
 
 ### Payment layer
@@ -21,7 +21,7 @@ You can read more about the Payments layer here: https://github.com/monetha/paym
 
 Monetha’s ICO Analyzer makes use of the Payments layer at two points. Transactions are facilitated via the Metamask app:
 
-* upon creating a new ICO passport. The creator is charged a small gas fee for deploying a smart contract on the blockchain;
+* upon creating a new ICO Identity. The creator is charged a small gas fee for deploying a smart contract on the blockchain;
 * upon starting the analysis. The requestor is asked to pay a small service fee held in an escrow account until the process is completed and funds are refunded in case if analysis fails
 
 ## Build status
@@ -37,7 +37,7 @@ Monetha’s ICO Analyzer makes use of the Payments layer at two points. Transact
 
 ## Features
 
-* Creation of Monetha's Reputation Passport for ICO analysis
+* Creation of Monetha's Reputational Identity for ICO analysis
 * Listing of Reputation Passports from blockchain
 * Metamask integration for signing onchain operations
 * Integation of [Monetha's Payments Layer](https://github.com/monetha/payment-layer)

@@ -52,7 +52,7 @@ const generateColumns = onSelect => [
     maxWidth: 250,
   },
   {
-    Header: <Text>ICO Passport address</Text>,
+    Header: <Text>ICO Identity Address</Text>,
     id: 'icoPassAddress',
     className: 'ico-pass-address',
     accessor: data => (

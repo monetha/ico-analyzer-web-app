@@ -11,7 +11,7 @@ export const scope = 'app.containers.EditIcoPage';
 export default defineMessages({
   analyseMessage: {
     id: `${scope}.analyseMessage`,
-    defaultMessage: 'Analyze the ICO passport ',
+    defaultMessage: 'Analyze the ICO Identity ',
   },
   backButtonText: {
     id: `${scope}.backButtonText`,
@@ -24,7 +24,7 @@ export default defineMessages({
   },
   icoAddress: {
     id: `${scope}.icoAddress`,
-    defaultMessage: 'ICO passport address:',
+    defaultMessage: 'ICO Identity address:',
   },
   rerunHeading: {
     id: `${scope}.rerunHeading`,
@@ -188,7 +188,7 @@ export default defineMessages({
   invalidPassportAddress: {
     id: `${scope}.invalidPassportAddress`,
     defaultMessage:
-      'The ICO Passport you are trying to access is incorrect. Please try again with a correct URL.',
+      'The ICO Identity you are trying to access is incorrect. Please try again with a correct URL.',
   },
   invalidIcoPrice: {
     id: `${scope}.invalidPassportAddress`,
@@ -240,6 +240,6 @@ export const createCustomMessages = ({ passportAddress }) =>
   defineMessages({
     passportAddressMessage: {
       id: `${scope}.passportAddressMessage`,
-      defaultMessage: `ICO passport address: ${passportAddress}`,
+      defaultMessage: `ICO Identity address: ${passportAddress}`,
     },
   });
