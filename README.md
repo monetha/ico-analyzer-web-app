@@ -33,7 +33,7 @@ Monetha’s ICO Analyzer makes use of the Payments layer at two points. Transact
 <b>Built with</b>
 
 * [React Redux](https://github.com/reduxjs/react-redux)
-* [Monetha Reputation JS SDK](https://github.com/monetha/reputation-js-sdk)
+* [Monetha Reputation JS SDK](https://github.com/monetha/js-verifiable-data)
 
 ## Features
 
