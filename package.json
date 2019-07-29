@@ -91,7 +91,7 @@
     "redux": "4.0.1",
     "redux-immutable": "4.0.0",
     "redux-saga": "0.16.2",
-    "reputation-sdk": "git+https://github.com/monetha/reputation-js-sdk.git#1.0.1",
+    "reputation-sdk": "https://github.com/monetha/js-verifiable-data.git#1.0.1",
     "reselect": "4.0.0",
     "sanitize.css": "4.1.0",
     "styled-components": "4.0.2",
