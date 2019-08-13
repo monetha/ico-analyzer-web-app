@@ -10,7 +10,6 @@ import {
   ACCEPT_COOKIE_POLICY,
   CHECK_COOKIE_POLICY_STATUS,
 } from './constants';
-import { TX_REJECTED } from '../../utils/MonethaError/constants';
 import {
   enableMetamaskFailure,
   enableMetamaskSuccess,
@@ -18,27 +17,14 @@ import {
   hideCopyToClipboard,
   setCookiePolicyStatus,
 } from './actions';
+import { enableWallet } from '../../utils/web3/walletProvider';
 
 export function* enableMetamask() {
   try {
-    if (!window.web3) {
-      throw new Error('Metamask not found');
-    }
-
-    if (!window.web3.eth.accounts.length === 0) {
-      throw new Error('Current provider not found');
-    }
-
-    const [currentAddress] = yield window.web3.currentProvider.enable();
-
-    if (currentAddress !== '') {
-      yield put(enableMetamaskSuccess());
-    } else {
-      throw new Error(TX_REJECTED);
-    }
+    yield enableWallet();
+    yield put(enableMetamaskSuccess());
   } catch (e) {
     yield put(enableMetamaskFailure(e));
-    console.error(e);
   }
 }
 

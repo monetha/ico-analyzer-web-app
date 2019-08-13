@@ -3,6 +3,12 @@ import hoistNonReactStatics from 'hoist-non-react-statics';
 import MessageBox from '../components/MessageBox';
 import Span from '../components/Span';
 import Link from '../components/Link';
+import {
+  getCurrentAccountAddress,
+  getProviderInstance,
+  enableWallet,
+} from './web3/walletProvider';
+import AppLoader from '../components/Loader';
 
 /**
  * Check for metatask login
@@ -16,8 +22,37 @@ export default WrappedComponent => {
       WrappedComponent.name ||
       'Component'})`;
 
+    constructor(props) {
+      super(props);
+
+      this.state = {
+        isEnabling: false,
+        currentAccount: null,
+      };
+    }
+
+    async componentDidMount() {
+      this.setState({
+        isEnabling: true,
+      });
+
+      await enableWallet();
+      const currentAccount = await getCurrentAccountAddress();
+
+      this.setState({
+        isEnabling: false,
+        currentAccount,
+      });
+    }
+
     render() {
-      if (!window.web3) {
+      if (this.state.isEnabling) {
+        return <AppLoader isLoading />;
+      }
+
+      const provider = getProviderInstance();
+
+      if (!provider) {
         return (
           <MessageBox>
             <Span>You do not have metamask installed</Span>
@@ -32,7 +67,7 @@ export default WrappedComponent => {
         );
       }
 
-      if (window.web3.eth.accounts.length === 0) {
+      if (!this.state.currentAccount) {
         return (
           <MessageBox>
             <div>

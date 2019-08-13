@@ -1,17 +1,19 @@
-import { takeEvery, put } from 'redux-saga/effects';
-import sdk from 'reputation-sdk';
-import { push } from 'connected-react-router';
 import config from 'config';
-
+import { push } from 'connected-react-router';
+import { put, takeEvery } from 'redux-saga/effects';
+import sdk from 'reputation-sdk';
 import MonethaError from 'utils/MonethaError';
-import convertCallbackToPromise from 'utils/convertCallbackToPromise';
 import { waitForTxToFinish } from 'utils/web3';
-import { CREATE_ICO_PASSPORT } from './constants';
-import messages from './messages';
-import { setFormSumbissionError, createIcoPassportSuccess } from './actions';
+import { getWeb3 } from '../../services/web3Provider';
+import {
+  getCurrentAccountAddress,
+  sendTransaction,
+} from '../../utils/web3/walletProvider';
 import { startLoader, stopLoader } from '../App/actions';
 import { setPassportAddress } from '../EditIcoPage/actions';
-import { getWeb3 } from '../../services/web3Provider';
+import { createIcoPassportSuccess, setFormSumbissionError } from './actions';
+import { CREATE_ICO_PASSPORT } from './constants';
+import messages from './messages';
 
 export function* createIcoPassport() {
   try {
@@ -23,14 +25,11 @@ export function* createIcoPassport() {
       config.PASSPORT_FACTORY_ADDRESS,
     );
 
-    const rawTx = yield PassportFactory.createPassport(
-      window.web3.eth.accounts[0],
-    );
+    const accountAddress = yield getCurrentAccountAddress();
 
-    const txHash = yield convertCallbackToPromise(
-      window.web3.eth.sendTransaction,
-      rawTx,
-    );
+    const rawTx = yield PassportFactory.createPassport(accountAddress);
+
+    const txHash = yield sendTransaction(rawTx);
 
     // set loader message for better UI feedback
     yield put(startLoader(messages.icoLoadingMessage));

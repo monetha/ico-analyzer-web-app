@@ -78,6 +78,9 @@ module.exports = {
     'redux-saga/no-yield-in-race': 2,
     'redux-saga/yield-effects': 2,
     'require-yield': 0,
+    'no-await-in-loop': 0,
+    'no-continue': 0,
+    'no-prototype-builtins': 0,
   },
   settings: {
     'import/resolver': {

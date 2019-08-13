@@ -6,7 +6,6 @@ import omit from 'lodash/omit';
 import keys from 'lodash/keys';
 import find from 'lodash/find';
 import { push } from 'connected-react-router';
-import convertCallbackToPromise from 'utils/convertCallbackToPromise';
 import MonethaError from 'utils/MonethaError';
 import isValidAddress from 'utils/isValidAddress';
 import isValidDecimal from 'utils/isValidDecimal';
@@ -61,6 +60,8 @@ import { weiToEth } from '../../utils/ethConvert';
 import { ICORatingUrlPrefix } from '../../const/ico';
 import { extractICONameFromUrl } from '../../utils/ico';
 import { getWeb3 } from '../../services/web3Provider';
+import { getCurrentAccountAddress } from '../../utils/web3/walletProvider';
+import { cbToPromise } from '../../utils/promise';
 
 export function* analyseNewIco() {
   const {
@@ -118,7 +119,7 @@ export function* processPaymentAndAnalyse(requestData) {
       const orderId = Date.now();
 
       // Address of the current metamask account
-      const accountAddress = window.web3.eth.accounts[0];
+      const accountAddress = yield getCurrentAccountAddress();
 
       // Voucher parameter
       const vouchersApply = 0;
@@ -145,18 +146,21 @@ export function* processPaymentAndAnalyse(requestData) {
       );
 
       // Invoking addOrder
-      const addOrderTxHash = yield convertCallbackToPromise(
-        paymentProcessor.addOrder,
-        orderId,
-        Fees.serviceFee,
-        accountAddress,
-        accountAddress,
-        Fees.serviceFeeTXFee,
-        tokenAddress,
-        vouchersApply,
-        {
-          gas: Fees.serviceFeeGAS.toString(),
-        },
+      const addOrderTxHash = yield cbToPromise(cb =>
+        paymentProcessor.addOrder(
+          orderId,
+          Fees.serviceFee,
+          accountAddress,
+          accountAddress,
+          Fees.serviceFeeTXFee,
+          tokenAddress,
+          vouchersApply,
+          {
+            from: accountAddress,
+            gas: Fees.serviceFeeGAS.toString(),
+          },
+          cb,
+        ),
       );
 
       yield put(startLoader(messages.transactionExecutionMessage));
@@ -170,13 +174,16 @@ export function* processPaymentAndAnalyse(requestData) {
       yield put(startLoader(messages.confirmMonethaFeeInMetamask));
 
       // Invoking securePay
-      const securePayTxHash = yield convertCallbackToPromise(
-        paymentProcessor.securePay,
-        orderId,
-        {
-          value: Fees.serviceFee,
-          gas: Fees.serviceFeeGAS.toString(),
-        },
+      const securePayTxHash = yield cbToPromise(cb =>
+        paymentProcessor.securePay(
+          orderId,
+          {
+            value: Fees.serviceFee,
+            gas: Fees.serviceFeeGAS.toString(),
+            from: accountAddress,
+          },
+          cb,
+        ),
       );
 
       const url = 'https://lambdagw.monetha.io/ico-analyzer';
