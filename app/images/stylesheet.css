@@ -3,9 +3,9 @@
 
 
 @font-face {
-    font-family: 'cerebri_sansbold';
-    src: url('hanken_design_co._-_cerebri_sans_bold-webfont.woff2') format('woff2'),
-         url('hanken_design_co._-_cerebri_sans_bold-webfont.woff') format('woff');
+    font-family: 'RobotoBold';
+    src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+         url('../fonts/Roboto-Bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -15,9 +15,9 @@
 
 
 @font-face {
-    font-family: 'cerebri_sanslight';
-    src: url('hanken_design_co._-_cerebri_sans_light-webfont.woff2') format('woff2'),
-         url('hanken_design_co._-_cerebri_sans_light-webfont.woff') format('woff');
+    font-family: 'RobotoLight';
+    src: url('../fonts/Roboto-Light.woff2') format('woff2'),
+         url('../fonts/Roboto-Light.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -27,9 +27,9 @@
 
 
 @font-face {
-    font-family: 'cerebri_sansmedium';
-    src: url('hanken_design_co._-_cerebri_sans_medium-webfont.woff2') format('woff2'),
-         url('hanken_design_co._-_cerebri_sans_medium-webfont.woff') format('woff');
+    font-family: 'RobotoMedium';
+    src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
+         url('../fonts/Roboto-Medium.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -39,21 +39,9 @@
 
 
 @font-face {
-    font-family: 'cerebri_sansregular';
-    src: url('hanken_design_co._-_cerebri_sans_regular-webfont.woff2') format('woff2'),
-         url('hanken_design_co._-_cerebri_sans_regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'cerebri_sanssemibold';
-    src: url('hanken_design_co._-_cerebri_sans_semibold-webfont.woff2') format('woff2'),
-         url('hanken_design_co._-_cerebri_sans_semibold-webfont.woff') format('woff');
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+         url('../fonts/Roboto-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 

@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import myFont from './images/hanken_design_co._-_cerebri_sans_regular-webfont.woff';
+import myFont from './fonts/Roboto-Regular.woff';
 
 const GlobalStyle = createGlobalStyle`
   html,
@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: 'cerebri_sans_regular';
+    font-family: 'Roboto';
   }
 
   #app {
@@ -19,7 +19,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   @font-face {
-    font-family: 'cerebri_sans_regular'; src: url(${myFont}) format('truetype');
+    font-family: 'Roboto'; src: url(${myFont}) format('truetype');
   }
 
 `;
